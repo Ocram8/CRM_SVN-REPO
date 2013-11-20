@@ -1,5 +1,5 @@
-<?php
-teste mais teste 2
-asd
-asd
-?>
+<index>
+	<body>
+		<p>Batatas Fritas</p>
+	</body>
+</index>
