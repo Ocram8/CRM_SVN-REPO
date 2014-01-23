@@ -1,5 +1,5 @@
 <index>
 	<body>
-		<p>Batatas Fritas</p>
+		<p>Batatas Fritas2</p>
 	</body>
 </index>
