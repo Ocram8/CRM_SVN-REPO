@@ -108,8 +108,36 @@
 			$this->pesSexo = $newSexo;
 		}
 		
-		public function setPesEstadoCivil($nesEstCivil) {
-			
+		public function setPesEstadoCivil($newEstCivil) {
+			$this->pesEstadoCivil = $newEstCivil;
+		}
+		
+		public function setPesProfissoa($newProf) {
+			$this->pesProfissao = $newProf;
+		}
+		
+		public function setPesMorada($newMorada) {
+			$this->pesMorada = $newMorada;
+		}
+		
+		public function setPesTelefone($newTel) {
+			$this->pesTelefone = $newTel;
+		}
+		
+		public function setPesEmail($newEmail) {
+			$this->pesEmail = $newEmail;
+		}
+		
+		public function setPesTitulo($newTitulo) {
+			$this->pesTitulo = $newTitulo;
+		}
+		
+		public function setPesFotografia($newFoto) {
+			$this->pesFotografia = $newFoto;
+		}
+		
+		public function setPesObservacoes($newObvs) {
+			$this->pesObservacoes=$newObvs;
 		}
 		
 		private static function incLastPesID(){
