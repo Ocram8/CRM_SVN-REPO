@@ -7,55 +7,55 @@
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="?page=home">Painel de Administração</a></li>
-				<li class="active">Funcionários</li>
+				<li><a href="?page=home"><?php echo $lang_worker_index_text_1;?></a></li>
+				<li class="active"><?php echo $lang_worker_index_text_2;?></li>
 			</ol>
 			
 			<div class="page-header">
-				<h1>Gestão de Funcionários</h1>
+				<h1><?php echo $lang_worker_index_text_3;?></h1>
 			</div>
 
-			<p class="lead">O módulo de gestão de funcionários tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar de novos funcionários, ver e alterar toda a informação associada às permissões dos funcionário e desativar e reativar os funcionários.</p>
+			<p class="lead"><?php echo $lang_worker_index_text_4;?></p>
 			<hr>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px">
 					<form class="form-inline" role="form">
 						<div class="form-group">
-							<label class="sr-only">Pesquisar</label> <input type="email" class="form-control input-sm" placeholder="Pesquisar">
+							<label class="sr-only">Pesquisar</label> <input type="email" class="form-control input-sm" placeholder="<?php echo $lang_worker_index_placeholder_5;?>">
 						</div>
 						<div class="form-group">
 							<label class="sr-only">Permissões</label> <select class="form-control input-sm">
-								<option>Número</option>
-								<option selected>Nome</option>
-								<option>Permissões</option>
+								<option><?php echo $lang_worker_index_text_6;?></option>
+								<option selected><?php echo $lang_worker_index_text_7;?></option>
+								<option><?php echo $lang_worker_index_text_8;?></option>
 							</select>
 						</div>
 						<div class="form-group">
 							<label class="sr-only" for="exampleInputPassword2">Permissões</label> <select class="form-control input-sm">
-								<option>Todos os funcionários</option>
-								<option selected>Só funcionários ativos</option>
-								<option>Só funcionários desativos</option>
+								<option><?php echo $lang_worker_index_text_9;?></option>
+								<option selected><?php echo $lang_worker_index_text_10;?></option>
+								<option><?php echo $lang_worker_index_text_11;?></option>
 							</select>
 						</div>
-						<button type="submit" class="btn btn-default btn-sm" title="Pesquisar">
-							<span class="glyphicon glyphicon-search"></span> Pesquisar
+						<button type="submit" class="btn btn-default btn-sm" title="<?php echo $lang_worker_index_title_12;?>">
+							<span class="glyphicon glyphicon-search"></span> <?php echo $lang_worker_index_text_13;?>
 						</button>
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="?page=new_worker" title="Inserir novo funcionário"><span class="glyphicon glyphicon-plus"></span> Novo funcionário</a>
+					<a class="btn btn-default btn-sm" href="?page=new_worker" title="<?php echo $lang_worker_index_title_14;?>"><span class="glyphicon glyphicon-plus"></span> <?php echo $lang_worker_index_text_15;?></a>
 				</div>
 			</div>
 			<br>
 			<div>
 				<table class="table table table-hover">
 					<tr>
-						<th>Número</th>
-						<th>Nome</th>
-						<th>Correio-eletrónico</th>
-						<th>Permissões</th>
-						<th colspan="3">Opções</th>
+						<th><?php echo $lang_worker_index_text_16;?></th>
+						<th><?php echo $lang_worker_index_text_17;?></th>
+						<th><?php echo $lang_worker_index_text_18;?></th>
+						<th><?php echo $lang_worker_index_text_19;?></th>
+						<th colspan="3"><?php echo $lang_worker_index_text_20;?></th>
 					</tr>
 
 					<tr class="success">
@@ -163,8 +163,8 @@
 			</div>
 			<hr>
 			<div class="btn-group">
-				<a class="btn btn-default btn-sm" href="#" title="Importar dados dos funcionários"><span class="glyphicon glyphicon-import"></span> Importar dados dos funcionários</a> <a class="btn btn-default btn-sm" href="#" title="Exportar dados dos funcionários"><span class="glyphicon glyphicon-export"></span>
-					Exportar dados dos funcionários</a>
+				<a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_25;?>"><span class="glyphicon glyphicon-import"></span> <?php echo $lang_worker_index_text_26;?></a> <a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_27;?>"><span class="glyphicon glyphicon-export"></span>
+					<?php echo $lang_worker_index_text_28;?></a>
 			</div>
 		</div>
 	</div>
