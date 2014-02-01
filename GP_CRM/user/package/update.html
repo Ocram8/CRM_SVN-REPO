@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Tomé Silva, Luis Costa, José Monteiro">
+    <link rel="shortcut icon" href="../../favicon.png">
+
+    <title>cloudCRM | Encomendas | Alterar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../dist/css/bootstrap.css" rel="stylesheet">
+	 <link rel="stylesheet" href="../../../assets/css/docs.css"></link>
+    <link rel="stylesheet" href="../../../assets/css/pygments-manni.css"></link>
+
+    <!-- Custom styles for this template -->
+    <link href="offcanvas.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html" title="Ir para página principal" ><img src="../../logo.png" title="cloud CRM" ></a></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html" title="Ir para o painel principal" ><span class="glyphicon glyphicon-home"></span> Painel Principal</a></li>
+            <li><a href="../leads/index.html" title="Ir para o módulo de gestão de leads" ><i lang="en">Leads</i></a></li>
+            <li><a href="../customer/index.html" title="Ir para o módulo de gestão de clientes">Clientes</a></li>
+            <li><a href="../campaigns/index.html" title="Ir para o módulo de gestão de campanhas comerciais" >Campanhas</a></li>
+            <li><a href="../interactions/index.html" title="Ir para o módulo de interações" >Interações</a></li>
+            <li class="active"><a href="../package/index.html" title="Ir para o módulo de gestão de encomendas">Encomendas</a></li>
+            <li><a href="../personal/index.html" title="Ir para o módulo de gestão da área pessoal">Área Pessoal</a></li>
+			<li><a href="./user.html" title="Ir para o módulo de gestão da área pessoal">Relatórios</a></li>
+          </ul>
+          
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Sub-Menu</button>
+          </p>
+
+          <ol class="breadcrumb">
+			  <li><a href="../index.html">Painel Principal</a></li>
+              <li><a href="./index.html">Encomendas</a></li>
+			  <li class="active">Alterar</li>
+			</ol>
+
+          <div class="page-header">
+				<h1>Alterar Encomenda</h1>
+			</div>
+			<p class="lead">Altere os dados da encomenda.</p>
+			
+			<div class="col-lg-10">
+	
+				<form action="">
+			
+					<fieldset>
+						<legend>
+							Dados da Encomenda
+						</legend>
+					
+						<div class="col-lg-6">
+							<label for="num" title="Introduza o número da campanha comercial" >Número da encomenda</label>
+							<p class="form-control-static">[Número da encomenda]</p>
+							</br>
+							
+							<label for="nome" title="Altere o nome da campanha" >Nome Cliente</label>
+							<input type="text" class="form-control" placeholder="Nome do cliente" title="Altere o nome do cliente" id="name" value="[Nome do cliente]">
+							<span class="help-block">Altere o nome do cliente</span>
+							</br>
+						
+							<label for="dataie" title="Altere a data de início da encomenda">Data de encomenda</label>
+							<input type="date" class="form-control" placeholder="Data de início da encomenda" title="Altere a data de início da encomenda" id="dataie" value="1993-09-11">
+							<span class="help-block">Altere a data de início da encomenda</span>
+							</br>
+							
+							<label for="time" title="Altere a hora de início da encomenda">Hora</label>
+							<input type="time" class="form-control" placeholder="Hora de início da encomenda" title="Altere a hora de início da encomenda" id="time" value="08:30">
+							<span class="help-block">Altere a hora de início da encomenda</span>
+							</br>
+              
+							<label for="datafe" title="Altere a data de entrega da encomenda" >Data de entrega</label>
+							<input type="date" class="form-control" placeholder="Data de entrega da encomenda" title="Altere a data de entrega da encomenda" id="datafe" value="2013-11-24">
+							<span class="help-block">Altere a data de entrega da encomenda</span>
+							</br>
+							
+							<label for="des" title="Altere as descrições da encomenda" >Descrição</label>
+							<textarea class="form-control" rows="3" title="Altere as descrições da encomenda">[Descrições da encomenda]</textarea>
+							<span class="help-block">Introduza as descrições da encomenda</span>
+							</br>
+						
+							
+							<label for="est" title="Altere o estado da encomenda" >Estado da encomenda</label></br>
+							<input type="radio" name="est" value="can"> Cancelado</br>
+							<input type="radio" name="est" value="pen" checked> Pendente</br>
+							<input type="radio" name="est" value="pro"> Processamento</br>
+							<input type="radio" name="est" value="fin"> Finalizado</br>
+							</br>
+							
+						</div>
+					
+					</fieldset>
+			
+					<button type="submit" class="btn btn-lg btn-primary">Alterar</button>
+				</form>
+			</div>
+			
+		
+		
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>
+           &copy; Interface e código realizado por
+           <a href="mailto:lei123002@alunos.estgoh.ipc.pt" title="Enviar e-mail a José Monteiro" >José Monteiro</a>,
+           <a href="mailto:lmfcc_5@hotmail.com" title="Enviar e-mail a Luis Costa" >Luis Costa</a>,
+           <a href="mailto:godlike.mailbox@gmail.com" title="Enviar e-mail a Manuel Rama" >Manuel Rama</a>,
+           <a href="mailto:marcomotagds@gmail.com" title="Enviar e-mail a Marco Mota" >Marco Mota</a> e 
+           <a href="mailto:tom3silva@gmail.com" title="Enviar e-mail a Tomé Silva" >Tomé Silva</a>.
+        </p>
+        <p>Código licenciado pela licença <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blanck" title="Ver termos e condições para o uso, reprodução e distribuição da licensa Apache 2.0" >Apache 2.0</a>.</p>
+        <p>Versão 1.0 &#8226; 2013 &#8226; <a href="../help.html" target="_blanck" title="Ver manual do utilizador" >Ajuda</a></p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../assets/js/jquery.js"></script>
+    <script src="../../../dist/js/bootstrap.min.js"></script>
+    <script src="offcanvas.js"></script>
+	 <style>
+    	a.navbar-brand {
+    		padding-bottom: 1px;
+    		padding-top: 1px;
+    	}
+    	
+    </style>
+  </body>
+</html>
