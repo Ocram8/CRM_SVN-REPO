@@ -7,33 +7,32 @@
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.php">Painel de Administração</a></li>
-				<li class="active">Área Pessoal</li>
+				<li><a href="../index.php"><?php echo $lang_personal_index_text_1;?></a></li>
+				<li class="active"><?php echo $lang_personal_index_text_2;?></li>
 			</ol>
 
 			<div class="page-header">
-				<h1>Gestão de Área Pessoal</h1>
+				<h1><?php echo $lang_personal_index_text_3;?></h1>
 			</div>
-			<p class="lead">O módulo de gestão da Área Pessoal serve para alterar os dados de perfil.</p>
+			<p class="lead"><?php echo $lang_personal_index_text_4;?></p>
 
 			<div class="col-lg-10">
 				<form action="">
 					<fieldset>
-						<legend> Dados Pessoais </legend>
+						<legend><?php echo $lang_personal_index_text_5;?></legend>
 						<div class="col-lg-8">
-							<label for="nome" title="Introduza o nome do Administrador">Nome</label> <input type="text" class="form-control" placeholder="Nome do Administrador" title="Introduza o nome do Administrador" id="name" value="[Nome do administrador]"> <span class="help-block">Altere o nome do
-								administrador</span>
+							<label for="nome" title="Altere o nome do Administrador"><?php echo $lang_personal_index_text_6;?></label> <input type="text" class="form-control" placeholder="<?php echo $lang_personal_index_placeholder_7;?>" title="<?php echo $lang_personal_index_title_8;?>" id="name"> <span class="help-block"><?php echo $lang_personal_index_text_9;?></span>
 						</div>
 						<div class="col-lg-6">
-							<label for="email" title="Introduza o correiro eletrónico do Administrador">Correio eletrónico</label> <input type="email" class="form-control" placeholder="Correio eletrónico do Administrador" title="Introduza o correiro eletrónico do Administrador" id="email"
-								value="[Correio eletrónico do administrador]"> <span class="help-block">Introduza o correiro eletrónico do administrador</span> <label for="inputfile" title="Introduza uma fotografia do Administrador">Fotografia</label> <input type="file" id="inputfile"
-								title="Introduza uma fotografia do Administrador"> <span class="help-block">Introduza uma fotografia do Administrador</span>
-							<legend> Palavra-Passe </legend>
+							<label for="email" title="Altere o correiro eletrónico do Administrador"><?php echo $lang_personal_index_text_10;?></label> <input type="email" class="form-control" placeholder="<?php echo $lang_personal_index_placeholder_11;?>" title="<?php echo $lang_personal_index_title_12;?>" id="email">
+							<span class="help-block"><?php echo $lang_personal_index_text_13;?></span> <label for="inputfile" title="Altere a fotografia do Administrador"><?php echo $lang_personal_index_text_14;?></label> <input type="file" id="inputfile"
+								title="<?php echo $lang_personal_index_title_15;?>"> <span class="help-block"><?php echo $lang_personal_index_text_16;?></span>
+							<legend> <?php echo $lang_personal_index_text_17;?> </legend>
 
-							<label for="nome" title="Nova Palavra-Passe">Nova Palavra-Passe</label> <input type="password" class="form-control" placeholder="Nova Palavra-Passe" title="Nova Palavra-Passe" id="name"> <span class="help-block">Introduza Nova Palavra-Passe</span> <label for="nome"
-								title="Confirme Palavra-Passe">Confirme Palavra-Passe</label> <input type="password" class="form-control" placeholder="Confirme Palavra-Passe" title="Confirme Palavra-Passe" id="name"> <span class="help-block">Confirme a sua Nova Palavra-Passe</span> <label for="nome"
-								title="Palavra-Passe Atual">Palavra-Passe Atual</label> <input type="password" class="form-control" placeholder="Palavra-Passe Atual" title="Palavra-Passe Atual" id="name"> <span class="help-block">Introduza a Palavra-Passe Atual</span>
-							<button type="submit" class="btn btn-lg btn-primary">Guardar</button>
+							<label for="nome" title="Nova Palavra-Passe"><?php echo $lang_personal_index_text_18;?></label> <input type="password" class="form-control" placeholder="<?php echo $lang_personal_index_placeholder_19;?>" title="<?php echo $lang_personal_index_title_20;?>" id="name"> <span class="help-block"><?php echo $lang_personal_index_text_21;?></span> <label for="nome"
+								title="Confirme Palavra-Passe"><?php echo $lang_personal_index_text_22;?></label> <input type="password" class="form-control" placeholder="<?php echo $lang_personal_index_placeholder_23;?>" title="<?php echo $lang_personal_index_title_24;?>" id="name"> <span class="help-block"><?php echo $lang_personal_index_text_25;?></span> <label for="nome"
+								title="Palavra-Passe Atual"><?php echo $lang_personal_index_text_26;?></label> <input type="password" class="form-control" placeholder="<?php echo $lang_personal_index_placeholder_27;?>" title="<?php echo $lang_personal_index_title_28;?>" id="name"> <span class="help-block"><?php echo $lang_personal_index_text_29;?>l</span>
+							<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_personal_index_text_30;?></button>
 						</div>
 					</fieldset>
 				</form>
@@ -43,3 +42,4 @@
 	<hr>
 </div>
 <!--/.container-->
+
