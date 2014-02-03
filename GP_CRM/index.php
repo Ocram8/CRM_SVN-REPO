@@ -21,6 +21,12 @@ require 'lang/pt_pt.php';
 		elseif ($_GET['page'] == 'new_worker')
 			$header_menu_page = 5;
 		
+		elseif ($_GET['page'] == 'update_worker')
+			$header_menu_page = 6;
+		
+		elseif ($_GET['page'] == 'view_worker')
+			$header_menu_page = 7;
+		
 		else
 			$header_menu_page = -1;
 	}
@@ -74,24 +80,34 @@ require 'lang/pt_pt.php';
 	elseif($header_menu_page == 2)
 	{	
 		require 'admin/header.php';			
-		require 'admin/application/index.html';
+		require 'admin/application/index.php';
 	}
 	
 	elseif ($header_menu_page == 3)
 	{	
 		require 'admin/header.php';
-		require 'admin/worker/index.html';
+		require 'admin/worker/index.php';
 	}
 	
 	elseif ($header_menu_page == 4)
 	{
 		require 'admin/header.php';
-		require 'admin/personal/index.html';
+		require 'admin/personal/index.php';
 	}
 	elseif ($header_menu_page == 5)
 	{
 		require 'admin/header.php';
-		require 'admin/worker/insert.html';
+		require 'admin/worker/insert.php';
+	}
+	elseif ($header_menu_page == 6)
+	{
+		require 'admin/header.php';
+		require 'admin/worker/update.php';
+	}
+	elseif ($header_menu_page == 7)
+	{
+		require 'admin/header.php';
+		require 'admin/worker/view.php';
 	}
 	else
 	{	

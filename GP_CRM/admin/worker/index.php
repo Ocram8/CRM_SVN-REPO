@@ -10,7 +10,7 @@
 				<li><a href="?page=home"><?php echo $lang_worker_index_text_1;?></a></li>
 				<li class="active"><?php echo $lang_worker_index_text_2;?></li>
 			</ol>
-			
+
 			<div class="page-header">
 				<h1><?php echo $lang_worker_index_text_3;?></h1>
 			</div>
@@ -20,7 +20,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px">
-					<form class="form-inline" role="form">
+					<form class="form-inline" role="form" action="?page=worker" method="post">
 						<div class="form-group">
 							<label class="sr-only">Pesquisar</label> <input type="email" class="form-control input-sm" placeholder="<?php echo $lang_worker_index_placeholder_5;?>">
 						</div>
@@ -44,7 +44,7 @@
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="?page=new_worker" title="<?php echo $lang_worker_index_title_14;?>"><span class="glyphicon glyphicon-plus"></span> <?php echo $lang_worker_index_text_15;?></a>
+					<a class="btn btn-default btn-sm" href="?page=new_worker" title="<?php echo $lang_worker_index_title_14;?>"> <span class="glyphicon glyphicon-plus"></span> <?php echo $lang_worker_index_text_15;?></a>
 				</div>
 			</div>
 			<br>
@@ -57,97 +57,23 @@
 						<th><?php echo $lang_worker_index_text_19;?></th>
 						<th colspan="3"><?php echo $lang_worker_index_text_20;?></th>
 					</tr>
-
-					<tr class="success">
-						<td>1</td>
-						<td>Daniela Pacheco</td>
-						<td><a href="mailto:daniela.pacheco@email.com" title="Enviar e-mail a Daniela Pacheco">daniela.pacheco@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>2</td>
-						<td>Ricardo Costa</td>
-						<td><a href="mailto:ricardo.costa@email.com" title="Enviar e-mail a Ricardo Costa">ricardo.costa@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>3</td>
-						<td>Carlos Mesquita</td>
-						<td><a href="mailto:carlos.mesquita@email.com" title="Enviar e-mail a Carlos Mesquita">carlos.mesquita@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="danger">
-						<td>4</td>
-						<td>Catarina Costa</td>
-						<td><a href="mailto:catarina.costa@email.com" title="Enviar e-mail a Catarina Costa">catarina.costa@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ok"></span> Reativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>5</td>
-						<td>Tânia Portugal</td>
-						<td><a href="mailto:tania.portugal@email.com" title="Enviar e-mail a Tânia Portugal">tania.portugal@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>6</td>
-						<td>João Miguel Pais</td>
-						<td><a href="mailto:joao.miguel.pais@email.com" title="Enviar e-mail a João Miguel Pais">joao.miguel.pais@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>7</td>
-						<td>Susana Oliveira</td>
-						<td><a href="mailto:susana.oliveira@email.com" title="Enviar e-mail a Susana Oliveira">susana.oliveir@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="danger">
-						<td>8</td>
-						<td>Joana Antunes</td>
-						<td><a href="mailto:joana.antunes@email.com" title="Enviar e-mail a Joana Antunes">joana.antunes@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ok"></span> Reativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>9</td>
-						<td>Melissa Faria</td>
-						<td><a href="mailto:melissa.faria@email.com" title="Enviar e-mail a Melissa Faria">melissa.faria@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
-					<tr class="success">
-						<td>10</td>
-						<td>Carlos Lopes</td>
-						<td><a href="mailto:carlos.lopes@email.com" title="Enviar e-mail a Carlos Lopes">carlos.lopes@email.com</a></td>
-						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
-						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
-					</tr>
+					
+					<?php 
+						$worker_list = array("asd","zxc","dfg","fgh","cas","ogd","vfa");
+						
+						for($i=0; $i<2; $i++)
+						{
+							echo '<tr class="success">'; //class="success" or class="danger"
+							echo '<td>'; echo $i+1; echo '</td>';
+							echo "<td>$worker_list[$i]</td>";
+							echo '<td><a href="mailto:'.$worker_list[$i].'@email.com" title="Enviar e-mail a '.$worker_list[$i].'">'.$worker_list[$i].'@email.com</a></td>';
+							echo '<td>[ToDo] Permissões</td>';
+							echo '<td><a href="?page=view_worker"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>';
+							echo '<td><a href="?page=update_worker"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>';
+							echo '<td><a href="?page=worker"><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>';
+							echo '</tr>';
+						}
+					?>
 				</table>
 
 				<ul class="pagination pagination-sm">
@@ -163,7 +89,8 @@
 			</div>
 			<hr>
 			<div class="btn-group">
-				<a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_25;?>"><span class="glyphicon glyphicon-import"></span> <?php echo $lang_worker_index_text_26;?></a> <a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_27;?>"><span class="glyphicon glyphicon-export"></span>
+				<a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_25;?>"><span class="glyphicon glyphicon-import"></span> <?php echo $lang_worker_index_text_26;?></a> <a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_27;?>"><span
+					class="glyphicon glyphicon-export"></span>
 					<?php echo $lang_worker_index_text_28;?></a>
 			</div>
 		</div>

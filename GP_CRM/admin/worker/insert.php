@@ -25,7 +25,7 @@
 
 						<div class="col-lg-6">
 							<label for="num" title=""><?php echo $lang_worker_insert_text_7;?></label>
-							<p class="form-control-static">[Número do funcionário]</p>
+							<p class="form-control-static">[ToDo] ID</p>
 							</br> 
 							<label for="nome" title="Introduza o nome do funcionário"><?php echo $lang_worker_insert_text_8;?></label> 
 							<input type="text" class="form-control" placeholder="<?php echo $lang_worker_insert_placeholder_9;?>" title="<?php echo $lang_worker_insert_title_10;?>" id="name">
@@ -96,4 +96,3 @@
 	<hr>
 </div>
 <!--/.container-->
-
