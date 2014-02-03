@@ -62,15 +62,15 @@
           </p>
 
           <ol class="breadcrumb">
-			  <li><a href="../index.html">Área de Administração</a></li>
-			  <li><a href="./index.html">Funcionários</a></li>
-			  <li class="active">Alterar permissões</li>
+			  <li><a href="../index.html"><?php echo $lang_worker_update_text_1;?></a></li>
+			  <li><a href="./index.html"><?php echo $lang_worker_update_text_2;?></a></li>
+			  <li class="active"><?php echo $lang_worker_update_text_3;?></li>
 			</ol>
 
 			<div class="page-header">
-				<h1>Alterar Permissões</h1>
+				<h1><?php echo $lang_worker_update_text_4;?></h1>
 			</div>
-			<p class="lead">Permite alterar as permissões dos funcionários.</p>
+			<p class="lead"><?php echo $lang_worker_update_text_5;?></p>
           
 			<div class="col-lg-10">
 	
@@ -78,30 +78,30 @@
 			
 					<fieldset>
 						<legend>
-							Dados Pessoais
+							<?php echo $lang_worker_update_text_6;?>
 						</legend>
 					
 						<div class="col-lg-8">
-							<label for="nome" >Número</label>
+							<label for="nome" ><?php echo $lang_worker_update_text_7;?></label>
 							<p class="form-control-static">1</p>
 							<br>
 						</div>
 						
 						<div class="col-lg-8">
-							<label for="nome" >Nome</label>
+							<label for="nome" ><?php echo $lang_worker_update_text_8;?></label>
 							<p class="form-control-static">Daniela Pacheco</p>
 							<br>
 						</div>
 						
 						<div class="col-lg-6">
 						
-							<label for="email" title="Introduza o correiro eletrónico do funcionário" >Correio eletrónico</label>
+							<label for="email" title="Introduza o correiro eletrónico do funcionário" ><?php echo $lang_worker_update_text_9;?></label>
 							<p class="form-control-static"><a href="mailto:daniela.pacheco@email.com">daniela.pacheco@email.com</a></p>
 							<br>		
 						</div>
 						
 						<div class="col-lg-8">
-							<label for="inputfile" title="Introduza uma fotografia do funcionário">Fotografia</label>
+							<label for="inputfile" title="Introduza uma fotografia do funcionário"><?php echo $lang_worker_update_text_10;?></label>
 							<br>
 							<img src="../../logo.png" alt="..." class="img-thumbnail">
 							</br>
@@ -112,58 +112,51 @@
 
 					<fieldset>
 						<legend>
-							Permissões
+							<?php echo $lang_worker_update_text_11;?>
 						</legend>
-						<span class="help-block">Escolha as permissões de acesso do funcionário</span>
+						<span class="help-block"><?php echo $lang_worker_update_text_12;?></span>
 						<table class="table table-striped table-hover">
 							
 							<tr>
 								<th></th>
-								<th>Inserir</th>
-								<th>Editar</th>
-								<th>Desativar</th>
+								<th><?php echo $lang_worker_update_text_13;?></th>
+								<th><?php echo $lang_worker_update_text_14;?></th>
+								<th><?php echo $lang_worker_update_text_15;?></th>
 							</tr>
 						
 							<tr>
-								<th>Gestão de <i lang="en-uk">Leads</i></th>
+								<th><?php echo $lang_worker_update_text_16;?><i lang="en-uk"><?php echo $lang_worker_update_text_17;?></i></th>
 								<td><input type="checkbox" id="gli" value="gli"></td>
 								<td><input type="checkbox" id="gle" value="gle"></td>
 								<td><input type="checkbox" id="gld" value="gld"></td>
 							</tr>
 							
 							<tr>
-								<th>Gestão de Clientes</th>
+								<th><?php echo $lang_worker_update_text_18;?></th>
 								<td><input type="checkbox" id="gci" value="gci"></td>
 								<td><input type="checkbox" id="gce" value="gce"></td>
 								<td><input type="checkbox" id="gcd" value="gcd"></td>
 							</tr>
 						
 							<tr>
-								<th>Gestão de Campanhas</th>
+								<th><?php echo $lang_worker_update_text_19;?></th>
 								<td><input type="checkbox" id="gcpi" value="gcpi"></td>
 								<td><input type="checkbox" id="gcpe" value="gcpe"></td>
 								<td><input type="checkbox" id="gcpd" value="gcpd"></td>
 							</tr>
 							
 							<tr>
-								<th>Gestão de Encomendas</th>
+								<th><?php echo $lang_worker_update_text_20;?></th>
 								<td><input type="checkbox" id="gei" value="gei"></td>
 								<td><input type="checkbox" id="gee" value="gee"></td>
 								<td><input type="checkbox" id="ged" value="ged"></td>
 							</tr>
 							
 							<tr>
-								<th>Gestão de Funcionário</th>
+								<th><?php echo $lang_worker_update_text_21;?></th>
 								<td><input type="checkbox" id="gfi" value="gfi"></td>
 								<td><input type="checkbox" id="gfe" value="gfe"></td>
 								<td><input type="checkbox" id="gfd" value="gfd"></td>
-							</tr>
-							
-							<tr>
-								<th>Gestão de Relatórios e Estatísticas</th>
-								<td><input type="checkbox" id="gri" value="gri"></td>
-								<td><input type="checkbox" id="gre" value="gre"></td>
-								<td><input type="checkbox" id="grd" value="grd"></td>
 							</tr>
 
 						</table>
@@ -171,7 +164,7 @@
 					</fieldset>
 					</br>
 			
-					<button type="submit" class="btn btn-lg btn-primary">Alterar</button>
+					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_worker_update_text_22;?></button>
 				</form>
 			</div>
 		  

@@ -125,6 +125,51 @@ $lang_worker_insert_text_28 = 'Gestão de Encomendas';
 $lang_worker_insert_text_29 = 'Gestão de Funcionário';
 $lang_worker_insert_text_30 = 'Criar';
 
+//worker/view.html
+$lang_worker_view_text_1 = 'Painel de Administração';
+$lang_worker_view_text_2 = 'Funcionários';
+$lang_worker_view_text_3 = 'Ver';
+$lang_worker_view_text_4 = 'Ver Funcionário';
+$lang_worker_view_text_5 = 'Ver os dados pessoais do funcionário, bem como as suas permissões.';
+$lang_worker_view_text_6 = 'Dados Pessoais';
+$lang_worker_view_text_7 = 'Nome';
+$lang_worker_view_text_8 = 'Correio eletrónico';
+$lang_worker_view_text_9 = 'Permissões';
+$lang_worker_view_text_10 = 'Ver as permissões de acesso do funcionário';
+$lang_worker_view_text_11 = 'Inserir';
+$lang_worker_view_text_12 = 'Editar';
+$lang_worker_view_text_13 = 'Desativar';
+$lang_worker_view_text_14 = 'Gestão de';
+$lang_worker_view_text_15 = ' Leads';
+$lang_worker_view_text_16 = 'Gestão de Clientes';
+$lang_worker_view_text_17 = 'Gestão de Campanhas';
+$lang_worker_view_text_18 = 'Gestão de Encomendas';
+$lang_worker_view_text_19 = 'Gestão de Funcionário';
+
+//worker/update.html
+$lang_worker_update_text_1 = 'Painel de Administração';
+$lang_worker_update_text_2 = 'Funcionários';
+$lang_worker_update_text_3 = 'Alterar permissões';
+$lang_worker_update_text_4 = 'Alterar permissões';
+$lang_worker_update_text_5 = 'Permite alterar as permissões dos funcionários.';
+$lang_worker_update_text_6 = 'Dados Pessoais';
+$lang_worker_update_text_7 = 'Número';
+$lang_worker_update_text_8 = 'Nome';
+$lang_worker_update_text_9 = 'Correio eletrónico';
+$lang_worker_update_text_10 = 'Fotografia';
+$lang_worker_update_text_11 = 'Permissões';
+$lang_worker_update_text_12 = 'Escolha as permissões de acesso do funcionário';
+$lang_worker_update_text_13 = 'Inserir';
+$lang_worker_update_text_14 = 'Editar';
+$lang_worker_update_text_15 = 'Desativar';
+$lang_worker_update_text_16 = 'Gestão de';
+$lang_worker_update_text_17 = ' Leads';
+$lang_worker_update_text_18 = 'Gestão de Clientes';
+$lang_worker_update_text_19 = 'Gestão de Campanhas';
+$lang_worker_update_text_20 = 'Gestão de Encomendas';
+$lang_worker_update_text_21 = 'Gestão de Funcionário';
+$lang_worker_update_text_22 = 'Alterar';
+
 //personal/index.html
 $lang_personal_index_text_1 = 'Painel de Administração';
 $lang_personal_index_text_2 = 'Área Pessoal';

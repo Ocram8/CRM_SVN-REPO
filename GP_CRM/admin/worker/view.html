@@ -62,15 +62,15 @@
           </p>
 
           <ol class="breadcrumb">
-			  <li><a href="../index.html">Área de Administração</a></li>
-			  <li><a href="./index.html">Funcionários</a></li>
-			  <li class="active">Ver</li>
+			  <li><a href="../index.html"><?php echo $lang_worker_view_text_1;?></a></li>
+			  <li><a href="./index.html"><?php echo $lang_worker_view_text_2;?></a></li>
+			  <li class="active"><?php echo $lang_worker_view_text_3;?></li>
 			</ol>
 
 			<div class="page-header">
-				<h1>Ver Funcionário</h1>
+				<h1><?php echo $lang_worker_view_text_4;?></h1>
 			</div>
-			<p class="lead">Ver os dados pessoais do funcionário, bem como as suas permissões.</p>
+			<p class="lead"><?php echo $lang_worker_view_text_5;?></p>
 			
           
 			<div class="col-lg-10">
@@ -81,11 +81,11 @@
 					
 					
 						<legend>
-							Dados Pessoais
+							<?php echo $lang_worker_view_text_6;?>
 						</legend>
 					
 						<div class="col-lg-8">
-							<label for="nome" title="Introduza o nome do funcionário" >Nome</label>
+							<label for="nome" title="" ><?php echo $lang_worker_view_text_7;?></label>
 							
 							<span class="help-block">Nome do funcionário</span>
 							</br>
@@ -94,7 +94,7 @@
 						
 						<div class="col-lg-6">
 						
-							<label for="email" title="Introduza o correiro eletrónico do funcionário" >Correio eletrónico</label>
+							<label for="email" title="" ><?php echo $lang_worker_view_text_8;?></label>
 							
 							<span class="help-block">Correiro eletrónico do funcionário</span>
 							</br>
@@ -113,72 +113,51 @@
 
 					<fieldset>
 						<legend>
-							Permissões
+							<?php echo $lang_worker_view_text_9;?>
 						</legend>
-						<span class="help-block">Ver as permissões de acesso do funcionário</span>
+						<span class="help-block"><?php echo $lang_worker_view_text_10;?></span>
 						<table class="table table-striped table-hover">
 							
 							<tr>
 								<td></td>
-								<td>Inserir</td>
-								<td>Editar</td>
-								<td>Desativar</td>
-								<td>column5</td>
-								<td>column6</td>
+								<td><?php echo $lang_worker_view_text_11;?></td>
+								<td><?php echo $lang_worker_view_text_12;?></td>
+								<td><?php echo $lang_worker_view_text_13;?></td>
 							</tr>
 						
 							<tr>
-								<td>Gestão de <i lang="en-uk">Leads</i></td>
+								<td><?php echo $lang_worker_view_text_14;?><i lang="en-uk"><?php echo $lang_worker_view_text_15;?></i></td>
 								<td><input type="checkbox" id="gli" value="gli"></td>
 								<td><input type="checkbox" id="gle" value="gle"></td>
 								<td><input type="checkbox" id="gld" value="gld"></td>
-								<td><input type="checkbox" id="gl5" value="gl5"></td>
-								<td><input type="checkbox" id="gl6" value="gl6"></td>
 							</tr>
 							
 							<tr>
-								<td>Gestão de Clientes</td>
+								<td><?php echo $lang_worker_view_text_16;?></td>
 								<td><input type="checkbox" id="gci" value="gci"></td>
 								<td><input type="checkbox" id="gce" value="gce"></td>
 								<td><input type="checkbox" id="gcd" value="gcd"></td>
-								<td><input type="checkbox" id="gc5" value="gc5"></td>
-								<td><input type="checkbox" id="gc6" value="gc6"></td>
 							</tr>
 						
 							<tr>
-								<td>Gestão de Campanhas</td>
+								<td><?php echo $lang_worker_view_text_17;?></td>
 								<td><input type="checkbox" id="gcpi" value="gcpi"></td>
 								<td><input type="checkbox" id="gcpe" value="gcpe"></td>
 								<td><input type="checkbox" id="gcpd" value="gcpd"></td>
-								<td><input type="checkbox" id="gcp5" value="gcp5"></td>
-								<td><input type="checkbox" id="gcp6" value="gcp6"></td>
 							</tr>
 							
 							<tr>
-								<td>Gestão de Encomendas</td>
+								<td><?php echo $lang_worker_view_text_18;?></td>
 								<td><input type="checkbox" id="gei" value="gei"></td>
 								<td><input type="checkbox" id="gee" value="gee"></td>
 								<td><input type="checkbox" id="ged" value="ged"></td>
-								<td><input type="checkbox" id="ge5" value="ge5"></td>
-								<td><input type="checkbox" id="ge6" value="ge6"></td>
 							</tr>
 							
 							<tr>
-								<td>Gestão de Funcionário</td>
+								<td><?php echo $lang_worker_view_text_19;?></td>
 								<td><input type="checkbox" id="gfi" value="gfi"></td>
 								<td><input type="checkbox" id="gfe" value="gfe"></td>
 								<td><input type="checkbox" id="gfd" value="gfd"></td>
-								<td><input type="checkbox" id="gf5" value="gf5"></td>
-								<td><input type="checkbox" id="gf6" value="gf6"></td>
-							</tr>
-							
-							<tr>
-								<td>Gestão de Relatórios e Estatísticas</td>
-								<td><input type="checkbox" id="gri" value="gri"></td>
-								<td><input type="checkbox" id="gre" value="gre"></td>
-								<td><input type="checkbox" id="grd" value="grd"></td>
-								<td><input type="checkbox" id="gr5" value="gr5"></td>
-								<td><input type="checkbox" id="gr6" value="gr6"></td>
 							</tr>
 
 						</table>
