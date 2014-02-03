@@ -92,7 +92,6 @@ $lang_worker_index_text_26 = 'Importar dados dos funcionários';
 $lang_worker_index_title_27 = 'Exportar dados dos funcionários';
 $lang_worker_index_text_28 = 'Exportar dados dos funcionários';
 
-
 //worker/insert.html
 $lang_worker_insert_text_1 = 'Painel de Administração';
 $lang_worker_insert_text_2 = 'Funcionários';
