@@ -5,14 +5,15 @@
 		private $morLocalidade;
 		private $morCodigoPostal;
 		
-		private static $lastMorID = 1;
 		
 		public function __construct($endereco, $localidade, $codigoPostal){
 			$this->morID = $this->lastMorID;
 			$this->morEndereco = $endereco;
 			$this->morCodigoPostal = $codigoPostal;
+		}
+		
+		public function __construct($id, $endereco, $localidade, $codigoPostal){
 			
-			incLastMorID();
 		}
 		
 		public function getMorID(){
