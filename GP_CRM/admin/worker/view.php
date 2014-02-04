@@ -7,8 +7,8 @@
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html"><?php echo $lang_worker_view_text_1;?></a></li>
-				<li><a href="./index.html"><?php echo $lang_worker_view_text_2;?></a></li>
+				<li><a href="?page=home"><?php echo $lang_worker_view_text_1;?></a></li>
+				<li><a href="?page=worker"><?php echo $lang_worker_view_text_2;?></a></li>
 				<li class="active"><?php echo $lang_worker_view_text_3;?></li>
 			</ol>
 

@@ -88,7 +88,7 @@
 							</tr>
 						</table>
 					</fieldset>
-					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_worker_insert_text_30;?></button>
+					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_worker_insert_link_30;?></button>
 				</form>
 			</div>
 		</div>
