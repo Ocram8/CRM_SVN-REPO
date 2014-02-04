@@ -39,12 +39,12 @@
 							</select>
 						</div>
 						<button type="submit" class="btn btn-default btn-sm" title="<?php echo $lang_worker_index_title_12;?>">
-							<span class="glyphicon glyphicon-search"></span> <?php echo $lang_worker_index_text_13;?>
+							<span class="glyphicon glyphicon-search"></span> <?php echo $lang_worker_index_link_13;?>
 						</button>
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="?page=new_worker" title="<?php echo $lang_worker_index_title_14;?>"> <span class="glyphicon glyphicon-plus"></span> <?php echo $lang_worker_index_text_15;?></a>
+					<a class="btn btn-default btn-sm" href="?page=new_worker" title="<?php echo $lang_worker_index_title_14;?>"> <span class="glyphicon glyphicon-plus"></span> <?php echo $lang_worker_index_link_15;?></a>
 				</div>
 			</div>
 			<br>
@@ -68,9 +68,9 @@
 							echo "<td>$worker_list[$i]</td>";
 							echo '<td><a href="mailto:'.$worker_list[$i].'@email.com" title="Enviar e-mail a '.$worker_list[$i].'">'.$worker_list[$i].'@email.com</a></td>';
 							echo '<td>[ToDo] Permissões</td>';
-							echo '<td><a href="?page=view_worker"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>';
-							echo '<td><a href="?page=update_worker"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>';
-							echo '<td><a href="?page=worker"><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>';
+							echo '<td><a href="?page=view_worker"><span class="glyphicon glyphicon-eye-open"></span>'.$lang_worker_index_link_21.'</a></td>';
+							echo '<td><a href="?page=update_worker"><span class="glyphicon glyphicon-edit"></span>'.$lang_worker_index_link_22.'</a></td>';
+							echo '<td><a href="?page=worker"><span class="glyphicon glyphicon-ban-circle"></span>'.$lang_worker_index_link_23.'</a></td>';
 							echo '</tr>';
 						}
 					?>
@@ -89,9 +89,9 @@
 			</div>
 			<hr>
 			<div class="btn-group">
-				<a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_25;?>"><span class="glyphicon glyphicon-import"></span> <?php echo $lang_worker_index_text_26;?></a> <a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_27;?>"><span
+				<a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_25;?>"><span class="glyphicon glyphicon-import"></span> <?php echo $lang_worker_index_link_26;?></a> <a class="btn btn-default btn-sm" href="#" title="<?php echo $lang_worker_index_title_27;?>"><span
 					class="glyphicon glyphicon-export"></span>
-					<?php echo $lang_worker_index_text_28;?></a>
+					<?php echo $lang_worker_index_link_28;?></a>
 			</div>
 		</div>
 	</div>

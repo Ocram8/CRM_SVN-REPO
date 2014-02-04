@@ -26,7 +26,7 @@
 							<label for="nome" title="Introduza o nome da empresa"><?php echo $lang_application_index_text_6;?></label> <input type="text" class="form-control" placeholder="<?php echo $lang_application_index_placeholder_7;?>" title="<?php echo $lang_application_index_title_8;?>" id="name"> <span class="help-block"><?php echo $lang_application_index_text_9;?></span>
 						</div>
 					</fieldset>
-					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_application_index_text_10;?></button>
+					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_application_index_link_10;?></button>
 				</form>
 			</div>
 		</div>

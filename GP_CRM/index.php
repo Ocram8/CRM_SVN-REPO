@@ -38,20 +38,24 @@ require 'lang/pt_pt.php';
 <head>
 <meta charset="uft-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="<?php echo $lang_main_index_text_1;?>">
+<meta name="description" content="<?php echo $lang_main_index_content;?>">
 
 <title>
 <?php
 	if($header_menu_page == 1)
-		echo $lang_main_index_text_2;
+		echo $lang_admin_index_text_1;
 	if($header_menu_page == 2)
-		echo $lang_main_index_text_3;
+		echo $lang_admin_index_text_2;
 	if ($header_menu_page == 3)
-		echo $lang_main_index_text_4;
+		echo $lang_admin_index_text_3;
 	if ($header_menu_page == 4)
-		echo $lang_main_index_text_5;
+		echo $lang_admin_index_text_4;
 	if ($header_menu_page == 5)
-		echo $lang_main_index_text_6;
+		echo $lang_admin_index_text_5;
+	if ($header_menu_page == 6)
+		echo $lang_admin_index_text_6;
+	if ($header_menu_page == 7)
+		echo $lang_admin_index_text_7; 
 ?>
 </title>
 
