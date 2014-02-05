@@ -20,6 +20,7 @@ if ($_SESSION ['login']) {
 				<li <?php if($container['menu']=='application') echo 'class="active"';?>><a href="?page=application" title="<?php echo $lang_admin_header_title_4;?>"><?php echo $lang_admin_header_link_5;?></a></li>
 				<li <?php if($container['menu']=='worker') echo 'class="active"';?>><a href="?page=worker" title="<?php echo $lang_admin_header_title_6;?>"><?php echo $lang_admin_header_link_7;?></a></li>
 				<li <?php if($container['menu']=='personal') echo 'class="active"';?>><a href="?page=personal" title="<?php echo $lang_admin_header_title_8;?>"><?php echo $lang_admin_header_link_9;?></a></li>
+				<li><a href="actions/logout.php" title="logout">Logout</a></li>
 			</ul>
 		</div>
 		<!--/.navbar-collapse -->
@@ -53,6 +54,7 @@ if ($_SESSION ['login']) {
 				<li <?php if($container['menu']=='package') echo 'class="active"';?>><a href="?page=package" title="Ir para o módulo de gestão de encomendas">Encomendas</a></li>
 				<li <?php if($container['menu']=='personal') echo 'class="active"';?>><a href="?page=personal" title="Ir para o módulo de gestão da área pessoal">Área Pessoal</a></li>
 				<li <?php if($container['menu']=='reports') echo 'class="active"';?>><a href="?page=reports" title="Ir para o módulo de gestão da área pessoal">Relatórios</a></li>
+				<li><a href="actions/logout.php" title="logout">Logout</a></li>
 			</ul>
 		</div>
 		<!--/.navbar-collapse -->

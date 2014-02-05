@@ -1,8 +1,12 @@
 <?php
 session_start();
-$_SESSION['login'] = true;	//true or false
-$_SESSION['user'] = 'admin'; //admin or worker
+
+if (!isset($_SESSION ['login']))
+	header ( "Location: actions/login.php" );
 	
+if (!$_SESSION ['login'])
+	header ( "Location: actions/login.php" );
+
 require 'lang/pt_pt.php';
 require 'container.php';
 
@@ -37,14 +41,9 @@ $page_version = "alfa v0.2";
 </head>
 <body>
 <?php
-if ($_SESSION ['login']) {
 	require 'header.php';
 	require $container['page'];
 	require 'footer.php';
-} else {
-	//If not logged in, show this page
-	require 'actions/login.php';
-}
 ?>
 	<!-- Bootstrap core JavaScript
    ================================================== -->
