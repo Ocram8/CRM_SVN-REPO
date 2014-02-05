@@ -1,330 +1,230 @@
-<!DOCTYPE html>
-<html lang="pt-pt">
-  <head>
-  
-	<SCRIPT LANGUAGE="JavaScript">
-		<!-- 
-		// Generated at http://www.csgnetwork.com/puhtmlwincodegen.html 
-		function popUp(URL) {
-		day = new Date();
-		id = day.getTime();
-		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=300,height=300,left = 283,top = 84');");
-		}
-		// -->
-	</script>
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Tomé Silva, Luis Costa, José Monteiro">
-    <link rel="shortcut icon" href="../../favicon.png">
 
-    <title>cloudCRM | Interações</title>
+<div class="container">
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../../dist/css/bootstrap.css" rel="stylesheet">
-	 <link rel="stylesheet" href="../../../assets/css/docs.css"></link>
-    <link rel="stylesheet" href="../../../assets/css/pygments-manni.css"></link>
+	<div class="row row-offcanvas row-offcanvas-right">
+		<div class="col-xs-12 col-sm-9">
+			<p class="pull-right visible-xs">
+				<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Sub-Menu</button>
+			</p>
 
-    <!-- Custom styles for this template -->
-    <link href="offcanvas.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="../index.html" title="Ir para página principal" ><img src="../../logo.png" title="cloud CRM" ></a></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="../index.html" title="Ir para o painel principal" ><span class="glyphicon glyphicon-home"></span> Painel Principal</a></li>
-            <li><a href="../leads/index.html" title="Ir para o módulo de gestão de leads" ><i lang="en">Leads</i></a></li>
-            <li><a href="../customer/index.html" title="Ir para o módulo de gestão de clientes">Clientes</a></li>
-            <li><a href="../campaigns/index.html" title="Ir para o módulo de gestão de campanhas comerciais" >Campanhas</a></li>
-            <li class="active"><a href="../interactions/index.html" title="Ir para o módulo de interações" >Interações</a></li>
-            <li><a href="../package/index.html" title="Ir para o módulo de gestão de encomendas">Encomendas</a></li>
-            <li><a href="../personal/index.html" title="Ir para o módulo de gestão da área pessoal">Área Pessoal</a></li>
-			<li><a href="./user.html" title="Ir para o módulo de gestão da área pessoal">Relatórios</a></li>
-          </ul>
-          
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
-    <div class="container">
-
-      <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Sub-Menu</button>
-          </p>
-
-          <ol class="breadcrumb">
-			  <li><a href="../index.html">Painel Principal</a></li>
-			  <li class="active">Interações</li>
+			<ol class="breadcrumb">
+				<li><a href="../index.html">Painel Principal</a></li>
+				<li class="active">Interações</li>
 			</ol>
 
-          <div class="page-header">
-            <h1>Gestão de Interações</h1>
-          </div>
-		  <p class="lead">O módulo de gestão de interações tem como principal funcionalidade gerir toda a informação de contacto relacionado com os clientes</p>
-		  
-       <hr>
-	   
-	   <fieldset>
-			<p class="lead">Agendamentos</p>
-	   
-			<div class="row">
-			  <div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px" >
-				<form class="form-inline" role="form">
-				  <div class="form-group">
-					<label class="sr-only">Pesquisar</label>
-					<input type="text" class="form-control input-sm" placeholder="Pesquisar">
-				  </div>
-				  <div class="form-group">
-					<label class="sr-only">Pesquisar1</label>
-					<select class="form-control input-sm" >
-					  <option>Número</option>
-					  <option selected>Nome</option>
-					  <option>Motivo</option>
-					</select>
-				  </div>
-				  
-				  
-				  <div class="form-group">
-					<label class="sr-only">Data de início</label>
-					<input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da interação">
-				  </div>
-				  
-				  <button type="submit" class="btn btn-default btn-sm" title="Pesquisar" ><span class="glyphicon glyphicon-search"></span> Pesquisar</button>
-				</form>
-			  </div>
-			
+			<div class="page-header">
+				<h1>Gestão de Interações</h1>
 			</div>
-			
-		</fieldset>
-		
-		
-        <br>
-        <div>
-			<table class="table table-hover">
-				<tr>
-				  <th>Número</th>
-				  <th>Nome</th>
-				  <th>Data</th>
-				  <th>Hora</th>
-				  <th>Motivo</th>
-				  <th>Iniciar</th>
-				</tr>
+			<p class="lead">O módulo de gestão de interações tem como principal funcionalidade gerir toda a informação de contacto relacionado com os clientes</p>
 
-				<tr >
-				  <td>1</td>
-				  <td>Tó Manel</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>Coisas do tempo</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>2</td>
-				  <td>Zé Marco</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>fosforos</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>3</td>
-				  <td>Luís Costa</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>ta má</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>4</td>
-				  <td>Tomé Rama</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>o gonçalo é mau cozinheiro</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>5</td>
-				  <td>Manuel Silva</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>ovo estrelado</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-			</table>
-		
-			<ul class="pagination pagination-sm">
-			<li class="disabled"><a href="#">&laquo;</a></li>
-			<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			<li><a href="#">&raquo;</a></li>
-			</ul>
-		
-		
-		</div>
-		<hr>
-		
-		<div>
-			<fieldset>
-				<p class="lead">Contactos</p>
-		   
-				<div class="row">
-				  <div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px" >
-					<form class="form-inline" role="form">
-					  <div class="form-group">
-						<label class="sr-only">Pesquisar</label>
-						<input type="text" class="form-control input-sm" placeholder="Pesquisar">
-					  </div>
-					  <div class="form-group">
-						<label class="sr-only">Pesquisar1</label>
-						<select class="form-control input-sm" >
-						  <option>Número</option>
-						  <option selected>Nome</option>
-						  <option>Motivo</option>
-						</select>
-					  </div>
-					  
-					  
-					  <div class="form-group">
-						<label class="sr-only">Data de início</label>
-						<input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da interação">
-					  </div>
-					  
-					  <button type="submit" class="btn btn-default btn-sm" title="Pesquisar" ><span class="glyphicon glyphicon-search"></span> Pesquisar</button>
-					</form>
-				  </div>
-				
-				</div>
-				
-			</fieldset>
 			<hr>
-				
-				
-			<table class="table table-hover">
-				<tr>
-				  <th>Número</th>
-				  <th>Nome</th>
-				  <th>Data</th>
-				  <th>Hora</th>
-				  <th>Motivo</th>
-				  <th>Iniciar</th>
-				</tr>
-			
-				<tr>
-				  <td>1</td>
-				  <td>José Mota</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>hh:mm</td>
-				  <td>tom3 faz barulho</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>2</td>
-				  <td>Cliente X</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>chegou e nao disse nada</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>3</td>
-				  <td>Cliente Y</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>00:00</td>
-				  <td>paletes</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>4</td>
-				  <td>Este Senhor</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>tesouras</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-				<tr>
-				  <td>5</td>
-				  <td>Tuxa</td>
-				  <td>dd/mm/aaaa</td>
-				  <td>12:34</td>
-				  <td>trabalho atrasado</td>
-				  <td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
-				</tr>
-			</table>
 
-			<ul class="pagination pagination-sm">
-			<li class="disabled"><a href="#">&laquo;</a></li>
-			<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			<li><a href="#">&raquo;</a></li>
-			</ul>
-		  
-        </div>
-      </div>
-    </div>
+			<fieldset>
+				<p class="lead">Agendamentos</p>
 
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px">
+						<form class="form-inline" role="form">
+							<div class="form-group">
+								<label class="sr-only">Pesquisar</label> <input type="text" class="form-control input-sm" placeholder="Pesquisar">
+							</div>
+							<div class="form-group">
+								<label class="sr-only">Pesquisar1</label> <select class="form-control input-sm">
+									<option>Número</option>
+									<option selected>Nome</option>
+									<option>Motivo</option>
+								</select>
+							</div>
+
+
+							<div class="form-group">
+								<label class="sr-only">Data de início</label> <input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da interação">
+							</div>
+
+							<button type="submit" class="btn btn-default btn-sm" title="Pesquisar">
+								<span class="glyphicon glyphicon-search"></span> Pesquisar
+							</button>
+						</form>
+					</div>
+
+				</div>
+
+			</fieldset>
+
+
+			<br>
+			<div>
+				<table class="table table-hover">
+					<tr>
+						<th>Número</th>
+						<th>Nome</th>
+						<th>Data</th>
+						<th>Hora</th>
+						<th>Motivo</th>
+						<th>Iniciar</th>
+					</tr>
+
+					<tr>
+						<td>1</td>
+						<td>Tó Manel</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>Coisas do tempo</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Zé Marco</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>fosforos</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Luís Costa</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>ta má</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Tomé Rama</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>o gonçalo é mau cozinheiro</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Manuel Silva</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>ovo estrelado</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+				</table>
+
+				<ul class="pagination pagination-sm">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+
+
+			</div>
+			<hr>
+
+			<div>
+				<fieldset>
+					<p class="lead">Contactos</p>
+
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px">
+							<form class="form-inline" role="form">
+								<div class="form-group">
+									<label class="sr-only">Pesquisar</label> <input type="text" class="form-control input-sm" placeholder="Pesquisar">
+								</div>
+								<div class="form-group">
+									<label class="sr-only">Pesquisar1</label> <select class="form-control input-sm">
+										<option>Número</option>
+										<option selected>Nome</option>
+										<option>Motivo</option>
+									</select>
+								</div>
+
+
+								<div class="form-group">
+									<label class="sr-only">Data de início</label> <input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da interação">
+								</div>
+
+								<button type="submit" class="btn btn-default btn-sm" title="Pesquisar">
+									<span class="glyphicon glyphicon-search"></span> Pesquisar
+								</button>
+							</form>
+						</div>
+
+					</div>
+
+				</fieldset>
+				<hr>
+
+
+				<table class="table table-hover">
+					<tr>
+						<th>Número</th>
+						<th>Nome</th>
+						<th>Data</th>
+						<th>Hora</th>
+						<th>Motivo</th>
+						<th>Iniciar</th>
+					</tr>
+
+					<tr>
+						<td>1</td>
+						<td>José Mota</td>
+						<td>dd/mm/aaaa</td>
+						<td>hh:mm</td>
+						<td>tom3 faz barulho</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Cliente X</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>chegou e nao disse nada</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Cliente Y</td>
+						<td>dd/mm/aaaa</td>
+						<td>00:00</td>
+						<td>paletes</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Este Senhor</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>tesouras</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Tuxa</td>
+						<td>dd/mm/aaaa</td>
+						<td>12:34</td>
+						<td>trabalho atrasado</td>
+						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+					</tr>
+				</table>
+
+				<ul class="pagination pagination-sm">
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">6</a></li>
+					<li><a href="#">&raquo;</a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
 	<hr>
-	
-	<a class="btn btn-default btn-sm" href="javascript:popUp('initiate.html')" title="Efetuar chamada" ><span class="glyphicon glyphicon-resize-full"></span> Iniciar interação</a>
-	<a class="btn btn-default btn-sm" href="./receive.html" title="Receber chamada" ><span class="glyphicon glyphicon-resize-small"></span> Receber interação</a>
-	
-	<hr>
-		
-      <footer>
-        <p>
-           &copy; Interface e código realizado por
-           <a href="mailto:lei123002@alunos.estgoh.ipc.pt" title="Enviar e-mail a José Monteiro" >José Monteiro</a>,
-           <a href="mailto:lmfcc_5@hotmail.com" title="Enviar e-mail a Luis Costa" >Luis Costa</a>,
-           <a href="mailto:godlike.mailbox@gmail.com" title="Enviar e-mail a Manuel Rama" >Manuel Rama</a>,
-           <a href="mailto:marcomotagds@gmail.com" title="Enviar e-mail a Marco Mota" >Marco Mota</a> e 
-           <a href="mailto:tom3silva@gmail.com" title="Enviar e-mail a Tomé Silva" >Tomé Silva</a>.
-        </p>
-        <p>Código licenciado pela licença <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blanck" title="Ver termos e condições para o uso, reprodução e distribuição da licensa Apache 2.0" >Apache 2.0</a>.</p>
-        <p>Versão 1.0 &#8226; 2013 &#8226; <a href="../help.html" target="_blanck" title="Ver manual do utilizador" >Ajuda</a></p>
-      </footer>
+	<a class="btn btn-default btn-sm" href="javascript:popUp('initiate.html')" title="Efetuar chamada"><span class="glyphicon glyphicon-resize-full"></span> Iniciar interação</a> <a class="btn btn-default btn-sm" href="./receive.html" title="Receber chamada"><span
+		class="glyphicon glyphicon-resize-small"></span> Receber interação</a>
 
-    </div><!--/.container-->
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../../../assets/js/jquery.js"></script>
-    <script src="../../../dist/js/bootstrap.min.js"></script>
-    <script src="offcanvas.js"></script>
-	 <style>
-    	a.navbar-brand {
-    		padding-bottom: 1px;
-    		padding-top: 1px;
-    	}
-    	
-    </style>
-  </body>
-</html>
+</div>
+<!--/.container-->

@@ -1,0 +1,1 @@
+<h3 class='container'><?php echo $lang_main_index_page_error; ?></h3>

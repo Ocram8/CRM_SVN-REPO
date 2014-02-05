@@ -1,37 +1,12 @@
 <?php
 session_start();
+$_SESSION['login'] = true;	//true or false
+$_SESSION['user'] = 'admin'; //admin or worker
 	
 require 'lang/pt_pt.php';
+require 'container.php';
 
-//page selection
-	if(isset($_GET['page']))
-	{	
-		if($_GET['page'] == 'home')
-			$header_menu_page = 1;
-		
-		elseif($_GET['page'] == 'application')
-			$header_menu_page = 2;
-		
-		elseif ($_GET['page'] == 'worker')
-			$header_menu_page = 3;
-		
-		elseif ($_GET['page'] == 'personal')
-			$header_menu_page = 4;
-		
-		elseif ($_GET['page'] == 'new_worker')
-			$header_menu_page = 5;
-		
-		elseif ($_GET['page'] == 'update_worker')
-			$header_menu_page = 6;
-		
-		elseif ($_GET['page'] == 'view_worker')
-			$header_menu_page = 7;
-		
-		else
-			$header_menu_page = -1;
-	}
-	else
-		$header_menu_page = 1;
+$page_version = "alfa v0.2";
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang_type;?>">
@@ -42,20 +17,7 @@ require 'lang/pt_pt.php';
 
 <title>
 <?php
-	if($header_menu_page == 1)
-		echo $lang_admin_index_text_1;
-	if($header_menu_page == 2)
-		echo $lang_admin_index_text_2;
-	if ($header_menu_page == 3)
-		echo $lang_admin_index_text_3;
-	if ($header_menu_page == 4)
-		echo $lang_admin_index_text_4;
-	if ($header_menu_page == 5)
-		echo $lang_admin_index_text_5;
-	if ($header_menu_page == 6)
-		echo $lang_admin_index_text_6;
-	if ($header_menu_page == 7)
-		echo $lang_admin_index_text_7; 
+	echo $container["tabtitle"];
 ?>
 </title>
 
@@ -75,57 +37,20 @@ require 'lang/pt_pt.php';
 </head>
 <body>
 <?php
-	if($header_menu_page == 1)
-	{
-		require 'admin/header.php';
-		require 'admin/container.php';
-	}
-	
-	elseif($header_menu_page == 2)
-	{	
-		require 'admin/header.php';			
-		require 'admin/application/index.php';
-	}
-	
-	elseif ($header_menu_page == 3)
-	{	
-		require 'admin/header.php';
-		require 'admin/worker/index.php';
-	}
-	
-	elseif ($header_menu_page == 4)
-	{
-		require 'admin/header.php';
-		require 'admin/personal/index.php';
-	}
-	elseif ($header_menu_page == 5)
-	{
-		require 'admin/header.php';
-		require 'admin/worker/insert.php';
-	}
-	elseif ($header_menu_page == 6)
-	{
-		require 'admin/header.php';
-		require 'admin/worker/update.php';
-	}
-	elseif ($header_menu_page == 7)
-	{
-		require 'admin/header.php';
-		require 'admin/worker/view.php';
-	}
-	else
-	{	
-		require 'admin/header.php';
-		echo "<h4 class='container'>Page not found</h4>";
-		require 'admin/container.php';
-	}
-	require 'admin/footer.php';
+if ($_SESSION ['login']) {
+	require 'header.php';
+	require $container['page'];
+	require 'footer.php';
+} else {
+	//If not logged in, show this page
+	require 'actions/login.php';
+}
 ?>
 	<!-- Bootstrap core JavaScript
    ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="css/bootstrap/assets/js/jquery.js"></script>
 	<script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="css/offcanvas.js"></script>
+	<script src="js/offcanvas.js"></script>
 </body>
 </html>

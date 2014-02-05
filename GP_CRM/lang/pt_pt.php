@@ -1,24 +1,48 @@
 <?php
 /*
-salvar este ficheiro sempre em charset uft-8
+*** salvar este ficheiro sempre em charset uft-8 ***
 
 estrutura de organização do nome das strings:
-lang_<modulo>_<ficheiro>_tipo_<id>
+lang_<modulo>_<ficheiro>_<tipo>_<id>
 ex: lang_admin_index_text_1
+
+tipos:
+	text
+	title
+	link (para tags de <a> e <button>)
+	placeholder
+*/
+
+/*
+ * MAIN PAGE
 */
 
 //index.php
 $lang_type = 'pt';	//html language code
 $lang_main_index_content = 'Página principal do administrador';
-$lang_admin_index_text_1 = 'cloudCRM | Painel de Administração';
-$lang_admin_index_text_2 = 'cloudCRM | Administrador | Aplicação';
-$lang_admin_index_text_3 = 'cloudCRM | Administrador | Funcionários';
-$lang_admin_index_text_4 = 'cloudCRM | Administrador | Área Pessoal';
-$lang_admin_index_text_5 = 'cloudCRM | Administrador | Novo Funcionário';
-$lang_admin_index_text_6 = 'cloudCRM | Administrador | Ver Funcionário';
-$lang_admin_index_text_7 = 'cloudCRM | Administrador | Alterar Funcionário';
+$lang_main_index_page_error = 'Página não encontrada';
 
-//admin/header.php - Menu
+//footer.php
+$lang_main_footer_text_1 = 'Interface e código realizado por';
+$lang_main_footer_title_2 = 'Enviar e-mail a';
+$lang_main_footer_text_3 = 'Código licenciado pela licença';
+$lang_main_footer_title_4 = 'Ver termos e condições para o uso, reprodução e distribuição da licensa Apache 2.0';
+$lang_main_footer_text_5 = 'Versão';
+
+/*
+ * ADMINISTRATOR PAGES
+*/
+
+//index.php
+$lang_admin_index_tabtitle_1 = 'cloudCRM | Painel Geral';
+$lang_admin_index_tabtitle_2 = 'cloudCRM | Admin | Aplicação';
+$lang_admin_index_tabtitle_3 = 'cloudCRM | Admin | Funcionários';
+$lang_admin_index_tabtitle_4 = 'cloudCRM | Admin | Área Pessoal';
+$lang_admin_index_tabtitle_5 = 'cloudCRM | Admin | Novo Funcionário';
+$lang_admin_index_tabtitle_6 = 'cloudCRM | Admin | Ver Funcionário';
+$lang_admin_index_tabtitle_7 = 'cloudCRM | Admin | Alterar Funcionário';
+
+//header.php - Menu
 $lang_admin_header_title_1 = 'cloud CRM';
 $lang_admin_header_title_2 = 'Ir para o painel de administração';
 $lang_admin_header_link_3 = 'Home';
@@ -29,28 +53,21 @@ $lang_admin_header_link_7 = 'Funcionários';
 $lang_admin_header_title_8 = 'Ir para o módulo de gestão da área pessoal';
 $lang_admin_header_link_9 = 'Área Pessoal';
 
-//admin/container.php
-$lang_admin_container_text_1 = 'Painel de Administração';
-$lang_admin_container_text_2 = 'O painel de administração, o administrador poderá gerir os seus funcionários e alterar dados relativos à sua empresa.';
-$lang_admin_container_text_3 = 'Gerir Aplicação';
-$lang_admin_container_text_4 = 'O módulo de aplicação o administrador do sistema poderá alterar determinadas credenciais da aplicação.';
-$lang_admin_container_title_5 = 'Ir para a página de gestão de aplicação';
-$lang_admin_container_link_6 = 'Gerir Aplicação';
-$lang_admin_container_text_7 = 'Gerir Funcionários';
-$lang_admin_container_text_8 = 'O módulo de funcionários permite ao administrador gerir os funcionários existentes no sistema.';
-$lang_admin_container_title_9 = 'Ir para a página de gestão dos funcionários';
-$lang_admin_container_link_10 = 'Gerir Funcionários';
-$lang_admin_container_text_11 = 'Área Pessoal';
-$lang_admin_container_text_12 = 'Configurações da sua conta pessoal.';
-$lang_admin_container_title_13 = 'Ir para o página de gestão de conta';
-$lang_admin_container_link_14 = 'Área pessoal';
-
-//footer.php
-$lang_main_footer_text_1 = 'Interface e código realizado por';
-$lang_main_footer_title_2 = 'Enviar e-mail a';
-$lang_main_footer_text_3 = 'Código licenciado pela licença';
-$lang_main_footer_title_4 = 'Ver termos e condições para o uso, reprodução e distribuição da licensa Apache 2.0';
-$lang_main_footer_text_5 = 'Versão';
+//admin/index.php
+$lang_admin_index_text_1 = 'Painel de Administração';
+$lang_admin_index_text_2 = 'O painel de administração, o administrador poderá gerir os seus funcionários e alterar dados relativos à sua empresa.';
+$lang_admin_index_text_3 = 'Gerir Aplicação';
+$lang_admin_index_text_4 = 'O módulo de aplicação o administrador do sistema poderá alterar determinadas credenciais da aplicação.';
+$lang_admin_index_title_5 = 'Ir para a página de gestão de aplicação';
+$lang_admin_index_link_6 = 'Gerir Aplicação';
+$lang_admin_index_text_7 = 'Gerir Funcionários';
+$lang_admin_index_text_8 = 'O módulo de funcionários permite ao administrador gerir os funcionários existentes no sistema.';
+$lang_admin_index_title_9 = 'Ir para a página de gestão dos funcionários';
+$lang_admin_index_link_10 = 'Gerir Funcionários';
+$lang_admin_index_text_11 = 'Área Pessoal';
+$lang_admin_index_text_12 = 'Configurações da sua conta pessoal.';
+$lang_admin_index_title_13 = 'Ir para o página de gestão de conta';
+$lang_admin_index_link_14 = 'Área pessoal';
 
 //application/index.html
 $lang_application_index_text_1 = 'Painel de Administração';
@@ -118,13 +135,12 @@ $lang_worker_insert_text_20 = 'Escolha as permissões de acesso do funcionário'
 $lang_worker_insert_text_21 = 'Inserir';
 $lang_worker_insert_text_22 = 'Editar';
 $lang_worker_insert_text_23 = 'Desativar';
-$lang_worker_insert_text_24 = 'Gestão de';
-$lang_worker_insert_text_25 = ' Leads';
-$lang_worker_insert_text_26 = 'Gestão de Clientes';
-$lang_worker_insert_text_27 = 'Gestão de Campanhas';
-$lang_worker_insert_text_28 = 'Gestão de Encomendas';
-$lang_worker_insert_text_29 = 'Gestão de Funcionário';
-$lang_worker_insert_link_30 = 'Criar';
+$lang_worker_insert_text_24 = 'Gestão de <i lang="en-uk">Leads</i>';
+$lang_worker_insert_text_25 = 'Gestão de Clientes';
+$lang_worker_insert_text_26= 'Gestão de Campanhas';
+$lang_worker_insert_text_27 = 'Gestão de Encomendas';
+$lang_worker_insert_text_28 = 'Gestão de Funcionário';
+$lang_worker_insert_link_29 = 'Criar';
 
 //worker/view.html
 $lang_worker_view_text_1 = 'Painel de Administração';
@@ -140,12 +156,11 @@ $lang_worker_view_text_10 = 'Ver as permissões de acesso do funcionário';
 $lang_worker_view_text_11 = 'Inserir';
 $lang_worker_view_text_12 = 'Editar';
 $lang_worker_view_text_13 = 'Desativar';
-$lang_worker_view_text_14 = 'Gestão de';
-$lang_worker_view_text_15 = ' Leads';
-$lang_worker_view_text_16 = 'Gestão de Clientes';
-$lang_worker_view_text_17 = 'Gestão de Campanhas';
-$lang_worker_view_text_18 = 'Gestão de Encomendas';
-$lang_worker_view_text_19 = 'Gestão de Funcionário';
+$lang_worker_view_text_14 = 'Gestão de <i lang="en-uk">Leads</i>';
+$lang_worker_view_text_15 = 'Gestão de Clientes';
+$lang_worker_view_text_16 = 'Gestão de Campanhas';
+$lang_worker_view_text_17 = 'Gestão de Encomendas';
+$lang_worker_view_text_18 = 'Gestão de Funcionário';
 
 //worker/update.html
 $lang_worker_update_text_1 = 'Painel de Administração';
@@ -163,13 +178,12 @@ $lang_worker_update_text_12 = 'Escolha as permissões de acesso do funcionário'
 $lang_worker_update_text_13 = 'Inserir';
 $lang_worker_update_text_14 = 'Editar';
 $lang_worker_update_text_15 = 'Desativar';
-$lang_worker_update_text_16 = 'Gestão de';
-$lang_worker_update_text_17 = ' Leads';
-$lang_worker_update_text_18 = 'Gestão de Clientes';
-$lang_worker_update_text_19 = 'Gestão de Campanhas';
-$lang_worker_update_text_20 = 'Gestão de Encomendas';
-$lang_worker_update_text_21 = 'Gestão de Funcionário';
-$lang_worker_update_link_22 = 'Alterar';
+$lang_worker_update_text_16 = 'Gestão de <i lang="en-uk">Leads</i>';
+$lang_worker_update_text_17 = 'Gestão de Clientes';
+$lang_worker_update_text_18 = 'Gestão de Campanhas';
+$lang_worker_update_text_19 = 'Gestão de Encomendas';
+$lang_worker_update_text_20 = 'Gestão de Funcionário';
+$lang_worker_update_link_21 = 'Alterar';
 
 //personal/index.html
 $lang_personal_index_text_1 = 'Painel de Administração';
@@ -203,7 +217,21 @@ $lang_personal_index_title_28 = 'Palavra-Passe Atual';
 $lang_personal_index_text_29 = 'Introduza a Palavra-Passe Atual';
 $lang_personal_index_link_30 = 'Guardar';
 
-//user/header.php - menu           -falta adicionar-
+/*
+ * USER PAGES
+ */
+
+//index.php
+$lang_user_index_tabtitle_1 = 'cloudCRM | Painel de Geral';
+$lang_user_index_tabtitle_2 = 'cloudCRM | Funcionário | Leads';
+$lang_user_index_tabtitle_3 = 'cloudCRM | Funcionário | Clientes';
+$lang_user_index_tabtitle_4 = 'cloudCRM | Funcionário | Campanhas';
+$lang_user_index_tabtitle_5 = 'cloudCRM | Funcionário | Interações';
+$lang_user_index_tabtitle_6 = 'cloudCRM | Funcionário | Encomendas';
+$lang_user_index_tabtitle_7 = 'cloudCRM | Funcionário | Área Pessoal';
+$lang_user_index_tabtitle_8 = 'cloudCRM | Funcionário | Relatórios';
+
+//header.php - Menu           -falta adicionar-
 $lang_user_header_title_1 = 'cloud CRM';
 $lang_user_header_title_2 = 'Ir para o painel principal';
 $lang_user_header_link_3 = 'Painel principal';
@@ -220,43 +248,32 @@ $lang_user_header_link_13 = 'Encomendas';
 $lang_user_header_title_14 = 'Ir para o módulo de gestão de área pessoal';
 $lang_user_header_link_15 = 'Área Pessoal';
 
-//user/container.php				-falta adicionar-
-$lang_user_container_text_1 = 'Painel Principal';
-$lang_user_container_text_2 = 'No painel Principal de funcionários, o utilizador poderá, consoante as suas permissões, gerir as leads, os clientes, as campanhas comerciais, as interações, as encomendas e a sua área pessoal.';
-$lang_user_container_text_3 = 'Gerir Leads';
-$lang_user_container_text_4 = 'O módulo de utilizador permite ao utilizador gerir as leads.';
-$lang_user_container_title_5 = 'Ir para o módulo de gestão das leads';
-$lang_user_container_link_6 = 'Gerir Leads »';
-$lang_user_container_text_7 = 'Gerir Clientes';
-$lang_user_container_text_8 = 'O módulo de utilizador permite ao utilizador gerir os clientes.';
-$lang_user_container_title_9 = 'Ir para o módulo de gestão dos clientes';
-$lang_user_container_link_10 = 'Gerir Funcionários »';
-$lang_user_container_text_11 = 'Gerir Campanhas';
-$lang_user_container_text_12 = 'O módulo de utilizador permite ao utilizador gerir as campanhas.';
-$lang_user_container_title_13 = 'Ir para o módulo de gestão das campanhas';
-$lang_user_container_link_14 = 'Gerir Campanhas »';
-$lang_user_container_text_15 = 'Gerir Interações';
-$lang_user_container_text_16 = 'O módulo de utilizador permite ao utilizador gerir as Interações.';
-$lang_user_container_title_17 = 'Ir para o módulo de gestão das interações';
-$lang_user_container_link_18 = 'Gerir Interações »';
-$lang_user_container_text_19 = 'Gerir Encomendas';
-$lang_user_container_text_20 = 'O módulo de utilizador permite ao utilizador gerir as encomendas.';
-$lang_user_container_title_21 = 'Ir para o módulo de gestão das encomendas';
-$lang_user_container_link_22 = 'Gerir Encomendas »';
-$lang_user_container_text_23 = 'Gerir Área Pessoal';
-$lang_user_container_text_24 = 'A área pessoal permite ao utilizador gerir as suas definições.';
-$lang_user_container_title_25 = 'Ir para o módulo de gestão da área pessoal';
-$lang_user_container_link_26 = 'Gerir Área Pessoal »';
-
-
-
-
-
-
-
-
-
-
-
+//user/index.php				-falta adicionar-
+$lang_user_index_text_1 = 'Painel Principal';
+$lang_user_index_text_2 = 'No painel Principal de funcionários, o utilizador poderá, consoante as suas permissões, gerir as leads, os clientes, as campanhas comerciais, as interações, as encomendas e a sua área pessoal.';
+$lang_user_index_text_3 = 'Gerir Leads';
+$lang_user_index_text_4 = 'O módulo de utilizador permite ao utilizador gerir as leads.';
+$lang_user_index_title_5 = 'Ir para o módulo de gestão das leads';
+$lang_user_index_link_6 = 'Gerir Leads »';
+$lang_user_index_text_7 = 'Gerir Clientes';
+$lang_user_index_text_8 = 'O módulo de utilizador permite ao utilizador gerir os clientes.';
+$lang_user_index_title_9 = 'Ir para o módulo de gestão dos clientes';
+$lang_user_index_link_10 = 'Gerir Funcionários »';
+$lang_user_index_text_11 = 'Gerir Campanhas';
+$lang_user_index_text_12 = 'O módulo de utilizador permite ao utilizador gerir as campanhas.';
+$lang_user_index_title_13 = 'Ir para o módulo de gestão das campanhas';
+$lang_user_index_link_14 = 'Gerir Campanhas »';
+$lang_user_index_text_15 = 'Gerir Interações';
+$lang_user_index_text_16 = 'O módulo de utilizador permite ao utilizador gerir as Interações.';
+$lang_user_index_title_17 = 'Ir para o módulo de gestão das interações';
+$lang_user_index_link_18 = 'Gerir Interações »';
+$lang_user_index_text_19 = 'Gerir Encomendas';
+$lang_user_index_text_20 = 'O módulo de utilizador permite ao utilizador gerir as encomendas.';
+$lang_user_index_title_21 = 'Ir para o módulo de gestão das encomendas';
+$lang_user_index_link_22 = 'Gerir Encomendas »';
+$lang_user_index_text_23 = 'Gerir Área Pessoal';
+$lang_user_index_text_24 = 'A área pessoal permite ao utilizador gerir as suas definições.';
+$lang_user_index_title_25 = 'Ir para o módulo de gestão da área pessoal';
+$lang_user_index_link_26 = 'Gerir Área Pessoal »';
 
 ?>
