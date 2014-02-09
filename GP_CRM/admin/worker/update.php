@@ -68,35 +68,35 @@
 							</tr>
 
 							<tr>
-								<th><?php echo $lang_worker_update_text_16;?></th>
+								<th><?php echo $lang_worker_update_text_16;?><i lang="en-uk"><?php echo $lang_worker_update_text_17;?></i></th>
 								<td><input type="checkbox" id="gli" value="gli"></td>
 								<td><input type="checkbox" id="gle" value="gle"></td>
 								<td><input type="checkbox" id="gld" value="gld"></td>
 							</tr>
 
 							<tr>
-								<th><?php echo $lang_worker_update_text_17;?></th>
+								<th><?php echo $lang_worker_update_text_18;?></th>
 								<td><input type="checkbox" id="gci" value="gci"></td>
 								<td><input type="checkbox" id="gce" value="gce"></td>
 								<td><input type="checkbox" id="gcd" value="gcd"></td>
 							</tr>
 
 							<tr>
-								<th><?php echo $lang_worker_update_text_18;?></th>
+								<th><?php echo $lang_worker_update_text_19;?></th>
 								<td><input type="checkbox" id="gcpi" value="gcpi"></td>
 								<td><input type="checkbox" id="gcpe" value="gcpe"></td>
 								<td><input type="checkbox" id="gcpd" value="gcpd"></td>
 							</tr>
 
 							<tr>
-								<th><?php echo $lang_worker_update_text_19;?></th>
+								<th><?php echo $lang_worker_update_text_20;?></th>
 								<td><input type="checkbox" id="gei" value="gei"></td>
 								<td><input type="checkbox" id="gee" value="gee"></td>
 								<td><input type="checkbox" id="ged" value="ged"></td>
 							</tr>
 
 							<tr>
-								<th><?php echo $lang_worker_update_text_20;?></th>
+								<th><?php echo $lang_worker_update_text_21;?></th>
 								<td><input type="checkbox" id="gfi" value="gfi"></td>
 								<td><input type="checkbox" id="gfe" value="gfe"></td>
 								<td><input type="checkbox" id="gfd" value="gfd"></td>
@@ -105,7 +105,7 @@
 					</fieldset>
 					</br>
 
-					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_worker_update_link_21;?></button>
+					<button type="submit" class="btn btn-lg btn-primary"><?php echo $lang_worker_update_link_22;?></button>
 				</form>
 			</div>
 		</div>

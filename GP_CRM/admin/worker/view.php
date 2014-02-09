@@ -44,42 +44,42 @@
 
 						<table class="table table-striped table-hover">
 							<tr>
-								<td></td>
-								<td><?php echo $lang_worker_view_text_11;?></td>
-								<td><?php echo $lang_worker_view_text_12;?></td>
-								<td><?php echo $lang_worker_view_text_13;?></td>
+								<th></th>
+								<th><?php echo $lang_worker_view_text_11;?></th>
+								<th><?php echo $lang_worker_view_text_12;?></th>
+								<th><?php echo $lang_worker_view_text_13;?></th>
 							</tr>
 
 							<tr>
-								<td><?php echo $lang_worker_view_text_14;?></td>
+								<th><?php echo $lang_worker_view_text_14;?><i lang="en-uk"><?php echo $lang_worker_view_text_15;?></i></th>
 								<td><input type="checkbox" id="gli" value="gli"></td>
 								<td><input type="checkbox" id="gle" value="gle"></td>
 								<td><input type="checkbox" id="gld" value="gld"></td>
 							</tr>
 
 							<tr>
-								<td><?php echo $lang_worker_view_text_15;?></td>
+								<th><?php echo $lang_worker_view_text_16;?></th>
 								<td><input type="checkbox" id="gci" value="gci"></td>
 								<td><input type="checkbox" id="gce" value="gce"></td>
 								<td><input type="checkbox" id="gcd" value="gcd"></td>
 							</tr>
 
 							<tr>
-								<td><?php echo $lang_worker_view_text_16;?></td>
+								<th><?php echo $lang_worker_view_text_17;?></th>
 								<td><input type="checkbox" id="gcpi" value="gcpi"></td>
 								<td><input type="checkbox" id="gcpe" value="gcpe"></td>
 								<td><input type="checkbox" id="gcpd" value="gcpd"></td>
 							</tr>
 
 							<tr>
-								<td><?php echo $lang_worker_view_text_17;?></td>
+								<th><?php echo $lang_worker_view_text_18;?></th>
 								<td><input type="checkbox" id="gei" value="gei"></td>
 								<td><input type="checkbox" id="gee" value="gee"></td>
 								<td><input type="checkbox" id="ged" value="ged"></td>
 							</tr>
 
 							<tr>
-								<td><?php echo $lang_worker_view_text_18;?></td>
+								<th><?php echo $lang_worker_view_text_19;?></th>
 								<td><input type="checkbox" id="gfi" value="gfi"></td>
 								<td><input type="checkbox" id="gfe" value="gfe"></td>
 								<td><input type="checkbox" id="gfd" value="gfd"></td>
