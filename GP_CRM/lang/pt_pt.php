@@ -57,7 +57,7 @@ $lang_admin_header_link_11 = 'Logout';
 
 //admin/index.php
 $lang_admin_index_text_1 = 'Painel de Administração';
-$lang_admin_index_text_2 = 'O painel de administração, o administrador poderá gerir os seus funcionários e alterar dados relativos à sua empresa.';
+$lang_admin_index_text_2 = 'No painel de administração, o administrador poderá gerir os seus funcionários e alterar dados relativos à sua empresa.';
 $lang_admin_index_text_3 = 'Gerir Aplicação';
 $lang_admin_index_text_4 = 'O módulo de aplicação o administrador do sistema poderá alterar determinadas credenciais da aplicação.';
 $lang_admin_index_title_5 = 'Ir para a página de gestão de aplicação';
@@ -72,7 +72,7 @@ $lang_admin_index_title_13 = 'Ir para o página de gestão de conta';
 $lang_admin_index_link_14 = 'Área pessoal';
 
 //application/index.html
-$lang_application_index_text_1 = 'Painel de Administração';
+$lang_application_index_text_1 = 'Home';
 $lang_application_index_text_2 = 'Aplicação';
 $lang_application_index_text_3 = 'Gestão de Aplicação';
 $lang_application_index_text_4 = 'O módulo de gestão da Aplicação tem como principal funcionalidade gerir a informação referente à empresa, ou seja, alteração da mesma.';
@@ -84,7 +84,7 @@ $lang_application_index_text_9 = 'Introduza o nome da empresa';
 $lang_application_index_link_10 = 'Guardar';
 
 //worker/index.html
-$lang_worker_index_text_1 = 'Painel de Administração';
+$lang_worker_index_text_1 = 'Home';
 $lang_worker_index_text_2 = 'Funcionários';
 $lang_worker_index_text_3 = 'Gestão de Funcionários';
 $lang_worker_index_text_4 = 'O módulo de gestão de funcionários tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar de novos funcionários, ver e alterar toda a informação associada às permissões dos funcionário e desativar e reativar os funcionários.';
@@ -114,7 +114,7 @@ $lang_worker_index_title_27 = 'Exportar dados dos funcionários';
 $lang_worker_index_link_28 = 'Exportar dados dos funcionários';
 
 //worker/insert.html
-$lang_worker_insert_text_1 = 'Painel de Administração';
+$lang_worker_insert_text_1 = 'Home';
 $lang_worker_insert_text_2 = 'Funcionários';
 $lang_worker_insert_text_3 = 'Inserir';
 $lang_worker_insert_text_4 = 'Inserir Funcionário';
@@ -146,7 +146,7 @@ $lang_worker_insert_text_29 = 'Gestão de Funcionário';
 $lang_worker_insert_link_30 = 'Criar';
 
 //worker/view.html
-$lang_worker_view_text_1 = 'Painel de Administração';
+$lang_worker_view_text_1 = 'Home';
 $lang_worker_view_text_2 = 'Funcionários';
 $lang_worker_view_text_3 = 'Ver';
 $lang_worker_view_text_4 = 'Ver Funcionário';
@@ -167,7 +167,7 @@ $lang_worker_view_text_18 = 'Gestão de Encomendas';
 $lang_worker_view_text_19 = 'Gestão de Funcionário';
 
 //worker/update.html
-$lang_worker_update_text_1 = 'Painel de Administração';
+$lang_worker_update_text_1 = 'Home';
 $lang_worker_update_text_2 = 'Funcionários';
 $lang_worker_update_text_3 = 'Alterar permissões';
 $lang_worker_update_text_4 = 'Alterar permissões';
@@ -191,7 +191,7 @@ $lang_worker_update_text_21 = 'Gestão de Funcionário';
 $lang_worker_update_link_22 = 'Alterar';
 
 //personal/index.html
-$lang_personal_index_text_1 = 'Painel de Administração';
+$lang_personal_index_text_1 = 'Home';
 $lang_personal_index_text_2 = 'Área Pessoal';
 $lang_personal_index_text_3 = 'Gestão Área Pessoal';
 $lang_personal_index_text_4 = 'O módulo de gestão da Área Pessoal serve para alterar os dados de perfil.';
@@ -239,7 +239,7 @@ $lang_user_index_tabtitle_8 = 'cloudCRM | Funcionário | Relatórios';
 //header.php - Menu
 $lang_user_header_title_1 = 'cloud CRM';
 $lang_user_header_title_2 = 'Ir para o painel principal';
-$lang_user_header_link_3 = ' Painel principal';
+$lang_user_header_link_3 = ' Home';
 $lang_user_header_title_4 = 'Ir para o módulo de gestão de leads';
 $lang_user_header_link_5 = 'Leads';
 $lang_user_header_title_6 = 'Ir para o módulo de gestão de clientes';
@@ -283,13 +283,240 @@ $lang_user_index_text_26 = 'A área pessoal permite ao utilizador gerir as suas 
 $lang_user_index_title_27 = 'Ir para o módulo de gestão da área pessoal';
 $lang_user_index_link_28 = 'Gerir Área Pessoal ';
 
-//user/leads.php  -falta adicionar-
-$lang_user_index_text_1 = 'Painel Principal';
-$lang_user_index_text_2 = 'Leads';
-$lang_user_index_text_3 = 'Gestão de';
-$lang_user_index_text_4 = ' Leads';
-$lang_user_index_text_5 = 'O módulo de gestão de';
-$lang_user_index_text_6 = ' tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar novas campanhas, ver e alterar toda a informação associada às mesmas.';
-$lang_user_index_placeholder_7 = 'Pesquisar';
+//user/leadsindex.php  -falta adicionar-
+$lang_user_leadsindex_text_1 = 'Home';
+$lang_user_leadsindex_text_2 = 'Leads';
+$lang_user_leadsindex_text_3 = 'Gestão de';
+$lang_user_leadsindex_text_4 = ' Leads';
+$lang_user_leadsindex_text_5 = 'O módulo de gestão de';
+$lang_user_leadsindex_text_6 = ' tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar novas campanhas, ver e alterar toda a informação associada às mesmas.';
+$lang_user_leadsindex_placeholder_7 = 'Pesquisar';
+$lang_user_leadsindex_title_8 = 'Número';
+$lang_user_leadsindex_title_9 = 'Nome';
+$lang_user_leadsindex_title_10 = 'Data de inicío de lead';
+$lang_user_leadsindex_title_11 = 'Data de fim de lead';
+$lang_user_leadsindex_title_12 = 'Inserir nova lead';
+$lang_user_leadsindex_link_13 = ' Nova Lead';
+$lang_user_leadsindex_text_14 = 'Número';
+$lang_user_leadsindex_text_15 = 'Nome';
+$lang_user_leadsindex_text_16 = 'Empresa';
+$lang_user_leadsindex_text_17 = 'Origem';
+$lang_user_leadsindex_text_18 = 'Opçoes';
+$lang_user_leadsindex_text_19 = ' Ver';
+$lang_user_leadsindex_text_20 = ' Alterar';
+$lang_user_leadsindex_text_21 = ' Desativar';
+$lang_user_leadsindex_text_22 = ' Ativar';
+
+//user/leadsinsert.php  -falta adicionar-
+$lang_user_leadsinsert_text_1 = 'Home';
+$lang_user_leadsinsert_text_2 = 'Leads';
+$lang_user_leadsinsert_text_3 = 'Inserir';
+$lang_user_leadsinsert_text_4 = 'Inserir dados da ';
+$lang_user_leadsinsert_text_5 = 'lead';
+$lang_user_leadsinsert_text_6 = 'Introduza os dados da ';
+$lang_user_leadsinsert_text_7 = 'lead.';
+$lang_user_leadsinsert_text_8 = 'Dados da ';
+$lang_user_leadsinsert_text_9 = 'lead';
+$lang_user_leadsinsert_text_10 = 'Nome';
+$lang_user_leadsinsert_placeholder_11 = 'Nome da lead';
+$lang_user_leadsinsert_title_12 = 'Introduza o nome da lead';
+$lang_user_leadsinsert_text_13 = 'Introduza o nome da lead';
+$lang_user_leadsinsert_text_14 = 'Empresa';
+$lang_user_leadsinsert_placeholder_15 = 'Nome da empresa';
+$lang_user_leadsinsert_title_16 = 'Introduza o nome da empresa';
+$lang_user_leadsinsert_text_17 = 'Introduza o nome da empresa';
+$lang_user_leadsinsert_text_18 = 'Origem';
+$lang_user_leadsinsert_placeholder_19 = 'Origem da lead';
+$lang_user_leadsinsert_title_20 = 'Introduza a origem da lead';
+$lang_user_leadsinsert_text_21 = 'Introduza a origem da lead';
+$lang_user_leadsinsert_text_22 = 'Observações';
+$lang_user_leadsinsert_placeholder_23 = 'Observações da lead';
+$lang_user_leadsinsert_title_24 = 'Introduza as observações da lead';
+$lang_user_leadsinsert_text_25 = 'Introduza as obeservações da lead';
+$lang_user_leadsinsert_link_26 = 'Criar';
+
+//user/leadsview.php -falta adicionar-
+$lang_user_leadsview_text_1 = 'Home';
+$lang_user_leadsview_text_2 = 'Leads';
+$lang_user_leadsview_text_3 = 'Ver ';
+$lang_user_leadsview_text_4 = 'leads';
+$lang_user_leadsview_text_5 = 'Ver os dados da ';
+$lang_user_leadsview_text_6 = 'lead.';
+$lang_user_leadsview_text_7 = 'Dados da ';
+$lang_user_leadsview_text_8 = 'lead';
+$lang_user_leadsview_text_9 = 'Número';
+$lang_user_leadsview_text_10 = 'Nome';
+$lang_user_leadsview_text_11 = 'Empresa';
+$lang_user_leadsview_text_12 = 'Origem';
+$lang_user_leadsview_text_13 = 'Observações';
+
+//user/leadsupdate.php -falta adicionar-
+$lang_user_leadsupdate_text_1 = 'Home';
+$lang_user_leadsupdate_text_2 = 'Leads';
+$lang_user_leadsupdate_text_3 = 'Alterar';
+$lang_user_leadsupdate_text_4 = 'Alterar dados da ';
+$lang_user_leadsupdate_text_5 = 'lead';
+$lang_user_leadsupdate_text_6 = 'Altere os dados da ';
+$lang_user_leadsupdate_text_7 = 'lead.';
+$lang_user_leadsupdate_text_8 = 'Dados da ';
+$lang_user_leadsupdate_text_9 = 'lead';
+$lang_user_leadsupdate_text_10 = 'Nome';
+$lang_user_leadsupdate_placeholder_11 = 'Nome da lead';
+$lang_user_leadsupdate_title_12 = 'Altere o nome da lead';
+$lang_user_leadsupdate_text_13 = 'Altere o nome da lead';
+$lang_user_leadsupdate_text_14 = 'Empresa';
+$lang_user_leadsupdate_placeholder_15 = 'Nome da empresa';
+$lang_user_leadsupdate_title_16 = 'Altere o nome da empresa';
+$lang_user_leadsupdate_text_17 = 'Altere o nome da empresa';
+$lang_user_leadsupdate_text_18 = 'Origem';
+$lang_user_leadsupdate_placeholder_19 = 'Altere da lead';
+$lang_user_leadsupdate_title_20 = 'Altere a origem da lead';
+$lang_user_leadsupdate_text_21 = 'Altere a origem da lead';
+$lang_user_leadsupdate_text_22 = 'Observações';
+$lang_user_leadsupdate_placeholder_23 = 'Observações da lead';
+$lang_user_leadsupdate_title_24 = 'Altere as observações da lead';
+$lang_user_leadsupdate_text_25 = 'Altere as obeservações da lead';
+$lang_user_leadsupdate_link_26 = 'Alterar';
+
+//user//customerindex.php -falta adicionar-
+$lang_user_customerindex_text_1 = 'Home';
+$lang_user_customerindex_text_2 = 'Clientes';
+$lang_user_customerindex_text_3 = 'Gestão de clientes';
+$lang_user_customerindex_text_4 = 'O módulo de gestão de novos clientes tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar novos clientes, ver e alterar toda a informação associada às mesmas.';
+$lang_user_customerindex_placeholder_5 = 'Pesquisar';
+$lang_user_customerindex_title_6 = 'Número';
+$lang_user_customerindex_title_7 = 'Nome';
+$lang_user_customerindex_title_8 = 'Número';
+$lang_user_customerindex_title_9 = 'Data de registo cliente';
+$lang_user_customerindex_title_10 = 'Inserir novo cliente';
+$lang_user_customerindex_link_11 = ' Novo cliente';
+$lang_user_customerindex_text_12 = 'Número';
+$lang_user_customerindex_text_13 = 'Nome';
+$lang_user_customerindex_text_14 = 'BI';
+$lang_user_customerindex_text_15 = 'E-mail';
+$lang_user_customerindex_text_16 = 'Ver';
+$lang_user_customerindex_text_17 = 'Alterar';
+$lang_user_customerindex_text_18 = 'Desativar';
+$lang_user_customerindex_text_19 = 'Ativar';
+
+//user/custumerinsert.php -falta adicionar-
+$lang_user_customerinsert_text_1 = 'Home';
+$lang_user_customerinsert_text_2 = 'Clientes';
+$lang_user_customerinsert_text_3 = 'Inserir';
+$lang_user_customerinsert_text_4 = 'Inserir cliente';
+$lang_user_customerinsert_text_5 = 'Introduza os dados do cliente';
+$lang_user_customerinsert_text_6 = 'Dados do cliente';
+$lang_user_customerinsert_text_7 = 'Nome';
+$lang_user_customerinsert_placeholder_8 = 'Nome do cliente';
+$lang_user_customerinsert_title_9 = 'Introduza o nome do cliente';
+$lang_user_customerinsert_text_10 = 'Introduza o nome do cliente';
+$lang_user_customerinsert_text_11 = 'Sexo';
+$lang_user_customerinsert_title_12 = 'Masculino';
+$lang_user_customerinsert_title_13 = 'Feminino';
+$lang_user_customerinsert_text_14 = 'Introduza o sexo do cliente';
+$lang_user_customerinsert_text_15 = 'NIC';
+$lang_user_customerinsert_placeholder_16 = 'NIC do cliente';
+$lang_user_customerinsert_title_17 = 'Introduza o NIC do cliente';
+$lang_user_customerinsert_text_18 = 'Introduza o NIC do cliente';
+$lang_user_customerinsert_text_19 = 'Profissão';
+$lang_user_customerinsert_placeholder_20 = 'Profissão do cliente';
+$lang_user_customerinsert_title_21 = 'Introduza a profissão do cliente';
+$lang_user_customerinsert_text_22 = 'Introduza a profissão do cliente';
+$lang_user_customerinsert_text_23 = 'Estado civil';
+$lang_user_customerinsert_title_24 = 'Solteiro/(a)';
+$lang_user_customerinsert_title_25 = 'Casado/(a)';
+$lang_user_customerinsert_title_26 = 'Divorciado/(a)';
+$lang_user_customerinsert_title_27 = 'Viuvo/(a)';
+$lang_user_customerinsert_text_28 = 'Morada';
+$lang_user_customerinsert_placeholder_29 = 'Morada do cliente';
+$lang_user_customerinsert_title_30 = 'Introduza a morada do cliente';
+$lang_user_customerinsert_text_31 = 'Introduza a morada do cliente';
+$lang_user_customerinsert_text_32 = 'E-mail';
+$lang_user_customerinsert_placeholder_33 = 'E-mail do cliente';
+$lang_user_customerinsert_title_34 = 'Introduza o e-mail do cliente';
+$lang_user_customerinsert_text_35 = 'Introduza o e-mail do cliente';
+$lang_user_customerinsert_text_36 = 'Número de telefone';
+$lang_user_customerinsert_placeholder_37 = 'Número de telefone do cliente';
+$lang_user_customerinsert_title_38 = 'Introduza o número de telefone do cliente';
+$lang_user_customerinsert_text_39 = 'Introduza o número de telefone do cliente';
+$lang_user_customerinsert_text_40 = 'Número de telemóvel';
+$lang_user_customerinsert_placeholder_41 = 'Número de telemóvel do cliente';
+$lang_user_customerinsert_title_42 = 'Introduza o número de telemóvel do cliente';
+$lang_user_customerinsert_text_43 = 'Introduza o número de telemóvel do cliente';
+$lang_user_customerinsert_text_44 = 'Observações';
+$lang_user_customerinsert_placeholder_45 = 'Observações do cliente';
+$lang_user_customerinsert_title_46 = 'Introduza observações do cliente';
+$lang_user_customerinsert_text_47 = 'Introduza observações do cliente';
+$lang_user_customerinsert_link_48 = 'Criar';
+
+//user/customerview.php -falta adicionar-
+$lang_user_customerview_text_1 = 'Home';
+$lang_user_customerview_text_2 = 'Clientes';
+$lang_user_customerview_text_3 = 'Ver';
+$lang_user_customerview_text_4 = 'Ver cliente';
+$lang_user_customerview_text_5 = 'Ver os dados do cliente';
+$lang_user_customerview_text_6 = 'Dados do cliente';
+$lang_user_customerview_text_7 = 'Número';
+$lang_user_customerview_text_8 = 'Nome';
+$lang_user_customerview_text_9 = 'Sexo';
+$lang_user_customerview_text_10 = 'NIC';
+$lang_user_customerview_text_11 = 'Profissão';
+$lang_user_customerview_text_12 = 'Estado civil';
+$lang_user_customerview_text_13 = 'Morada';
+$lang_user_customerview_text_14 = 'E-mail';
+$lang_user_customerview_text_15 = 'Número de telefone';
+$lang_user_customerview_text_16 = 'Número de telemovel';
+$lang_user_customerview_text_17 = 'Observações';
+
+//user/customerupdate.php -falta adicionar-
+$lang_user_customerupdate_text_1 = 'Home';
+$lang_user_customerupdate_text_2 = 'Clientes';
+$lang_user_customerupdate_text_3 = 'Alterar';
+$lang_user_customerupdate_text_4 = 'Alterar dados do cliente';
+$lang_user_customerupdate_text_5 = 'Altere os dados do cliente';
+$lang_user_customerupdate_text_6 = 'Dados do cliente';
+$lang_user_customerupdate_text_7 = 'Nome';
+$lang_user_customerupdate_placeholder_8 = 'Nome do cliente';
+$lang_user_customerupdate_title_9 = 'Altere o nome do cliente';
+$lang_user_customerupdate_text_10 = 'Altere o nome do cliente';
+$lang_user_customerupdate_text_11 = 'Sexo';
+$lang_user_customerupdate_title_12 = 'Masculino';
+$lang_user_customerupdate_title_13 = 'Feminino';
+$lang_user_customerupdate_text_14 = 'Altere o sexo do cliente';
+$lang_user_customerupdate_text_15 = 'NIC';
+$lang_user_customerupdate_placeholder_16 = 'NIC do cliente';
+$lang_user_customerupdate_title_17 = 'Altere o NIC do cliente';
+$lang_user_customerupdate_text_18 = 'Altere o NIC do cliente';
+$lang_user_customerupdate_text_19 = 'Profissão';
+$lang_user_customerupdate_placeholder_20 = 'Profissão do cliente';
+$lang_user_customerupdate_title_21 = 'Altere a profissão do cliente';
+$lang_user_customerupdate_text_22 = 'Altere a profissão do cliente';
+$lang_user_customerupdate_text_23 = 'Estado civil';
+$lang_user_customerupdate_title_24 = 'Solteiro/(a)';
+$lang_user_customerupdate_title_25 = 'Casado/(a)';
+$lang_user_customerupdate_title_26 = 'Divorciado/(a)';
+$lang_user_customerupdate_title_27 = 'Viuvo/(a)';
+$lang_user_customerupdate_text_28 = 'Morada';
+$lang_user_customerupdate_placeholder_29 = 'Morada do cliente';
+$lang_user_customerupdate_title_30 = 'Altere a morada do cliente';
+$lang_user_customerupdate_text_31 = 'Altere a morada do cliente';
+$lang_user_customerupdate_text_32 = 'E-mail';
+$lang_user_customerupdate_placeholder_33 = 'E-mail do cliente';
+$lang_user_customerupdate_title_34 = 'Altere o e-mail do cliente';
+$lang_user_customerupdate_text_35 = 'Altere o e-mail do cliente';
+$lang_user_customerupdate_text_36 = 'Número de telefone';
+$lang_user_customerupdate_placeholder_37 = 'Número de telefone do cliente';
+$lang_user_customerupdate_title_38 = 'Altere o número de telefone do cliente';
+$lang_user_customerinsert_text_39 = 'Altere o número de telefone do cliente';
+$lang_user_customerupdate_text_40 = 'Número de telemóvel';
+$lang_user_customerupdate_placeholder_41 = 'Número de telemóvel do cliente';
+$lang_user_customerupdate_title_42 = 'Altere o número de telemóvel do cliente';
+$lang_user_customerupdate_text_43 = 'Altere o número de telemóvel do cliente';
+$lang_user_customerupdate_text_44 = 'Observações';
+$lang_user_customerupdate_placeholder_45 = 'Observações do cliente';
+$lang_user_customerupdate_title_46 = 'Altere observações do cliente';
+$lang_user_customerupdate_text_47 = 'Altere observações do cliente';
+$lang_user_customerupdate_link_48 = 'Alterar';
+
 
 ?>
