@@ -1,4 +1,13 @@
 <?php
+//invocar ficheiros .php pretendidos
+include("GP_CRM/db/edb.class.php");
+include("poo/objects/administrador.class.php");
+include("poo/objects/funcionario.class.php");
+include("poo/objects/super_administrador.class.php");
+include("poo/dao/dao_funcionario.class.php");
+include("poo/dao/dao_administrador.class.php");
+include("poo/dao/dao_super_administrador.class.php");
+$db=new edb();
 session_start();
 
 require '../lang/pt_pt.php';
@@ -51,17 +60,83 @@ require '../lang/pt_pt.php';
 	<!-- /container -->
 </body>
 </html>
-<?php 
-	if(isset($_POST['email']) && isset($_POST['password'])){
-		if($_POST['email'] == 'admin' && $_POST['password'] == 'admin'){
-			$_SESSION['login'] = true;
-			$_SESSION['user'] = 'admin';
-		}
-		
-		if($_POST['email'] == 'worker' && $_POST['password'] == 'worker'){
-			$_SESSION['login'] = true;
-			$_SESSION['user'] = 'worker';
-		}
-		header ( "Location: ../index.php" );
+<?php
+//para teste
+if(isset($_POST['email']) && isset($_POST['password'])){
+	if($_POST['email'] == 'admin' && $_POST['password'] == 'admin'){
+		$_SESSION['login'] = true;
+		$_SESSION['user'] = 'admin';
 	}
+
+	if($_POST['email'] == 'worker' && $_POST['password'] == 'worker'){
+		$_SESSION['login'] = true;
+		$_SESSION['user'] = 'worker';
+	}
+	header ( "Location: ../index.php" );
+}
+//fecha para teste
+
+//para funcionario
+if(!empty($_POST['email']) && !empty($_POST['password'])){
+	$funcionario = new Funcionario($db);
+	session_start();
+	$array_ut = funcionario->check_login($_POST['email'], md5($_POST['password']));
+
+	if(count($array_ut)>0){
+
+		$_SESSION['idutilizador'] = $array_ut[0]['FUN_ID'];
+		$_SESSION['pessoa'] = $array_ut[0]['FUN_PESSOA'];
+		$_SESSION['username'] = $array_ut[0]['FUN_USERNAME'];
+		$_SESSION['password'] = $array_ut[0]['FUN_PASSWORD'];
+		$_SESSION['email'] = $array_ut[0]['FUN_PERMISSOES'];//...e mais
+		
+		$_SESSION['login'] = true;
+		$_SESSION['user'] = 'worker';
+
+		header ( "Location: ../index.php" );
+
+}elseif(!empty($_POST['email']) && !empty($_POST['password'])){
+	$administrador = new Administrador($db);
+	session_start();
+	$array_ut = administrador->check_login($_POST['email'], md5($_POST['password']));
+
+	if(count($array_ut)>0){
+
+		$_SESSION['idutilizador'] = $array_ut[0]['ADM_ID'];
+		$_SESSION['pessoa'] = $array_ut[0]['ADM_PESSOA'];
+		$_SESSION['empresa'] = $array_ut[0]['ADM_EMPRESA'];
+		$_SESSION['username'] = $array_ut[0]['ADM_USERNAME'];
+		$_SESSION['password'] = $array_ut[0]['UT_PASSWORD'];
+		
+		$_SESSION['login'] = true;
+		$_SESSION['user'] = 'admin';
+
+		header ( "Location: ../index.php" );
+
+	}elseif(!empty($_POST['email']) && !empty($_POST['password'])){
+	$super_administrador = new SuperAdministrador($db);
+	session_start();
+	$array_ut = funcionario->check_login($_POST['email'], md5($_POST['password']));
+
+	if(count($array_ut)>0){
+
+		$_SESSION['idutilizador'] = $array_ut[0]['SUP_ID'];
+		$_SESSION['pessoa'] = $array_ut[0]['SUP_PESSOA'];
+		$_SESSION['username'] = $array_ut[0]['SUP_USERNAME'];
+		$_SESSION['password'] = $array_ut[0]['SUP_PASSWORD'];
+		
+		$_SESSION['login'] = true;
+		$_SESSION['user'] = 'super_admin';
+
+		header ( "Location: ../index.php" );
+
+	}else{
+
+		print ("<p class='erro'>Login inválido...</p>");}
+
+}else{
+	if(!empty($_POST['username']) || !empty($_POST['password']))
+		print ("<p class='erro'>Algum campo em falta...</p>");
+} 
+	
 ?>

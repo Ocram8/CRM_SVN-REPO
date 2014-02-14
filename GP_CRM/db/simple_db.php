@@ -1,5 +1,5 @@
 <?php
-	include ('config.php');
+	include ('conf.php');
 	class SimpleDBIConnection {
 		var $conn;
 		var $error = null;
@@ -56,5 +56,61 @@
 			$this->numAffected = $res;
 			return $res;
 		}
+	}
+	
+	// Created by Nuno Fonseca
+	//select row or rows, $db->selectWhere($tableName,$whereValues);
+	public function selectWhere($a,$b){
+		$q = "SELECT * FROM " . $a;
+		$q .= " WHERE 1";
+		foreach($b as $v=>$k){
+			if(is_numeric($k))
+				$q .= " AND `$v`='$k'";
+			else
+				$q .= " AND `$v` like '$k'";
+	
+		}
+		return $this->q($q);
+	}
+	
+	//insert data $db->insert($table,$data);
+	public function insert($a,$b){
+		$q = "INSERT INTO $a (";
+		foreach($b as $c=>$d){
+			$q .= "`$c`,";
+		}
+		$q = substr($q,0,-1);
+		$q .= ") values (";
+		foreach($b as $c=>$d){
+			$q .= "'$d',";
+		}
+		$q = substr($q,0,-1);
+		return $this->s($q.');');
+	}
+	
+	//update row or rows, $db->update($tableName,$updateValues,$whereValues);
+	public function update($a,$b,$c){
+		$q = "UPDATE `$a` SET ";
+		foreach($b as $v=>$k){
+			$q .= "`$v`='$k',";
+		}
+		$q = substr($q,0,-1);
+		$q .= " WHERE 1";
+		foreach($c as $v=>$k){
+			$q .= " AND `$v`='$k'";
+		}
+		print $q;
+	
+		return $this->s($q);
+	}
+	
+	// Created by Nuno Fonseca
+	//delete row or rows, $db->delete($tableName,$whereValues);
+	public function delete($a,$b){
+		$q = "DELETE FROM `$a` WHERE 1";
+		foreach($b as $v=>$k){
+			$q .= " AND `$v`='$k'";
+		}
+		return $this->s($q);
 	}
 ?>
