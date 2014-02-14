@@ -1,6 +1,6 @@
 <?php
 /*
-*** salvar este ficheiro sempre em charset uft-8 ***
+*** salvar este ficheiro sempre em charset utf-8 ***
 
 estrutura de organização do nome das strings:
 lang_<modulo>_<ficheiro>_<tipo>_<id>
