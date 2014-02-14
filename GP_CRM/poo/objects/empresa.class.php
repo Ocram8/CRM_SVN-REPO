@@ -1,93 +1,93 @@
 <?php
-	class Empressa {
-		private $empID;
+	class Empresa
+	{
+		private $empId;
 		private $empNome;
 		private $empTelefone;
 		private $empTelemovel;
 		private $empFax;
 		private $empLogotipo;
-		private $empURL;
-		private $empMorada;
+		private $empUrl;
 		
-		private static $lastEmpId = 1;
-		
-		public function __construct($nome, $tlf, $tlm, $fax, $logo, $url, $morada) {
-			$this->empID;
+		public function __construct($id, $nome, $tlf, $tlm, $fax, $logo, $url)
+		{
+			$this->empId = $id;
 			$this->empNome = $nome;
 			$this->empTelefone = $tlf;
 			$this->empTelemovel = $tlm;
 			$this->empFax = $fax;
 			$this->empLogotipo = $logo;
-			$this->empURL = $url;
-			$this->empMorada = $morada;
+			$this->empUrl = $url;
 		}
 		
-		public function getEmpID() {
-			return $this->empID;
+		public function getEmpId()
+		{
+			return $this->empId;
 		}
 		
-		public function getEmpNome() {
-			return $this->empNome;
+		public function getEmpNome()
+		{
+			return $this->empNome
 		}
 		
-		public function getEmpMorada() {
-			return $this->empMorada;
-		}
-		
-		public function getEmpTelefone() {
+		public function getEmpTelefone()
+		{
 			return $this->empTelefone;
 		}
 		
-		public function getEmpTelemovel() {
+		public function getEmpTelemovel()
+		{
 			return $this->empTelemovel;
 		}
 		
-		public function getEmpFax() {
+		public function getEmpFax()
+		{
 			return $this->empFax;
 		}
 		
-		public function getEmpLogotipo() {
+		public function getEmpLogotipo()
+		{
 			return $this->empLogotipo;
 		}
 		
-		public function getEmpURL() {
-			return $this->empURL;
+		public function getEmpUrl()
+		{
+			return $this->empUrl;
 		}
 		
-		public function setEmpID($newId) {
-			$this->empID=$newId;
+		public function setEmpId($id)
+		{
+			$this->empId = $id;
 		}
 		
-		public function setEmpNome($newNome) {
-			$this->empNome=$newNome;
+		public function setEmpNome($nome)
+		{
+			$this->empNome = $nome;
 		}
 		
-		public function setEmpMorada($newMorada) {
-			$this->empMorada=$newMorada;
+		public function setEmpTelefone($tel)
+		{
+			$this->empTelefone = $tel;
 		}
 		
-		public function setEmpTelefone($newTelefone) {
-			$this->empTelefone=$newTelefone;
+		public function setEmpTelemovel($tel)
+		{
+			$this->empTelemovel = $tel;
 		}
 		
-		public function setEmpTelemovel($newTelemovel) {
-			$this->empTelemovel=$newTelemovel;
+		public function setEmpFax($fax)
+		{
+			$this->empFax = $fax;
 		}
 		
-		public function setEmpFax($newFax) {
-			$this->empFax=$newFax;
+		public function setEmpLogotipo($logo)
+		{
+			$this->empLogotipo = $logo;
 		}
 		
-		public function setEmpLogotipo($newLogo) {
-			$this->empLogotipo=$newLogo;
-		}
-		
-		public function setEmpURL($newUrl) {
-			$this->empURL=$newUrl;
-		}
-		
-		private static function incLastEmpId() {
-			$this->lastEmpId++;
+		public function setEmpUrl($url)
+		{
+			$this->empUrl = $url;
 		}
 	}
 ?>

@@ -1,3 +1,15 @@
+<?php
+if (!isset($_SESSION['login'])){
+?>
+<div class='container'>
+	<h3 class='container'>Não esta logado!</h3>
+	<a href="../../actions/login.php">Login Administradores</a>
+</div>
+<?php 
+} 
+else 
+{
+?>
 <!-- Worker Content -->
 <div class="container">
 	<div class="row row-offcanvas row-offcanvas-right">
@@ -98,4 +110,6 @@
 	<hr>
 </div>
 <!--/.container-->
-
+<?php 
+}
+?>
