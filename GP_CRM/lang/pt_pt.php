@@ -715,12 +715,4 @@ $lang_user_interactionspackage_link_30 = 'Inserir';
 
 
 
-
-
-
-
-
-
-
-
 ?>
