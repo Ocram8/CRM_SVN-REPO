@@ -293,7 +293,7 @@ $lang_user_leadsindex_text_6 = ' tem como principal funcionalidade gerir a infor
 $lang_user_leadsindex_placeholder_7 = 'Pesquisar';
 $lang_user_leadsindex_title_8 = 'Número';
 $lang_user_leadsindex_title_9 = 'Nome';
-$lang_user_leadsindex_title_10 = 'Data de inicío de lead';
+$lang_user_leadsindex_title_10 = 'Data de início de lead';
 $lang_user_leadsindex_title_11 = 'Data de fim de lead';
 $lang_user_leadsindex_title_12 = 'Inserir nova lead';
 $lang_user_leadsindex_link_13 = ' Nova Lead';
@@ -517,6 +517,202 @@ $lang_user_customerupdate_placeholder_45 = 'Observações do cliente';
 $lang_user_customerupdate_title_46 = 'Altere observações do cliente';
 $lang_user_customerupdate_text_47 = 'Altere observações do cliente';
 $lang_user_customerupdate_link_48 = 'Alterar';
+
+//user/campaignsindex.php -falta adicionar-
+$lang_user_campaignsindex_text_1 = 'Home';
+$lang_user_campaignsindex_text_2 = 'Campanhas';
+$lang_user_campaignsindex_text_3 = 'Gestão de campanhas';
+$lang_user_campaignsindex_text_4 = 'O módulo de gestão de campanhas comerciais tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar novas campanhas, ver e alterar toda a informação associada às mesmas.';
+$lang_user_campaignsindex_placeholder_5 = 'Pesquisar';
+$lang_user_campaignsindex_title_6 = 'Número';
+$lang_user_campaignsindex_title_7 = 'Nome';
+$lang_user_campaignsindex_title_8 = 'Data início de campanha';
+$lang_user_campaignsindex_title_9 = 'Data fim de campanha';
+$lang_user_campaignsindex_title_10 = 'Inserir nova campanha';
+$lang_user_campaignsindex_link_11 = 'Nova campanha';
+$lang_user_campaignsindex_title_12 = 'Pesquisar';
+$lang_user_campaignsindex_link_13 = 'Pesquisar';
+$lang_user_campaignsindex_text_14 = 'Número';
+$lang_user_campaignsindex_text_15 = 'Nome';
+$lang_user_campaignsindex_text_16 = 'Data de início';
+$lang_user_campaignsindex_text_17 = 'Data de fim';
+$lang_user_campaignsindex_text_18 = 'Opções';
+$lang_user_campaignsindex_text_19 = 'Ver';
+$lang_user_campaignsindex_text_20 = 'Alterar';
+$lang_user_campaignsindex_text_21 = 'Desativar';
+$lang_user_campaignsindex_text_22 = 'Ativar';
+
+//user/campaignsinsert.php -falta adicionar-
+$lang_user_campaignsinsert_text_1 = 'Home';
+$lang_user_campaignsinsert_text_2 = 'Campanhas';
+$lang_user_campaignsinsert_text_3 = 'Inserir';
+$lang_user_campaignsinsert_text_4 = 'Inserir campanha';
+$lang_user_campaignsinsert_text_5 = 'Introduza os dados da nova campanha comercial.';
+$lang_user_campaignsinsert_text_6 = 'Dados da campanha';
+$lang_user_campaignsinsert_text_7 = 'Número da campanha';
+$lang_user_campaignsinsert_text_8 = 'Nome';
+$lang_user_campaignsinsert_placeholder_9 = 'Nome da campanha';
+$lang_user_campaignsinsert_title_10 = 'Introduza o nome da campanha';
+$lang_user_campaignsinsert_text_11 = 'Introduza o nome da campanha';
+$lang_user_campaignsinsert_text_12 = 'Data de início';
+$lang_user_campaignsinsert_title_13 = 'Introduza a data de início da campanha';
+$lang_user_campaignsinsert_title_14 = 'Introduza a data de início da campanha';
+$lang_user_campaignsinsert_text_15 = 'Data de fim';
+$lang_user_campaignsinsert_title_16 = 'Introduza a data de fim da campanha';
+$lang_user_campaignsinsert_title_17 = 'Introduza a data de fim da campanha';
+$lang_user_campaignsinsert_text_18 = 'Observações';
+$lang_user_campaignsinsert_placeholder_19 = 'Observações da campanha';
+$lang_user_campaignsinsert_title_20 = 'Introduza observações da campanha';
+$lang_user_campaignsinsert_text_21 = 'Introduza observações da campanha';
+$lang_user_campaignsinsert_text_22 = 'Agendamentos';
+$lang_user_campaignsinsert_text_23 = 'Escolha os clientes e ';
+$lang_user_campaignsinsert_text_24 = 'leads';
+$lang_user_campaignsinsert_text_25 = 'associados à campanha';
+$lang_user_campaignsinsert_text_26 = 'Todos os ';
+$lang_user_campaignsinsert_text_27 = 'leads';
+$lang_user_campaignsinsert_text_28 = 'Todos os clientes';
+$lang_user_campaignsinsert_link_29 = 'Criar';
+
+//user/campaignsview.php -falta adicionar-
+$lang_user_campaignsview_text_1 = 'Home';
+$lang_user_campaignsview_text_2 = 'Campanhas';
+$lang_user_campaignsview_text_3 = 'Ver';
+$lang_user_campaignsview_text_4 = 'Ver campanha';
+$lang_user_campaignsview_text_5 = 'Ver os dados da campanha';
+$lang_user_campaignsview_text_6 = 'Dados da campanha';
+$lang_user_campaignsview_text_7 = 'Ver';
+$lang_user_campaignsview_text_8 = 'Número da campanha';
+$lang_user_campaignsview_text_9 = 'Nome';
+$lang_user_campaignsview_text_10 = 'Data de início';
+$lang_user_campaignsview_text_10 = 'Data de fim';
+$lang_user_campaignsview_text_11 = 'Observações';
+
+//user/campaignsupdate.php -falta adicionar-
+$lang_user_campaignsupdate_text_1 = 'Home';
+$lang_user_campaignsupdate_text_2 = 'Campanhas';
+$lang_user_campaignsupdate_text_3 = 'Alterar';
+$lang_user_campaignsupdate_text_4 = 'Alterar campanha';
+$lang_user_campaignsupdate_text_5 = 'Altere os dados da nova campanha comercial.';
+$lang_user_campaignsupdate_text_6 = 'Dados da campanha';
+$lang_user_campaignsupdate_text_7 = 'Número da campanha';
+$lang_user_campaignsupdate_text_8 = 'Nome';
+$lang_user_campaignsupdate_placeholder_9 = 'Nome da campanha';
+$lang_user_campaignsupdate_title_10 = 'Altere o nome da campanha';
+$lang_user_campaignsupdate_text_11 = 'Altere o nome da campanha';
+$lang_user_campaignsupdate_text_12 = 'Data de início';
+$lang_user_campaignsupdate_title_13 = 'Altere a data de início da campanha';
+$lang_user_campaignsupdate_title_14 = 'Altere a data de início da campanha';
+$lang_user_campaignsupdate_text_15 = 'Data de fim';
+$lang_user_campaignsupdate_title_16 = 'Altere a data de fim da campanha';
+$lang_user_campaignsupdate_title_17 = 'Altere a data de fim da campanha';
+$lang_user_campaignsupdate_text_18 = 'Observações';
+$lang_user_campaignsupdate_placeholder_19 = 'Observações da campanha';
+$lang_user_campaignsupdate_title_20 = 'Altere observações da campanha';
+$lang_user_campaignsupdate_text_21 = 'Altere observações da campanha';
+$lang_user_campaignsupdate_text_22 = 'Agendamentos';
+$lang_user_campaignsupdate_text_23 = 'Escolha os clientes e ';
+$lang_user_campaignsupdate_text_24 = 'leads';
+$lang_user_campaignsupdate_text_25 = 'associados à campanha';
+$lang_user_campaignsupdate_text_26 = 'Todos os ';
+$lang_user_campaignsupdate_text_27 = 'leads';
+$lang_user_campaignsupdate_text_28 = 'Todos os clientes';
+$lang_user_campaignsupdate_link_29 = 'Criar';
+
+//user/interactionsindex.php -falta adicionar-
+$lang_user_interactionsindex_text_1 = 'Home';
+$lang_user_interactionsindex_text_2 = 'Interações';
+$lang_user_interactionsindex_text_3 = 'Gestão de interações';
+$lang_user_interactionsindex_text_4 = 'O módulo de gestão de interações tem como principal funcionalidade gerir toda a informação de contacto relacionado com os clientes';
+$lang_user_interactionsindex_text_5 = 'Agendamentos';
+$lang_user_interactionsindex_placeholder_6 = 'Pesquisar';
+$lang_user_interactionsindex_title_7 = 'Número';
+$lang_user_interactionsindex_title_8 = 'Nome';
+$lang_user_interactionsindex_title_9 = 'Motivo';
+$lang_user_interactionsindex_title_10 = 'Data de início de interação';
+$lang_user_interactionsindex_title_11 = 'Pesquisar interações';
+$lang_user_interactionsindex_link_12 = 'Pesquisar';
+$lang_user_interactionsindex_text_13 = 'Número';
+$lang_user_interactionsindex_text_14 = 'Nome';
+$lang_user_interactionsindex_text_15 = 'Data';
+$lang_user_interactionsindex_text_16 = 'Hora';
+$lang_user_interactionsindex_text_17 = 'Motivo';
+$lang_user_interactionsindex_text_18 = 'Iniciar';
+$lang_user_interactionsindex_link_19 = 'Iniciar';
+$lang_user_interactionsindex_text_20 = 'Contactos';
+$lang_user_interactionsindex_title_21 = 'Efetuar chamada';
+$lang_user_interactionsindex_link_22 = 'Iniciar interação';
+$lang_user_interactionsindex_title_23 = 'Receber chamada';
+$lang_user_interactionsindex_link_24 = 'Receber interação';
+
+//user/interactionsiniciate.php -falta adicionar-
+$lang_user_interactionsiniciate_text_1 = 'Home';
+$lang_user_interactionsiniciate_text_2 = 'Interações';
+$lang_user_interactionsiniciate_text_3 = 'Receber';
+$lang_user_interactionsiniciate_text_4 = 'Em chamada...';
+$lang_user_interactionsiniciate_text_5 = 'Dados do cliente';
+$lang_user_interactionsiniciate_text_6 = 'Número do cliente';
+$lang_user_interactionsiniciate_text_7 = 'Nome';
+$lang_user_interactionsiniciate_text_8 = 'NIC';
+$lang_user_interactionsiniciate_text_9 = 'E-mail';
+$lang_user_interactionsiniciate_text_10 = 'Observações';
+$lang_user_interactionsiniciate_text_11 = 'Dados da encomenda';
+$lang_user_interactionsiniciate_text_12 = 'Número da encomenda';
+$lang_user_interactionsiniciate_text_13 = 'Data da encomenda';
+$lang_user_interactionsiniciate_text_14 = 'Hora';
+$lang_user_interactionsiniciate_text_15 = 'Data da entrega';
+$lang_user_interactionsiniciate_text_16 = 'Descrição';
+$lang_user_interactionsiniciate_text_17 = 'Estado da encomenda';
+$lang_user_interactionsiniciate_text_18 = 'Pendente';
+$lang_user_interactionsiniciate_text_19 = 'Processamento';
+$lang_user_interactionsiniciate_text_20 = 'Finalizado';
+$lang_user_interactionsiniciate_text_21 = 'Dados da chamada';
+$lang_user_interactionsiniciate_text_22 = 'Observações';
+$lang_user_interactionsiniciate_title_23 = 'Introduza as observações da chamada';
+$lang_user_interactionsiniciate_text_24 = 'Introduza as observações da chamada';
+$lang_user_interactionsiniciate_text_25 = 'Deseja voltar a ser contactado?';
+$lang_user_interactionsiniciate_title_26 = 'Inserir nova encomenda';
+$lang_user_interactionsiniciate_text_27 = 'Nova encomenda';
+$lang_user_interactionsiniciate_title_28 = 'Inserir nova interação';
+$lang_user_interactionsiniciate_text_29 = 'Terminar';
+
+//user/interactionspackage.php -falta adicionar-
+$lang_user_interactionspackage_text_1 = 'Home';
+$lang_user_interactionspackage_text_2 = 'Interações';
+$lang_user_interactionspackage_text_3 = 'Receber';
+$lang_user_interactionspackage_text_4 = 'Nova encomenda';
+$lang_user_interactionspackage_text_5 = 'Inserir encomenda';
+$lang_user_interactionspackage_text_6 = 'Introduza os dados da encomenda';
+$lang_user_interactionspackage_text_7 = 'Dados da encomenda';
+$lang_user_interactionspackage_text_8 = 'Número da encomenda';
+$lang_user_interactionspackage_text_9 = 'Nome cliente';
+$lang_user_interactionspackage_placeholder_10 = 'Nome do cliente';
+$lang_user_interactionspackage_text_11 = 'Introduza o nome do cliente';
+$lang_user_interactionspackage_text_12 = 'Data de encomenda';
+$lang_user_interactionspackage_title_13 = 'Introduza a data de início da encomenda';
+$lang_user_interactionspackage_text_14 = 'Introduza a data de início da encomenda';
+$lang_user_interactionspackage_text_15 = 'Hora';
+$lang_user_interactionspackage_title_16 = 'Introduza a hora de início da encomenda';
+$lang_user_interactionspackage_text_17 = 'Introduza a hora de início da encomenda';
+$lang_user_interactionspackage_text_18 = 'Data de entrega';
+$lang_user_interactionspackage_title_19 = 'Introduza a data de entrega da encomenda';
+$lang_user_interactionspackage_text_20 = 'Introduza a data de entrega da encomenda';
+$lang_user_interactionspackage_text_21 = 'Descrição';
+$lang_user_interactionspackage_placeholder_22 = 'Descrição da encomenda';
+$lang_user_interactionspackage_title_23 = 'Introduza a descrição da encomenda';
+$lang_user_interactionspackage_text_24 = 'Introduza a descrição da encomenda';
+$lang_user_interactionspackage_text_25 = 'Estado da encomenda';
+$lang_user_interactionspackage_text_26 = 'Cancelado';
+$lang_user_interactionspackage_text_27 = 'Pendente';
+$lang_user_interactionspackage_text_28 = 'Processamento';
+$lang_user_interactionspackage_text_29 = 'Finalizado';
+$lang_user_interactionspackage_link_30 = 'Inserir';
+
+
+
+
+
+
+
 
 
 ?>
