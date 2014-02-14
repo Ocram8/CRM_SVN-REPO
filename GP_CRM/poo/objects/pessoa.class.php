@@ -1,9 +1,10 @@
 <?php
-	class Pessoa {
-		private $pesID;
+	class Pessoa
+	{
+		private $pesId;
 		private $pesNome;
-		private $pesNIC;
-		private $pesNIF;
+		private $pesNic;
+		private $pesNif;
 		private $pesDataNascimento;
 		private $pesSexo;
 		private $pesEstadoCivil;
@@ -13,15 +14,13 @@
 		private $pesTitulo;
 		private $pesFotografia;
 		private $pesObservacoes;
-		private $pesMorada;
 		
-		private static $lastPesID = 1;
-		
-		public function __construct($nome, $nic, $nif, $dataNasc, $sexo, $estCivil, $prof, $tel, $email, $titulo, $foto, $obvs, $morada){
-			$this->pesID = $this->lastPesID;
+		public function __construct($id, $nome, $nic, $nif, $dataNasc, $sexo, $estCivil, $prof, $tel, $email, $titulo, $foto, $obs)
+		{
+			$this->pesId = $id;
 			$this->pesNome = $nome;
-			$this->pesNIC = $nic;
-			$this->pesNIF = $nif;
+			$this->pesNic = $nic;
+			$this->pesNif = $nif;
 			$this->pesDataNascimento = $dataNasc;
 			$this->pesSexo = $sexo;
 			$this->pesEstadoCivil = $estCivil;
@@ -30,118 +29,137 @@
 			$this->pesEmail = $email;
 			$this->pesTitulo = $titulo;
 			$this->pesFotografia = $foto;
-			$this->pesObservacoes = $obvs;
-			$this->pesMorada = $morada;
-			
-			incLastPesID();
+			$this->pesObservacoes = $obs;
 		}
 		
-		public function getPesID(){
-			return $this->pesID;
+		public function getPesId()
+		{
+			return $this->pesId;
 		}
 		
-		public function getPesNome(){
+		public function getPesNome()
+		{
 			return $this->pesNome;
 		}
 		
-		public function getPesNIC(){
-			return $this->pesNIC;
+		public function getPesNic()
+		{
+			return $this->pesNic;
 		}
 		
-		public function getPesNIF() {
-			return $this->pesNIF;
+		public function getPesNif()
+		{
+			return $this->pesNif;
 		}
 		
-		public function getPesDataNascimento(){
+		public function getPesDataNascimento()
+		{
 			return $this->pesDataNascimento;
 		}
 		
-		public function getPesSexo() {
+		public function getPesSexo()
+		{
 			return $this->pesSexo;
 		}
 		
-		public function getPesEstadoCivil() {
+		public function getPesEstadoCivil()
+		{
 			return $this->pesEstadoCivil;
 		}
 		
-		public function getPesProfissao() {
+		public function getPesProfissao()
+		{
 			return $this->pesProfissao;
 		}
 		
-		public function getPesMorada(){
-			return $this->pesMorada;
-		}
-		
-		public function getPesTelefone() {
+		public function getPesTelefone()
+		{
 			return $this->pesTelefone;
 		}
 		
-		public function getPesFotografia() {
+		public function getPesEmail()
+		{
+			return $this->pesEmail;
+		}
+		
+		public function getPesTitulo()
+		{
+			return $this->pesTitulo;
+		}
+		
+		public function getPesFotografia()
+		{
 			return $this->pesFotografia;
 		}
 		
-		public function getPesObservacoes() {
+		public function getPesObservacoes()
+		{
 			return $this->pesObservacoes;
 		}
 		
-		public function setPesID($newPesID){
-			$this->pesID = $newPesID;
+		public function setPesId($id)
+		{
+			$this->pesId = $id;
 		}
 		
-		public function setPesNome($newPesNome) {
-			$this->pesNome = $newPesNome;
+		public function setPesNome($nome)
+		{
+			$this->pesNome = $nome;
 		}
 		
-		public function setPesNIC($newNic) {
-			$this->pesNIC = $newNic;
+		public function setPesNic($nic)
+		{
+			$this->pesNic = $nic;
 		}
 		
-		public function setPesNIF($newNif) {
-			$this->pesNIF = $newNif;
+		public function setPesNif($nif)
+		{
+			$this->pesNif = $nif;
 		}
 		
-		public function setPesDataNascimento($newDataNasc) {
-			$this->pesDataNascimento= $newDataNasc;
+		public function setPesDataNascimento($dataNasc)
+		{
+			$this->pesDataNascimento = $dataNascimento;
 		}
 		
-		public function setPesSexo($newSexo) {
-			$this->pesSexo = $newSexo;
+		public function setPesSexo($sexo)
+		{
+			$this->pesSexo = $sexo;
 		}
 		
-		public function setPesEstadoCivil($newEstCivil) {
-			$this->pesEstadoCivil = $newEstCivil;
+		public function setPesEstadoCivil($estCivil)
+		{
+			$this->pesEstadoCivil = $estCivil;
 		}
 		
-		public function setPesProfissoa($newProf) {
-			$this->pesProfissao = $newProf;
+		public function setPesProfissao($prof)
+		{
+			$this->pesProfissao = $prof;
 		}
 		
-		public function setPesMorada($newMorada) {
-			$this->pesMorada = $newMorada;
+		public function setPesTelefone($tel)
+		{
+			$this->pesTelefone = $tel;
 		}
 		
-		public function setPesTelefone($newTel) {
-			$this->pesTelefone = $newTel;
+		public function setPesEmail($email)
+		{
+			$this->pesEmail = $email;
 		}
 		
-		public function setPesEmail($newEmail) {
-			$this->pesEmail = $newEmail;
+		public function setPesTitulo($titulo)
+		{
+			$this->pesTitulo = $titulo;
 		}
 		
-		public function setPesTitulo($newTitulo) {
-			$this->pesTitulo = $newTitulo;
+		public function setPesFotografia($foto)
+		{
+			$this->pesFotografia = $foto;
 		}
 		
-		public function setPesFotografia($newFoto) {
-			$this->pesFotografia = $newFoto;
-		}
-		
-		public function setPesObservacoes($newObvs) {
-			$this->pesObservacoes=$newObvs;
-		}
-		
-		private static function incLastPesID(){
-			$this->lastPesID++;
+		public function setPesObservacoes($obs)
+		{
+			$this->pesObservacoes = $obs;
 		}
 	}
 ?>
