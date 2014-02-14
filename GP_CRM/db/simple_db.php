@@ -12,6 +12,7 @@
 			}
 			return $this->conn;
 		}
+		
 		function query($sql) {
 			if (! $this->conn) {
 				$this->error = 'Not connected to database.';

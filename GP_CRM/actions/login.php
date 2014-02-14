@@ -138,5 +138,5 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 	if(!empty($_POST['username']) || !empty($_POST['password']))
 		print ("<p class='erro'>Algum campo em falta...</p>");
 } 
-	
+	 
 ?>
