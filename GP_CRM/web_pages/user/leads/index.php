@@ -1,3 +1,9 @@
+<?php
+if (! isset ( $_SESSION ['login'] ))
+	header ( "Location: ../../error.php" );
+else {
+	?>
+
 <div class="container">
 	<div class="row row-offcanvas row-offcanvas-right">
 		<div class="col-xs-12 col-sm-9">
@@ -11,7 +17,8 @@
 			</ol>
 
 			<div class="page-header">
-				<h1><?php echo $lang_user_leadsindex_text_3;?><i lang="en-uk"><?php echo $lang_user_leadsindex_text_4;?></i></h1>
+				<h1><?php echo $lang_user_leadsindex_text_3;?><i lang="en-uk"><?php echo $lang_user_leadsindex_text_4;?></i>
+				</h1>
 			</div>
 			<p class="lead"><?php echo $lang_user_leadsindex_text_5;?><i lang="en-uk"><?php echo $lang_user_leadsindex_text_4;?></i><?php echo $lang_user_leadsindex_text_6;?></p>
 
@@ -162,3 +169,5 @@
 	</div>
 </div>
 <!--/.container-->
+
+<?php } ?>

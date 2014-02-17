@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['login']))
+	header ( "Location: ../error.php" );
+else
+{ ?>
+
 <!-- Worker Main Painel Content -->
 <div class="page-header">
 	<div class="container" id="title_header">
@@ -49,3 +55,5 @@
 	</div>
 </div>
 <!-- /container -->
+
+<?php } ?>

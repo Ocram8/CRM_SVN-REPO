@@ -1,6 +1,10 @@
+<?php
+if (! isset ( $_SESSION ['login'] ))
+	header ( "Location: ../../error.php" );
+else {
+	?>
 
 <div class="container">
-
 	<div class="row row-offcanvas row-offcanvas-right">
 		<div class="col-xs-12 col-sm-9">
 			<p class="pull-right visible-xs">
@@ -50,7 +54,6 @@
 				</div>
 
 			</fieldset>
-
 
 			<br>
 			<div>
@@ -139,7 +142,6 @@
 									</select>
 								</div>
 
-
 								<div class="form-group">
 									<label class="sr-only">Data de início</label> <input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da interação">
 								</div>
@@ -154,7 +156,6 @@
 
 				</fieldset>
 				<hr>
-
 
 				<table class="table table-hover">
 					<tr>
@@ -222,9 +223,12 @@
 			</div>
 		</div>
 	</div>
-	<hr>
-	<a class="btn btn-default btn-sm" href="javascript:popUp('initiate.html')" title="Efetuar chamada"><span class="glyphicon glyphicon-resize-full"></span> Iniciar interação</a> <a class="btn btn-default btn-sm" href="./receive.html" title="Receber chamada"><span
-		class="glyphicon glyphicon-resize-small"></span> Receber interação</a>
 
+	<hr>
+	<a class="btn btn-default btn-sm" href="javascript:popUp('user/interactions/initiate.php')" title="Efetuar chamada"> <span class="glyphicon glyphicon-resize-full"></span> Iniciar Interação
+	</a> <a class="btn btn-default btn-sm" href="user/interactions/receive.php" title="Receber chamada"> <span class="glyphicon glyphicon-resize-small"></span> Receber interação
+	</a>
 </div>
 <!--/.container-->
+
+<?php } ?>

@@ -1,4 +1,10 @@
+<?php
+if (!isset($_SESSION['login']))
+	header ( "Location: ../../error.php" );
+else
+{ ?>
 
+<!-- Campaigns Content -->
 <div class="container">
 	<div class="row row-offcanvas row-offcanvas-right">
 		<div class="col-xs-12 col-sm-9">
@@ -165,3 +171,5 @@
 	</div>
 </div>
 <!--/.container-->
+
+<?php } ?>
