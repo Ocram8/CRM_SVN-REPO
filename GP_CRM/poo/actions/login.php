@@ -8,7 +8,6 @@ include("poo/dao/dao_funcionario.class.php");
 include("poo/dao/dao_administrador.class.php");
 include("poo/dao/dao_super_administrador.class.php");
 $db=new edb();
-session_start();
 
 require '../lang/pt_pt.php';
 ?>
@@ -38,28 +37,32 @@ require '../lang/pt_pt.php';
 	<div class="container">
 		<form class="form-signin" action="login.php" method="post">
 			<h2 class="form-signin-heading">Autenticação</h2>
-			
-			<input class="form-control" type="text" name="email" placeholder="Correio eletrónico" title="Introduza o seu endereço de correio eletrónico" autofocus>
-			<input class="form-control" type="password" name="password" placeholder="Palavra-passe" title="Introduza a sua palavra-passe de autenticação">
-			
+
+			<input class="form-control" type="text" name="email"
+				placeholder="Correio eletrónico"
+				title="Introduza o seu endereço de correio eletrónico" autofocus>
+			<input class="form-control" type="password" name="password"
+				placeholder="Palavra-passe"
+				title="Introduza a sua palavra-passe de autenticação">
+
 			<!--  
 			<label class="checkbox"><input type="checkbox" value="remember-me">Lembra-te de mim</label> 
 			<label><a>Esqueceu-se da palavra-passe?</a></label>
 			-->
-			
-			<button class="btn btn-lg btn-primary btn-block" type="submit" title="Pressione para concluir a autenticação">Entrar</button>
+
+			<button class="btn btn-lg btn-primary btn-block" type="submit"
+				title="Pressione para concluir a autenticação">Entrar</button>
 		</form>
-		
+
 		<div class=form-signin>
 			<h4>contas a testar:</h4>
 			<p>admin admin</p>
 			<p>worker worker</p>
 		</div>
-		
+
 	</div>
 	<!-- /container -->
-</body>
-</html>
+
 <?php
 //para teste
 if(isset($_POST['email']) && isset($_POST['password'])){
@@ -94,6 +97,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['user'] = 'worker';
 
 		header ( "Location: ../index.php" );
+	}	
 
 }elseif(!empty($_POST['email']) && !empty($_POST['password'])){
 	$administrador = new Administrador($db);
@@ -112,7 +116,8 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['user'] = 'admin';
 
 		header ( "Location: ../index.php" );
-
+	}
+	
 	}elseif(!empty($_POST['email']) && !empty($_POST['password'])){
 	$super_administrador = new SuperAdministrador($db);
 	session_start();
@@ -132,11 +137,14 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 
 	}else{
 
-		print ("<p class='erro'>Login inv�lido...</p>");}
+		print ("<p class='erro'>Login inv�lido...</p>");
+	}
 
-}else{
+	}else{
 	if(!empty($_POST['username']) || !empty($_POST['password']))
 		print ("<p class='erro'>Algum campo em falta...</p>");
-} 
-	 
+}
 ?>
+
+</body>	
+</html>

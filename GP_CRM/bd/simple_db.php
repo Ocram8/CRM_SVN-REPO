@@ -65,11 +65,11 @@
 		$q = "SELECT * FROM " . $a;
 		$q .= " WHERE 1";
 		foreach($b as $v=>$k){
-			if(is_numeric($k))
+			if(is_numeric($k)){
 				$q .= " AND `$v`='$k'";
-			else
+			}else{
 				$q .= " AND `$v` like '$k'";
-	
+			}
 		}
 		return $this->q($q);
 	}
@@ -114,4 +114,12 @@
 		}
 		return $this->s($q);
 	}
+	
+	//get last id
+	public function selectMaxID($coluna,$tabela){
+		$q = "SELECT MAX(`$coluna`) as tabela FROM `$tabela` LIMIT 1";
+	
+		return $this->q($q);
+	}
+	
 ?>
