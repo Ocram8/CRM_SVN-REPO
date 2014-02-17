@@ -229,12 +229,26 @@ $lang_personal_index_link_30 = 'Guardar';
 //index.php
 $lang_user_index_tabtitle_1 = 'cloudCRM | Painel de Geral';
 $lang_user_index_tabtitle_2 = 'cloudCRM | Funcionário | Leads';
+$lang_user_index_tabtitle_2_1 = 'cloudCRM | Funcionário | Leads | Inserir';
+$lang_user_index_tabtitle_2_2 = 'cloudCRM | Funcionário | Leads | Alterar';
+$lang_user_index_tabtitle_2_3 = 'cloudCRM | Funcionário | Leads | Ver';
 $lang_user_index_tabtitle_3 = 'cloudCRM | Funcionário | Clientes';
+$lang_user_index_tabtitle_3_1 = 'cloudCRM | Funcionário | Clientes | Inserir';
+$lang_user_index_tabtitle_3_2 = 'cloudCRM | Funcionário | Clientes | Alterar';
+$lang_user_index_tabtitle_3_3 = 'cloudCRM | Funcionário | Clientes | Ver';
 $lang_user_index_tabtitle_4 = 'cloudCRM | Funcionário | Campanhas';
+$lang_user_index_tabtitle_4_1 = 'cloudCRM | Funcionário | Campanhas | Inserir';
+$lang_user_index_tabtitle_4_2 = 'cloudCRM | Funcionário | Campanhas | Alterar';
+$lang_user_index_tabtitle_4_3 = 'cloudCRM | Funcionário | Campanhas | Ver';
 $lang_user_index_tabtitle_5 = 'cloudCRM | Funcionário | Interações';
+$lang_user_index_tabtitle_5_1 = 'cloudCRM | Funcionário | Interações | Receber';
+$lang_user_index_tabtitle_5_2 = 'cloudCRM | Funcionário | Interações | Iniciar';
+$lang_user_index_tabtitle_5_3 = 'cloudCRM | Funcionário | Interações | Inserir Encomenda';
+$lang_user_index_tabtitle_5_4 = 'cloudCRM | Funcionário | Interações | Sucesso';
 $lang_user_index_tabtitle_6 = 'cloudCRM | Funcionário | Encomendas';
+$lang_user_index_tabtitle_6_1 = 'cloudCRM | Funcionário | Encomendas | Alterar';
+$lang_user_index_tabtitle_6_2 = 'cloudCRM | Funcionário | Encomendas | Ver';
 $lang_user_index_tabtitle_7 = 'cloudCRM | Funcionário | Área Pessoal';
-$lang_user_index_tabtitle_8 = 'cloudCRM | Funcionário | Relatórios';
 
 //header.php - Menu
 $lang_user_header_title_1 = 'cloud CRM';

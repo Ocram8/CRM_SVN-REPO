@@ -6,7 +6,7 @@
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html"><?php echo $lang_user_leadsindex_text_1;?></a></li>
+				<li><a href="?page=home"><?php echo $lang_user_leadsindex_text_1;?></a></li>
 				<li class="active"><i lang="en-uk"><?php echo $lang_user_leadsindex_text_2?></i></li>
 			</ol>
 
@@ -40,7 +40,7 @@
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="./insert.html" title="Inserir nova campanha"><span class="glyphicon glyphicon-plus"></span> Nova Lead</a>
+					<a class="btn btn-default btn-sm" href="?page=new_lead" title="<?php echo $lang_user_leadsindex_title_12;?>"><span class="glyphicon glyphicon-plus"></span><?php echo $lang_user_leadsindex_link_13;?></a>
 				</div>
 			</div>
 			<br>
@@ -59,8 +59,8 @@
 						<td>Lead 1</td>
 						<td>**********</td>
 						<td>**********</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
+						<td><a href="?page=view_lead"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+						<td><a href="?page=update_lead"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
 						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
 					</tr>
 					<tr class="success">

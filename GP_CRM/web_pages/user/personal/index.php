@@ -21,10 +21,10 @@
 						<legend>Dados Pessoais</legend>
 						<div class="col-lg-6">
 							<label for="nome" title="Altere o seu nome">Nome</label>
-							<input type="text" class="form-control" placeholder="Nome do funcionário" title="Introduza o nome do funcionário" id="name" value="[Nome do Funcionário]"> 
+							<input type="text" class="form-control" placeholder="Nome do funcionário" title="Introduza o nome do funcionário" id="name"> 
 							<span class="help-block">Alterar o seu nome</span>
 							<label for="email" title="Altere o seu correiro eletrónico">Correio eletrónico</label> 
-							<input type="email" class="form-control" placeholder="Correio eletrónico do funcionário" title="Altere o seu correiro eletrónico" id="email" value="[E-mail do Funcionário]"> 
+							<input type="email" class="form-control" placeholder="Correio eletrónico do funcionário" title="Altere o seu correiro eletrónico" id="email"> 
 							<span class="help-block">Altere o seu correiro eletrónico</span>
 							<label for="inputfile" title="Altere a sua fotografia">Fotografia</label>
 							<input type="file" id="inputfile" title="Altere a sua fotografia">
