@@ -644,36 +644,12 @@ $lang_user_interactionsindex_link_22 = 'Iniciar interação';
 $lang_user_interactionsindex_title_23 = 'Receber chamada';
 $lang_user_interactionsindex_link_24 = 'Receber interação';
 
-//user/interactionsiniciate.php -falta adicionar-
-$lang_user_interactionsiniciate_text_1 = 'Home';
-$lang_user_interactionsiniciate_text_2 = 'Interações';
-$lang_user_interactionsiniciate_text_3 = 'Receber';
-$lang_user_interactionsiniciate_text_4 = 'Em chamada...';
-$lang_user_interactionsiniciate_text_5 = 'Dados do cliente';
-$lang_user_interactionsiniciate_text_6 = 'Número do cliente';
-$lang_user_interactionsiniciate_text_7 = 'Nome';
-$lang_user_interactionsiniciate_text_8 = 'NIC';
-$lang_user_interactionsiniciate_text_9 = 'E-mail';
-$lang_user_interactionsiniciate_text_10 = 'Observações';
-$lang_user_interactionsiniciate_text_11 = 'Dados da encomenda';
-$lang_user_interactionsiniciate_text_12 = 'Número da encomenda';
-$lang_user_interactionsiniciate_text_13 = 'Data da encomenda';
-$lang_user_interactionsiniciate_text_14 = 'Hora';
-$lang_user_interactionsiniciate_text_15 = 'Data da entrega';
-$lang_user_interactionsiniciate_text_16 = 'Descrição';
-$lang_user_interactionsiniciate_text_17 = 'Estado da encomenda';
-$lang_user_interactionsiniciate_text_18 = 'Pendente';
-$lang_user_interactionsiniciate_text_19 = 'Processamento';
-$lang_user_interactionsiniciate_text_20 = 'Finalizado';
-$lang_user_interactionsiniciate_text_21 = 'Dados da chamada';
-$lang_user_interactionsiniciate_text_22 = 'Observações';
-$lang_user_interactionsiniciate_title_23 = 'Introduza as observações da chamada';
-$lang_user_interactionsiniciate_text_24 = 'Introduza as observações da chamada';
-$lang_user_interactionsiniciate_text_25 = 'Deseja voltar a ser contactado?';
-$lang_user_interactionsiniciate_title_26 = 'Inserir nova encomenda';
-$lang_user_interactionsiniciate_text_27 = 'Nova encomenda';
-$lang_user_interactionsiniciate_title_28 = 'Inserir nova interação';
-$lang_user_interactionsiniciate_text_29 = 'Terminar';
+//user/intetactionsiniciate.php -falta adicionar
+$lang_user_interactionsiniciate_text_1 = 'Chamada ao cliente';
+$lang_user_interactionsiniciate_title_2 = 'Número';
+$lang_user_interactionsiniciate_title_3 = 'NIF';
+$lang_user_interactionsiniciate_title_4 = 'NIC';
+$lang_user_interactionsiniciate_title_5 = 'Chamar';
 
 //user/interactionspackage.php -falta adicionar-
 $lang_user_interactionspackage_text_1 = 'Home';
@@ -707,12 +683,148 @@ $lang_user_interactionspackage_text_28 = 'Processamento';
 $lang_user_interactionspackage_text_29 = 'Finalizado';
 $lang_user_interactionspackage_link_30 = 'Inserir';
 
+//user/interactionsreceive.php -falta adicionar-
+$lang_user_interactionsreceive_text_1 = 'Home';
+$lang_user_interactionsreceive_text_2 = 'Interações';
+$lang_user_interactionsreceive_text_3 = 'Receber';
+$lang_user_interactionsreceive_text_4 = 'Em chamada...';
+$lang_user_interactionsreceive_text_5 = 'Dados do cliente';
+$lang_user_interactionsreceive_text_6 = 'Número do cliente';
+$lang_user_interactionsreceive_text_7 = 'Nome';
+$lang_user_interactionsreceive_text_8 = 'NIC';
+$lang_user_interactionsreceive_text_9 = 'E-mail';
+$lang_user_interactionsreceive_text_10 = 'Observações';
+$lang_user_interactionsreceive_text_11 = 'Dados da encomenda';
+$lang_user_interactionsreceive_text_12 = 'Número da encomenda';
+$lang_user_interactionsreceive_text_13 = 'Data da encomenda';
+$lang_user_interactionsreceive_text_14 = 'Hora';
+$lang_user_interactionsreceive_text_15 = 'Data da entrega';
+$lang_user_interactionsreceive_text_16 = 'Descrição';
+$lang_user_interactionsreceive_text_17 = 'Estado da encomenda';
+$lang_user_interactionsreceive_text_18 = 'Pendente';
+$lang_user_interactionsreceive_text_19 = 'Processamento';
+$lang_user_interactionsreceive_text_20 = 'Finalizado';
+$lang_user_interactionsreceive_text_21 = 'Dados da chamada';
+$lang_user_interactionsreceive_text_22 = 'Observações';
+$lang_user_interactionsreceive_title_23 = 'Introduza as observações da chamada';
+$lang_user_interactionsreceive_text_24 = 'Introduza as observações da chamada';
+$lang_user_interactionsreceive_text_25 = 'Deseja voltar a ser contactado?';
+$lang_user_interactionsreceive_title_26 = 'Inserir nova encomenda';
+$lang_user_interactionsreceive_text_27 = 'Nova encomenda';
+$lang_user_interactionsreceive_title_28 = 'Inserir nova interação';
+$lang_user_interactionsreceive_text_29 = 'Terminar';
 
+//user/interactionssuccess.php -falta adicionar-
+$lang_user_interactionssuccess_text_1 = 'Chamada ao cliente';
+$lang_user_interactionssuccess_text_2 = 'A interação teve sucesso?';
+$lang_user_interactionssuccess_text_3 = 'Sim';
+$lang_user_interactionssuccess_text_4 = 'Não';
+$lang_user_interactionssuccess_link_5 = 'Ok';
 
+//user/packageindex.php -falta adicionar-
+$lang_user_packageindex_text_1 = 'Home';
+$lang_user_packageindex_text_2 = 'Encomendas';
+$lang_user_packageindex_text_3 = 'Gestão de encomendas';
+$lang_user_packageindex_text_4 = 'O módulo de gestão de encomendas tem como principal objetivo gerir toda a informação de novas encomendas associadas aos clientes.';
+$lang_user_packageindex_placeholder_5 = 'Pesquisar';
+$lang_user_packageindex_title_6 = 'Referência';
+$lang_user_packageindex_title_7 = 'Nome cliente';
+$lang_user_packageindex_title_8 = 'Data encomenda';
+$lang_user_packageindex_title_9 = 'Hora';
+$lang_user_packageindex_title_10 = 'Data entrega';
+$lang_user_packageindex_title_11 = 'Todas as encomendas';
+$lang_user_packageindex_title_12 = 'Encomendas pendentes';
+$lang_user_packageindex_title_13 = 'Encomendas finalizadas';
+$lang_user_packageindex_title_14 = 'Encomendas em processamento';
+$lang_user_packageindex_title_15 = 'Pesquisar encomendas';
+$lang_user_packageindex_link_16 = 'Pesquisar';
+$lang_user_packageindex_text_17 = 'Referência';
+$lang_user_packageindex_text_18 = 'Data encomenda';
+$lang_user_packageindex_text_19 = 'Hora';
+$lang_user_packageindex_text_20 = 'Data entrega';
+$lang_user_packageindex_text_21 = 'Descrição';
+$lang_user_packageindex_text_22 = 'Opções';
+$lang_user_packageindex_text_23 = 'Ver';
+$lang_user_packageindex_text_24 = 'Alterar';
 
+//user/packageview.php -falta adicionar-
+$lang_user_packageview_text_1 = 'Home';
+$lang_user_packageview_text_2 = 'Encomendas';
+$lang_user_packageview_text_3 = 'Ver';
+$lang_user_packageview_text_4 = 'Ver encomenda';
+$lang_user_packageview_text_5 = 'Ver os dados da encomenda.';
+$lang_user_packageview_text_6 = 'Dados da encomenda';
+$lang_user_packageview_text_7 = 'Número da encomenda';
+$lang_user_packageview_text_8 = 'Nome do cliente';
+$lang_user_packageview_text_9 = 'Data encomenda';
+$lang_user_packageview_text_10 = 'Hora';
+$lang_user_packageview_text_11 = 'Data entrega';
+$lang_user_packageview_text_12 = 'Descrição';
+$lang_user_packageview_text_13 = 'Estado da encomenda';
+$lang_user_packageview_text_14 = 'Pendente';
+$lang_user_packageview_text_15 = 'Processamento';
+$lang_user_packageview_text_16 = 'Finalizado';
 
+//user/packageupdate.php -falta adicionar-
+$lang_user_packageupdate_text_1 = 'Home';
+$lang_user_packageupdate_text_2 = 'Encomendas';
+$lang_user_packageupdate_text_3 = 'Alterar';
+$lang_user_packageupdate_text_4 = 'Alterar encomenda';
+$lang_user_packageupdate_text_5 = 'Altere os dados da encomenda.';
+$lang_user_packageupdate_text_6 = 'Dados da encomenda';
+$lang_user_packageupdate_text_7 = 'Número da encomenda';
+$lang_user_packageupdate_text_9 = 'Nome cliente';
+$lang_user_packageupdate_placeholder_10 = 'Nome do cliente';
+$lang_user_packageupdate_text_11 = 'Altere o nome do cliente';
+$lang_user_packageupdate_text_12 = 'Data de encomenda';
+$lang_user_packageupdate_title_13 = 'Altere a data de início da encomenda';
+$lang_user_packageupdate_text_14 = 'Altere a data de início da encomenda';
+$lang_user_packageupdate_text_15 = 'Hora';
+$lang_user_packageupdate_title_16 = 'Altere a hora de início da encomenda';
+$lang_user_packageupdate_text_17 = 'Altere a hora de início da encomenda';
+$lang_user_packageupdate_text_18 = 'Data de entrega';
+$lang_user_packageupdate_title_19 = 'Altere a data de entrega da encomenda';
+$lang_user_packageupdate_text_20 = 'Altere a data de entrega da encomenda';
+$lang_user_packageupdate_text_21 = 'Descrição';
+$lang_user_packageupdate_placeholder_22 = 'Descrição da encomenda';
+$lang_user_packageupdate_title_23 = 'Altere a descrição da encomenda';
+$lang_user_packageupdate_text_24 = 'Altere a descrição da encomenda';
+$lang_user_packageupdate_text_25 = 'Estado da encomenda';
+$lang_user_packageupdate_text_26 = 'Cancelado';
+$lang_user_packageupdate_text_27 = 'Pendente';
+$lang_user_packageupdate_text_28 = 'Processamento';
+$lang_user_packageupdate_text_29 = 'Finalizado';
+$lang_user_packageupdate_link_30 = 'Alterar';
 
-
-
+//user/personal.php -falta adicionar-
+$lang_user_personal_text_1 = 'Home';
+$lang_user_personal_text_2 = 'Área pessoal';
+$lang_user_personal_text_3 = 'Gestão área pessoal';
+$lang_user_personal_text_4 = 'O módulo de gestão da Área Pessoal serve para alterar os dados de perfil.';
+$lang_user_personal_text_5 = 'Nome';
+$lang_user_personal_placeholder_6 = 'Nome do funcionário';
+$lang_user_personal_title_7 = 'Altere o seu nome';
+$lang_user_personal_text_8 = 'Altere o seu nome';
+$lang_user_personal_text_9 = 'E-mail';
+$lang_user_personal_placeholder_10 = 'E-mail do funcionário';
+$lang_user_personal_title_11 = 'Altere o seu e-mail';
+$lang_user_personal_text_12 = 'Altere o seu e-mail';
+$lang_user_personal_text_13 = 'Fotografia';
+$lang_user_personal_title_14 = 'Altere a sua fotografia';
+$lang_user_personal_text_15 = 'Altere a sua fotografia';
+$lang_user_personal_text_16 = 'Palavra-passe';
+$lang_user_personal_text_17 = 'Nova palavra-passe';
+$lang_user_personal_placeholder_18 = 'Nova palavra-passe';
+$lang_user_personal_title_19 = 'Introduza a nova palavra-passe';
+$lang_user_personal_text_20 = 'Introduza a nova palavra-passe';
+$lang_user_personal_text_21 = 'Confirme a palavra-passe';
+$lang_user_personal_placeholder_22 = 'Nova palavra-passe';
+$lang_user_personal_title_23 = 'Confirme a nova palavra-passe';
+$lang_user_personal_text_24 = 'Confirme a nova palavra-passe';
+$lang_user_personal_text_25 = 'Palavra-passe atual';
+$lang_user_personal_placeholder_26 = 'Palavra-passe atual';
+$lang_user_personal_title_27 = 'Introduza a palavra-passe atual';
+$lang_user_personal_text_28 = 'Introduza a palavra-passe atual';
+$lang_user_personal_link_29 = 'Guardar';
 
 ?>

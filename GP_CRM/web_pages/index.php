@@ -2,12 +2,12 @@
 session_start();
 
 if (!isset($_SESSION ['login']))
-	header ( "Location: actions/login.php" );
+	header ( "Location: ../poo/actions/login.php" );
 	
 if (!$_SESSION ['login'])
-	header ( "Location: actions/login.php" );
+	header ( "Location: ../poo/actions/login.php" );
 
-require 'lang/pt_pt.php';
+require '../lang/pt_pt.php';
 require 'container.php';
 
 $page_version = "alfa v0.2";
@@ -28,15 +28,15 @@ $page_version = "alfa v0.2";
 <link rel="shortcut icon" href="../img/favicon.png">
 
 <!-- Bootstrap core CSS -->
-<link href="css/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="../css/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="css/style.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script src="css/bootstrap/assets/js/html5shiv.js"></script>
-<script src="css/bootstrap/assets/js/respond.min.js"></script>
+<script src="../css/bootstrap/assets/js/html5shiv.js"></script>
+<script src="../css/bootstrap/assets/js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -48,8 +48,8 @@ $page_version = "alfa v0.2";
 	<!-- Bootstrap core JavaScript
    ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="css/bootstrap/assets/js/jquery.js"></script>
-	<script src="css/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="js/offcanvas.js"></script>
+	<script src="../css/bootstrap/assets/js/jquery.js"></script>
+	<script src="../css/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../js/offcanvas.js"></script>
 </body>
 </html>

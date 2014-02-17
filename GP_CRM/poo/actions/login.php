@@ -1,4 +1,6 @@
 <?php
+session_start ();
+/*
 //invocar ficheiros .php pretendidos
 include("GP_CRM/db/edb.class.php");
 include("poo/objects/administrador.class.php");
@@ -8,8 +10,8 @@ include("poo/dao/dao_funcionario.class.php");
 include("poo/dao/dao_administrador.class.php");
 include("poo/dao/dao_super_administrador.class.php");
 $db=new edb();
-
-require '../lang/pt_pt.php';
+*/
+require '../../lang/pt_pt.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt">
@@ -21,10 +23,10 @@ require '../lang/pt_pt.php';
 <title>CRM | Autenticação</title>
 
 <!-- Bootstrap core CSS -->
-<link href="../css/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="../../css/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
-<link href="../css/signin.css" rel="stylesheet">
+<link href="../../css/signin.css" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -75,15 +77,16 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'worker';
 	}
-	header ( "Location: ../index.php" );
+	header ( "Location: ../../web_pages/index.php" );
 }
 //fecha para teste
+
 
 //para funcionario
 if(!empty($_POST['email']) && !empty($_POST['password'])){
 	$funcionario = new Funcionario($db);
 	session_start();
-	$array_ut = funcionario->check_login($_POST['email'], md5($_POST['password']));
+	$array_ut = $funcionario->check_login($_POST['email'], md5($_POST['password']));
 
 	if(count($array_ut)>0){
 
@@ -96,13 +99,13 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'worker';
 
-		header ( "Location: ../index.php" );
+		header ( "Location: ../web_pages/index.php" );
 	}	
 
 }elseif(!empty($_POST['email']) && !empty($_POST['password'])){
 	$administrador = new Administrador($db);
 	session_start();
-	$array_ut = administrador->check_login($_POST['email'], md5($_POST['password']));
+	$array_ut = $administrador->check_login($_POST['email'], md5($_POST['password']));
 
 	if(count($array_ut)>0){
 
@@ -115,13 +118,13 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'admin';
 
-		header ( "Location: ../index.php" );
+		header ( "Location: ../web_pages/index.php" );
 	}
 	
 	}elseif(!empty($_POST['email']) && !empty($_POST['password'])){
 	$super_administrador = new SuperAdministrador($db);
 	session_start();
-	$array_ut = funcionario->check_login($_POST['email'], md5($_POST['password']));
+	$array_ut = $funcionario->check_login($_POST['email'], md5($_POST['password']));
 
 	if(count($array_ut)>0){
 
@@ -133,17 +136,18 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'super_admin';
 
-		header ( "Location: ../index.php" );
+		header ( "Location: ../web_pages/index.php" );
 
 	}else{
 
-		print ("<p class='erro'>Login inv�lido...</p>");
+		print ("<p class='erro'>Login inválido...</p>");
 	}
 
 	}else{
 	if(!empty($_POST['username']) || !empty($_POST['password']))
 		print ("<p class='erro'>Algum campo em falta...</p>");
 }
+
 ?>
 
 </body>	

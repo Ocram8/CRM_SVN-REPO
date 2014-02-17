@@ -1,4 +1,5 @@
 <?php
+//cabeçalho dos administradores
 if ($_SESSION ['login']) {
 	if ($_SESSION ['user'] == 'admin') {
 		?>
@@ -10,7 +11,7 @@ if ($_SESSION ['login']) {
 			</button>
 
 			<div id="imglogo">
-				<a href="index.php"><img src="img/logo.png" title="<?php echo $lang_admin_header_title_1;?>"></a>
+				<a href="index.php"><img src="../img/logo.png" title="<?php echo $lang_admin_header_title_1;?>"></a>
 			</div>
 		</div>
 
@@ -20,7 +21,7 @@ if ($_SESSION ['login']) {
 				<li <?php if($container['menu']=='application') echo 'class="active"';?>><a href="?page=application" title="<?php echo $lang_admin_header_title_4;?>"><?php echo $lang_admin_header_link_5;?></a></li>
 				<li <?php if($container['menu']=='worker') echo 'class="active"';?>><a href="?page=worker" title="<?php echo $lang_admin_header_title_6;?>"><?php echo $lang_admin_header_link_7;?></a></li>
 				<li <?php if($container['menu']=='personal') echo 'class="active"';?>><a href="?page=personal" title="<?php echo $lang_admin_header_title_8;?>"><?php echo $lang_admin_header_link_9;?></a></li>
-				<li><a href="actions/logout.php" title="<?php echo $lang_admin_header_title_10;?>"><?php echo $lang_admin_header_link_11;?></a></li>
+				<li><a href="../poo/actions/logout.php" title="<?php echo $lang_admin_header_title_10;?>"><?php echo $lang_admin_header_link_11;?></a></li>
 			</ul>
 		</div>
 		<!--/.navbar-collapse -->
@@ -30,6 +31,7 @@ if ($_SESSION ['login']) {
 <?php
 	}
 	
+	//cabeçalho dos funcionarios
 	if ($_SESSION ['user'] == 'worker') {
 		?>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -40,7 +42,7 @@ if ($_SESSION ['login']) {
 			</button>
 
 			<div id="imglogo">
-				<a href="index.php"><img src="img/logo.png" title="<?php echo $lang_user_header_title_1;?>"></a>
+				<a href="index.php"><img src="../img/logo.png" title="<?php echo $lang_user_header_title_1;?>"></a>
 			</div>
 		</div>
 
@@ -53,7 +55,7 @@ if ($_SESSION ['login']) {
 				<li <?php if($container['menu']=='interactions') echo 'class="active"';?>><a href="?page=interactions" title="<?php echo $lang_user_header_title_10;?>"><?php echo $lang_user_header_link_11;?></a></li>
 				<li <?php if($container['menu']=='package') echo 'class="active"';?>><a href="?page=package" title="<?php echo $lang_user_header_title_12;?>"><?php echo $lang_user_header_link_13;?></a></li>
 				<li <?php if($container['menu']=='personal') echo 'class="active"';?>><a href="?page=personal" title="<?php echo $lang_user_header_title_14;?>"><?php echo $lang_user_header_link_15;?></a></li>
-				<li><a href="actions/logout.php" title="logout">Logout</a></li>
+				<li><a href="../poo/actions/logout.php" title="logout">Logout</a></li>
 			</ul>
 		</div>
 		<!--/.navbar-collapse -->
