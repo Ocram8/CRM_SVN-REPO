@@ -1,16 +1,16 @@
 <?php
 session_start ();
-/*
+
 //invocar ficheiros .php pretendidos
-include("GP_CRM/db/edb.class.php");
-include("poo/objects/administrador.class.php");
-include("poo/objects/funcionario.class.php");
-include("poo/objects/super_administrador.class.php");
-include("poo/dao/dao_funcionario.class.php");
-include("poo/dao/dao_administrador.class.php");
-include("poo/dao/dao_super_administrador.class.php");
-$db=new edb();
-*/
+//include("../../bd/simple_db.php");
+include("../objects/administrador.class.php");
+//include("../objects/funcionario.class.php");
+include("../objects/super_administrador.class.php");
+//include("../dao/dao_funcionario.class.php");
+//include("../dao/dao_administrador.class.php");
+//include("../dao/dao_super_administrador.class.php");
+//$db=new SimpleDBIConnection();
+
 require '../../lang/pt_pt.php';
 ?>
 <!DOCTYPE html>
@@ -57,9 +57,11 @@ require '../../lang/pt_pt.php';
 		</form>
 
 		<div class=form-signin>
-			<h4>contas a testar:</h4>
-			<p>admin admin</p>
-			<p>worker worker</p>
+			<h4>Contas de teste:</h4>
+			<ol>
+				<li>admin admin</li>
+				<li>worker worker</li>
+			</ol>
 		</div>
 
 	</div>
@@ -99,7 +101,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'worker';
 
-		header ( "Location: ../web_pages/index.php" );
+		header ( "Location: ../../web_pages/index.php" );
 	}	
 
 }elseif(!empty($_POST['email']) && !empty($_POST['password'])){
@@ -118,7 +120,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'admin';
 
-		header ( "Location: ../web_pages/index.php" );
+		header ( "Location: ../../web_pages/index.php" );
 	}
 	
 	}elseif(!empty($_POST['email']) && !empty($_POST['password'])){
@@ -136,7 +138,7 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 		$_SESSION['login'] = true;
 		$_SESSION['user'] = 'super_admin';
 
-		header ( "Location: ../web_pages/index.php" );
+		header ( "Location: ../../web_pages/index.php" );
 
 	}else{
 
@@ -147,7 +149,6 @@ if(!empty($_POST['email']) && !empty($_POST['password'])){
 	if(!empty($_POST['username']) || !empty($_POST['password']))
 		print ("<p class='erro'>Algum campo em falta...</p>");
 }
-
 ?>
 
 </body>	

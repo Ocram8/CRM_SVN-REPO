@@ -21,6 +21,7 @@ tipos:
 $lang_type = 'pt';	//html language code
 $lang_main_index_content = 'Página principal do administrador';
 $lang_main_index_page_error = 'Página não encontrada';
+$lang_main_index_page_noaccess = 'Não tem permissões para aceder a esta página.';
 
 //footer.php
 $lang_main_footer_text_1 = 'Interface e código realizado por';

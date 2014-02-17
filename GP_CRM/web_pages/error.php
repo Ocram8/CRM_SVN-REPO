@@ -1,16 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION ['login']))
-	header ( "Location: ../poo/actions/login.php" );
-	
-if (!$_SESSION ['login'])
-	header ( "Location: ../poo/actions/login.php" );
-
 require '../lang/pt_pt.php';
-require 'container.php';	//page selector
-
-$page_version = "alfa v0.2";
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang_type;?>">
@@ -20,9 +11,7 @@ $page_version = "alfa v0.2";
 <meta name="description" content="<?php echo $lang_main_index_content;?>">
 
 <title>
-<?php
-	echo $container["tabtitle"];
-?>
+	<?php echo $lang_main_index_page_error; ?>
 </title>
 
 <link rel="shortcut icon" href="../img/favicon.png">
@@ -40,16 +29,17 @@ $page_version = "alfa v0.2";
 <![endif]-->
 </head>
 <body>
-<?php
-	require 'header.php';
-	require $container['page'];
-	require 'footer.php';
-?>
-	<!-- Bootstrap core JavaScript
-   ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="../css/bootstrap/assets/js/jquery.js"></script>
-	<script src="../css/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="../js/offcanvas.js"></script>
+	<div class='container'>
+		<h3>
+		<?php 
+			if(isset($_SESSION['login']))
+				echo $lang_main_index_page_error; 
+
+			if(!isset($_SESSION['login']))
+				echo $lang_main_index_page_noaccess;
+		?>
+		</h3>
+		<a href="index.php">Return</a>
+	</div>
 </body>
 </html>

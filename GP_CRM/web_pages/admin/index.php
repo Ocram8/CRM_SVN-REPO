@@ -1,6 +1,9 @@
-<?php 
-	if (isset($_SESSION ['login'])){
-?>
+<?php
+if (!isset($_SESSION['login']))
+	header ( "Location: ../error.php" );
+else
+{ ?>
+
 <!-- Administration Main Painel Content -->
 <div class="page-header">
 	<div class="container" id="title_header">
@@ -33,8 +36,5 @@
 	</div>
 </div>
 <!-- /container -->
-<?php 
-}
-else
-	header ( "Location: ../../actions/login.php" );
-?>
+
+<?php } ?>

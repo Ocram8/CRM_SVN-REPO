@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['login']))
+	header ( "Location: ../../error.php" );
+else
+{ ?>
+
 <!-- Update Worker Content -->
 <div class="container">
 	<div class="row row-offcanvas row-offcanvas-right">
@@ -115,3 +121,5 @@
 	<hr>
 </div>
 <!--/.container-->
+
+<?php } ?>

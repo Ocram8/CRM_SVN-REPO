@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['login']))
+	header ( "Location: ../../error.php" );
+else
+{ ?>
+
 <!-- Personal Content -->
 <div class="container">
 	<div class="row row-offcanvas row-offcanvas-right">
@@ -43,3 +49,4 @@
 </div>
 <!--/.container-->
 
+<?php } ?>

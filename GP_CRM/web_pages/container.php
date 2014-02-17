@@ -1,6 +1,7 @@
 <?php
 if (isset ( $_GET ['page'] )) {
 	
+	//ADMINISTRATOR PAINEL **************
 	if ($_SESSION ['user'] == 'admin') {
 		
 		if ($_GET ['page'] == 'home')
@@ -53,13 +54,15 @@ if (isset ( $_GET ['page'] )) {
 			);
 		
 		else
-			$container = array (
-					'menu' => '',
-					'tabtitle' => "$lang_main_index_page_error",
-					'page' => '404.php' 
-			);
+			header ( "Location: error.php" );
+// 			$container = array (
+// 					'menu' => '',
+// 					'tabtitle' => "$lang_main_index_page_error",
+// 					'page' => 'error.php' 
+// 			);
 	}
 	
+	//USER PAINEL **************
 	if ($_SESSION ['user'] == 'worker') {
 		
 		if ($_GET ['page'] == 'home')
@@ -228,11 +231,12 @@ if (isset ( $_GET ['page'] )) {
 			);
 		
 		else
-			$container = array (
-					'menu' => '',
-					'tabtitle' => "$lang_main_index_page_error",
-					'page' => '404.php' 
-			);
+			header ( "Location: error.php" );
+// 			$container = array (
+// 					'menu' => '',
+// 					'tabtitle' => "$lang_main_index_page_error",
+// 					'page' => 'error.php' 
+// 			);
 	}
 } else {
 	if ($_SESSION ['user'] == 'admin') {
