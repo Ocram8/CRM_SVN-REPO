@@ -1,7 +1,7 @@
 <?php
 
 //invocar ficheiros .php pretendidos
-include("../../bd/simple_db.class.php");
+include("../../bd/simple_db.php");
 include("../dao/dao_funcionario.class.php");
 include("../objects/funcionario.class.php");
 
