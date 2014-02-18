@@ -1,18 +1,20 @@
 <?php
 
 //invocar ficheiros .php pretendidos
-include("GP_CRM/db/edb.class.php");
-$db=new edb();
-$estado="true";
+include("../../bd/simple_db.class.php");
+include("../dao/dao_funcionario.class.php");
+include("../objects/funcionario.class.php");
 
-	function __construct($db) {
-		$this->edb = $db;
-	}
-	
-	function desactive_worker($idfuncionario) {
-		$this->edb->update ( "funcionario", array ("fun_ativo" => $estado), 
-											array ("fun_id" => $idfuncionario) 
-							);
-	}
+$db=new SimpleDBIConnection();
+$estado=true;
 
+$id = $_POST["id"];
+
+$dao = new FuncionarioDAO($db);
+
+$func = $dao->get_funcionario($id);
+
+$func->setfunAtivo($estado);
+
+$dao->update_funcionario($func);
 ?>
