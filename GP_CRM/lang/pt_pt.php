@@ -321,6 +321,8 @@ $lang_user_leadsindex_text_19 = ' Ver';
 $lang_user_leadsindex_text_20 = ' Alterar';
 $lang_user_leadsindex_text_21 = ' Desativar';
 $lang_user_leadsindex_text_22 = ' Ativar';
+$lang_user_leadsindex_link_23 = ' Pesquisar';
+$lang_user_leadsindex_title_24 = 'Fazer pesquisa';
 
 //user/leadsinsert.php  -falta adicionar-
 $lang_user_leadsinsert_text_1 = 'Home';
@@ -347,7 +349,7 @@ $lang_user_leadsinsert_text_21 = 'Introduza a origem da lead';
 $lang_user_leadsinsert_text_22 = 'Observações';
 $lang_user_leadsinsert_placeholder_23 = 'Observações da lead';
 $lang_user_leadsinsert_title_24 = 'Introduza as observações da lead';
-$lang_user_leadsinsert_text_25 = 'Introduza as obeservações da lead';
+$lang_user_leadsinsert_text_25 = 'Introduza as observações da lead';
 $lang_user_leadsinsert_link_26 = 'Criar';
 
 //user/leadsview.php -falta adicionar-
@@ -355,7 +357,7 @@ $lang_user_leadsview_text_1 = 'Home';
 $lang_user_leadsview_text_2 = 'Leads';
 $lang_user_leadsview_text_3 = 'Ver ';
 $lang_user_leadsview_text_4 = 'leads';
-$lang_user_leadsview_text_5 = 'Ver os dados da ';
+$lang_user_leadsview_text_5 = 'Ver dados da ';
 $lang_user_leadsview_text_6 = 'lead.';
 $lang_user_leadsview_text_7 = 'Dados da ';
 $lang_user_leadsview_text_8 = 'lead';
@@ -390,7 +392,7 @@ $lang_user_leadsupdate_text_21 = 'Altere a origem da lead';
 $lang_user_leadsupdate_text_22 = 'Observações';
 $lang_user_leadsupdate_placeholder_23 = 'Observações da lead';
 $lang_user_leadsupdate_title_24 = 'Altere as observações da lead';
-$lang_user_leadsupdate_text_25 = 'Altere as obeservações da lead';
+$lang_user_leadsupdate_text_25 = 'Altere as observações da lead';
 $lang_user_leadsupdate_link_26 = 'Alterar';
 
 //user//customerindex.php -falta adicionar-
