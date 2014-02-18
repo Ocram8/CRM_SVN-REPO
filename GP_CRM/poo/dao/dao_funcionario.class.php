@@ -12,14 +12,14 @@ class FuncionarioDAO
 
 	public function insert_funcionario($funcionario)
 	{
-		$id			= $funcionario->getfunId();
+		$id				= $funcionario->getfunId();
 		$numero 		= $funcionario->getfunNumero();
 		$username		= $funcionario->getfunUsername();
 		$password		= $funcionario->getfunPassword();
-		$permissoes	= $funcionario->getfunPermissoes();
-		$datainsercao		= $funcionario->getfunDataInsercao();
-		$pessoa	= $funcionario->getfunPessoa();
-		$ativo	= $funcionario->getfunAtivo();
+		$permissoes		= $funcionario->getfunPermissoes();
+		$datainsercao	= $funcionario->getfunDataInsercao();
+		$pessoa			= $funcionario->getfunPessoa();
+		$ativo			= $funcionario->getfunAtivo();
 		
 			
 		$bd = $this->bd;
@@ -50,13 +50,13 @@ class FuncionarioDAO
 		$dao_pessoa = new DAOPessoa($bd);
 			
 		$sql = "SELECT	FUN_ID,
-										FUN_NUMERO,
-										FUN_USERNAME,
-										FUN_PASSWORD,
-										FUN_PERMISSOES,
-										FUN_ATIVO,
-										FUN_PESSOA,
-										FUN_DATA_INSERCAO
+						FUN_NUMERO,
+						FUN_USERNAME,
+						FUN_PASSWORD,
+						FUN_PERMISSOES,
+						FUN_ATIVO,
+						FUN_PESSOA,
+						FUN_DATA_INSERCAO
 					FROM FUNCIONARIO
 					WHERE FUN_ID = ".$id.";";
 
@@ -80,13 +80,13 @@ class FuncionarioDAO
 		$dao_pessoa = new DAOPessoa($bd);
 			
 		$sql = "SELECT 	FUN_ID,
-										FUN_NUMERO,
-										FUN_USERNAME,
-										FUN_PASSWORD,
-										FUN_PERMISSOES,
-										FUN_ATIVO,
-										FUN_PESSOA,
-										FUN_DATA_INSERCAO
+						FUN_NUMERO,
+						FUN_USERNAME,
+						FUN_PASSWORD,
+						FUN_PERMISSOES,
+						FUN_ATIVO,
+						FUN_PESSOA,
+						FUN_DATA_INSERCAO
 					FROM FUNCIONARIO;";
 
 		$result = $this->bd->query($sql);
@@ -97,7 +97,7 @@ class FuncionarioDAO
 		{
 			$pessoa = $dao_pessoa->get_pessoa($row[5]);
 
-			$this->funcionarios[] = new Pessoa($row[0],$row[1],$row[2],$row[3],$row[4],$row[6],$row[7],$pessoa);
+			$this->funcionarios[] = new Funcionario($row[0],$row[1],$row[2],$row[3],$row[4],$row[6],$row[7],$pessoa);
 		}
 			
 		return $this->funcionarios;
@@ -149,18 +149,37 @@ class FuncionarioDAO
 		$result = $this->bd->query($sql);
 	}
 
-	public function search_funcionario($word)
+	public function search_funcionario($word,$type,$state)
 	{
 		$sql = "SELECT 	FUN_ID,
-										FUN_NUMERO,
-										FUN_USERNAME,
-										FUN_PASSWORD,
-										FUN_PERMISSOES,
-										FUN_ATIVO,
-										FUN_PESSOA,
-										FUN_DATA_INSERCAO
+						FUN_NUMERO,
+						FUN_USERNAME,
+						FUN_PASSWORD,
+						FUN_PERMISSOES,
+						FUN_ATIVO,
+						FUN_PESSOA,
+						FUN_DATA_INSERCAO
 					FROM FUNCIONARIO
 					WHERE FUN_USERNAME LIKE '%".$word."%';";
+		
+		switch ($type)
+		{
+			case 1: $sql .= "WHERE FUN_NUMERO = ".$word;
+					break;
+			case 2: $sql .= "WHERE FUN_NOME LIKE '%".$word."%'";
+					break;
+			case 3: $sql .= "WHERE FUN_PERMISSÕES = ".$word;
+					break;
+		}
+		
+		if($state==1)
+		{
+			$sql .= "AND FUN_ATIVO = 1";
+		}
+		else
+		{
+			$sql .= "AND FUN_ATIVO = 0";
+		}
 			
 		$result = $this->bd->query($sql);
 
@@ -170,7 +189,7 @@ class FuncionarioDAO
 		{
 			$pessoa = $dao_pessoa->get_pessoa($row[5]);
 				
-			$this->funcionarios[] = new Pessoa($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$pessoa);
+			$this->funcionarios[] = new Funcionario($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$pessoa);
 		}
 
 		return $this->funcionarios;

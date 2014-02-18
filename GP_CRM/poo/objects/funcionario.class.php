@@ -1,5 +1,5 @@
 <?php
-class admerFuncionario {
+class Funcionario {
 	private $funID;
 	private $funNumero;
 	private $funUsername;
