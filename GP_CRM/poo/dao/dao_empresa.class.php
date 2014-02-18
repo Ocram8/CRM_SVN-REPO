@@ -125,5 +125,25 @@
 				
 			$result = $this->bd->query($sql);
 		}
+		
+		public function search_empresa($word)
+		{
+			$sql = "SELECT EMP_ID, EMP_NOME, EMP_MORADA, EMP_TELEFONE, EMP_TELEMOVEL, EMP_FAX, EMP_LOGOTIPO, EMP_URL
+					FROM EMPRESA
+					WHERE EMP_NOME LIKE '%".$word."%';";
+			
+			$result = $this->bd->query($sql);
+				
+			if($result->getNumRows() == 0) return 0;
+			
+			while($row = $result->getNext())
+			{
+				$morada = $dao_morada->get_morada($row[2]);
+			
+				$this->empresas[] = new Empresa($row[0],$row[1],$morada,$row[3],$row[4],$row[5],$row[6],$row[7]);
+			}
+				
+			return $this->empresas;
+		}
 	}
 ?>
