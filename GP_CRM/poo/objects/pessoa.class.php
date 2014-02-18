@@ -14,8 +14,9 @@
 		private $pesTitulo;
 		private $pesFotografia;
 		private $pesObservacoes;
+		private $pesMorada;
 		
-		public function __construct($id, $nome, $nic, $nif, $dataNasc, $sexo, $estCivil, $prof, $tel, $email, $titulo, $foto, $obs)
+		public function __construct($id, $nome, $nic, $nif, $dataNasc, $sexo, $estCivil, $prof, $tel, $email, $titulo, $foto, $obs, $morada)
 		{
 			$this->pesId = $id;
 			$this->pesNome = $nome;
@@ -30,6 +31,7 @@
 			$this->pesTitulo = $titulo;
 			$this->pesFotografia = $foto;
 			$this->pesObservacoes = $obs;
+			$this->pesMorada = $morada;
 		}
 		
 		public function getPesId()
@@ -97,6 +99,11 @@
 			return $this->pesObservacoes;
 		}
 		
+		public function getPesMorada()
+		{
+			return $this->pesMorada;
+		}
+		
 		public function setPesId($id)
 		{
 			$this->pesId = $id;
@@ -160,6 +167,11 @@
 		public function setPesObservacoes($obs)
 		{
 			$this->pesObservacoes = $obs;
+		}
+		
+		public function setPesMorada($morada)
+		{
+			$this->pesMorada = $morada;
 		}
 	}
 ?>
