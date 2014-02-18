@@ -13,54 +13,54 @@ else
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="?page=home">Painel Principal</a></li>
-				<li class="?page=campaigns">Campanhas</li>
+				<li><a href="?page=home"><?php echo $lang_user_campaignsindex_text_1;?></a></li>
+				<li class="active"><?php echo $lang_user_campaignsindex_text_2;?></li>
 			</ol>
 
 			<div class="page-header">
-				<h1>Gestão de Campanhas</h1>
+				<h1><?php echo $lang_user_campaignsindex_text_3;?></h1>
 			</div>
-			<p class="lead">O módulo de gestão de campanhas comerciais tem como principal funcionalidade gerir a informação relacionada com os mesmos, ou seja, criar novas campanhas, ver e alterar toda a informação associada às mesmas.</p>
+			<p class="lead"><?php echo $lang_user_campaignsindex_text_4;?></p>
 
 			<hr>
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-md-8" style="width: 600px">
 					<form class="form-inline" role="form">
 						<div class="form-group">
-							<label class="sr-only">Pesquisar</label> <input type="text" class="form-control input-sm" placeholder="Pesquisar">
+							<label class="sr-only">Pesquisar</label> <input type="text" class="form-control input-sm" placeholder="<?php echo $lang_user_campaignsindex_placeholder_5;?>">
 						</div>
 
 						<div class="form-group">
 							<label class="sr-only">Pesquisar1</label> <select class="form-control input-sm">
-								<option>Número</option>
-								<option selected>Nome</option>
+								<option><?php echo $lang_user_campaignsindex_title_6;?></option>
+								<option selected><?php echo $lang_user_campaignsindex_title_7;?></option>
 							</select>
 						</div>
 
 						<div class="form-group">
-							<label class="sr-only">Data de início</label> <input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da campanha">
+							<label class="sr-only">Data de inicio</label> <input type="date" class="form-control input-sm" title="<?php echo $lang_user_campaignsindex_title_8;?>">
 						</div>
 						<div class="form-group">
-							<label class="sr-only">Data de fim</label> <input type="date" class="form-control input-sm" placeholder="Data de fim" title="Data de fim da campanha">
+							<label class="sr-only">Data de fim</label> <input type="date" class="form-control input-sm" title="<?php echo $lang_user_campaignsindex_title_9;?>">
 						</div>
-						<button type="submit" class="btn btn-default btn-sm" title="Pesquisar">
-							<span class="glyphicon glyphicon-search"></span> Pesquisar
+						<button type="submit" class="btn btn-default btn-sm" title="<?php echo $lang_user_campaignsindex_title_12;?>">
+							<span class="glyphicon glyphicon-search"></span><?php echo $lang_user_campaignsindex_link_13;?>
 						</button>
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="?page=new_campaign" title="Inserir nova campanha"><span class="glyphicon glyphicon-plus"></span> Nova campanha</a>
+					<a class="btn btn-default btn-sm" href="?page=new_campaign" title="<?php echo $lang_user_campaignsindex_title_10;?>"><span class="glyphicon glyphicon-plus"></span><?php echo $lang_user_campaignsindex_link_11;?></a>
 				</div>
 			</div>
 			<br>
 			<div>
 				<table class="table table-hover">
 					<tr>
-						<th>Número</th>
-						<th>Nome</th>
-						<th>Data de início</th>
-						<th>Data de fim</th>
-						<th colspan="3">Opções</th>
+						<th><?php echo $lang_user_campaignsindex_text_14;?></th>
+						<th><?php echo $lang_user_campaignsindex_text_15;?></th>
+						<th><?php echo $lang_user_campaignsindex_text_16;?></th>
+						<th><?php echo $lang_user_campaignsindex_text_17;?></th>
+						<th colspan="3"><?php echo $lang_user_campaignsindex_text_18;?></th>
 					</tr>
 
 					<tr class="success">

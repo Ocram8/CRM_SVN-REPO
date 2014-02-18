@@ -4,8 +4,6 @@
 		private $logData;
 		private $logAcao;
 		
-		private static $lastLogID = 1;
-		
 		public function __construct($Data, $Acao) {
 			$this->logID;
 			$this->logData = $Data;

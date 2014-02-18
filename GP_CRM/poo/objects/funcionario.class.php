@@ -10,14 +10,14 @@ class Funcionario {
 	private $funPessoa;
 
 	public function __construct($ID,$Numero, $Username, $Password,$Permissoes,$Atvio, $Data, $Pessoa) {
-		$this->$funID = $ID;
-		$this->$funNumero = $Numero;
-		$this->$funUsername = $Username;
-		$this->$funPassword = $Password;
-		$this->$funPermissoes = $Permissoes;
-		$this->$funAtivo = $Ativo;
-		$this->$admDataInsercao = $Data;
-		$this->$funPessoa = $Pessoa
+		$this->funID = $ID;
+		$this->funNumero = $Numero;
+		$this->funUsername = $Username;
+		$this->funPassword = $Password;
+		$this->funPermissoes = $Permissoes;
+		$this->funAtivo = $Ativo;
+		$this->admDataInsercao = $Data;
+		$this->funPessoa = $Pessoa;
 	}
 
 	// getters
@@ -74,5 +74,4 @@ class Funcionario {
 		$this->funAtivo = $newAtivo;
 	}
 }
-?>
 ?>
