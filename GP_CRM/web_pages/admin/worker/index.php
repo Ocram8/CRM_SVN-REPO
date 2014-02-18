@@ -2,7 +2,11 @@
 if (!isset($_SESSION['login']))
 	header ( "Location: ../../error.php" );
 else
-{ ?>
+{ 
+
+// 	include '../../../poo/dao/dao_funcionario.class.php';
+// 	include '../../../poo/objects/funcionario.class.php';
+?>
 
 <!-- Worker Content -->
 <div class="container">
@@ -66,6 +70,7 @@ else
 					
 					<?php 
 						$worker_list = array("asd","zxc","dfg","fgh","cas","ogd","vfa");
+// 						$get_all_funcionarios = get_all_funcionarios();
 						
 						for($i=0; $i<2; $i++)
 						{
