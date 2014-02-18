@@ -119,7 +119,7 @@
 				
 			while($row = $result->getNext())
 			{
-				$morada = $dao_morada->get_morada($row[2]);
+				$morada = $dao_morada->get_morada($row[8]);
 				
 				$this->pessoas[] = new Pessoa($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[9],$row[10],$row[11],$row[12],$row[13],$morada);
 			}
@@ -209,7 +209,7 @@
 			
 			while($row = $result->getNext())
 			{
-				$morada = $dao_morada->get_morada($row[2]);
+				$morada = $dao_morada->get_morada($row[8]);
 			
 				$this->pessoas[] = new Pessoa($row[0],$row[1],$row[2],$row[3],$row[4],$row[5],$row[6],$row[7],$row[9],$row[10],$row[11],$row[12],$row[13],$morada);
 			}
