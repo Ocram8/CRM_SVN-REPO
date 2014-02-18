@@ -1,8 +1,10 @@
 <?php
 if (!isset($_SESSION['login']))
 	header ( "Location: ../../error.php" );
-else
-{ ?>
+else{
+// 	include "../../../poo/dao/dao_funcionario.class.php";
+// 	include "../../../poo/objects/funcionario.class.php";
+?>
 
 <!-- Insert New Worker Content -->
 <div class="container">
@@ -30,20 +32,11 @@ else
 						<legend><?php echo $lang_worker_insert_text_6;?></legend>
 
 						<div class="col-lg-6">
-							<label for="num" title=""><?php echo $lang_worker_insert_text_7;?></label>
-							<p class="form-control-static">[ToDo] ID</p>
-							</br> 
-							<label for="nome" title="Introduza o nome do funcionário"><?php echo $lang_worker_insert_text_8;?></label> 
-							<input type="text" class="form-control" placeholder="<?php echo $lang_worker_insert_placeholder_9;?>" title="<?php echo $lang_worker_insert_title_10;?>" id="name">
-							<span class="help-block"><?php echo $lang_worker_insert_text_11;?></span> 
-							</br> 
-							<label for="email" title="Introduza o correiro eletrónico do funcionário"><?php echo $lang_worker_insert_text_12;?></label>
-							<input type="email" class="form-control" placeholder="<?php echo $lang_worker_insert_placeholder_13;?>" title="<?php echo $lang_worker_insert_title_14;?>" id="email">
-							<span class="help-block"><?php echo $lang_worker_insert_text_15;?></span>
-							</br> <label for="inputfile" title="Introduza uma fotografia do funcionário"><?php echo $lang_worker_insert_text_16;?></label>
-							</br> <input type="file" id="inputfile" title="<?php echo $lang_worker_insert_title_17;?>">
-							<span class="help-block"><?php echo $lang_worker_insert_text_18;?></span>
-							</br></br>
+							<label for="numid" title="<?php echo $lang_worker_insert_text_7;?>"><?php echo $lang_worker_insert_text_7;?></label> <input type="hidden" class="form-control" id="numid"> <span class="help-block"><?php /* echo $getlastidfunc = get_last_id() + 1; */?></span></p> </br> 
+							<label for="nome" title="Introduza o nome do funcionário"><?php echo $lang_worker_insert_text_8;?></label> <input type="text" class="form-control" placeholder="<?php echo $lang_worker_insert_placeholder_9;?>" title="<?php echo $lang_worker_insert_title_10;?>" id="name"> <span class="help-block"><?php echo $lang_worker_insert_text_11;?></span> </br> 
+							<label for="email" title="Introduza o correiro eletrónico do funcionário"><?php echo $lang_worker_insert_text_12;?></label>	<input type="email" class="form-control" placeholder="<?php echo $lang_worker_insert_placeholder_13;?>" title="<?php echo $lang_worker_insert_title_14;?>" id="email"><span class="help-block"><?php echo $lang_worker_insert_text_15;?></span>	</br>
+							<label for="inputfile" title="Introduza uma fotografia do funcionário"><?php echo $lang_worker_insert_text_16;?></label></br>
+							<input type="file" id="inputfile" title="<?php echo $lang_worker_insert_title_17;?>"><span class="help-block"><?php echo $lang_worker_insert_text_18;?></span></br>
 						</div>
 					</fieldset>
 
