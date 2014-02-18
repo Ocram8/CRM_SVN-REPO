@@ -298,7 +298,7 @@ $lang_user_index_text_26 = 'A área pessoal permite ao utilizador gerir as suas 
 $lang_user_index_title_27 = 'Ir para o módulo de gestão da área pessoal';
 $lang_user_index_link_28 = 'Gerir Área Pessoal ';
 
-//user/leadsindex.php  -falta adicionar-
+//user/leadsindex.php
 $lang_user_leadsindex_text_1 = 'Home';
 $lang_user_leadsindex_text_2 = 'Leads';
 $lang_user_leadsindex_text_3 = 'Gestão de';
@@ -324,7 +324,7 @@ $lang_user_leadsindex_text_22 = ' Ativar';
 $lang_user_leadsindex_link_23 = ' Pesquisar';
 $lang_user_leadsindex_title_24 = 'Fazer pesquisa';
 
-//user/leadsinsert.php  -falta adicionar-
+//user/leadsinsert.php
 $lang_user_leadsinsert_text_1 = 'Home';
 $lang_user_leadsinsert_text_2 = 'Leads';
 $lang_user_leadsinsert_text_3 = 'Inserir';
@@ -352,7 +352,7 @@ $lang_user_leadsinsert_title_24 = 'Introduza as observações da lead';
 $lang_user_leadsinsert_text_25 = 'Introduza as observações da lead';
 $lang_user_leadsinsert_link_26 = 'Criar';
 
-//user/leadsview.php -falta adicionar-
+//user/leadsview.php
 $lang_user_leadsview_text_1 = 'Home';
 $lang_user_leadsview_text_2 = 'Leads';
 $lang_user_leadsview_text_3 = 'Ver ';
@@ -367,7 +367,7 @@ $lang_user_leadsview_text_11 = 'Empresa';
 $lang_user_leadsview_text_12 = 'Origem';
 $lang_user_leadsview_text_13 = 'Observações';
 
-//user/leadsupdate.php -falta adicionar-
+//user/leadsupdate.php
 $lang_user_leadsupdate_text_1 = 'Home';
 $lang_user_leadsupdate_text_2 = 'Leads';
 $lang_user_leadsupdate_text_3 = 'Alterar';
@@ -535,7 +535,7 @@ $lang_user_customerupdate_title_46 = 'Altere observações do cliente';
 $lang_user_customerupdate_text_47 = 'Altere observações do cliente';
 $lang_user_customerupdate_link_48 = 'Alterar';
 
-//user/campaignsindex.php -falta adicionar-
+//user/campaignsindex.php
 $lang_user_campaignsindex_text_1 = 'Home';
 $lang_user_campaignsindex_text_2 = 'Campanhas';
 $lang_user_campaignsindex_text_3 = 'Gestão de campanhas';
@@ -546,9 +546,9 @@ $lang_user_campaignsindex_title_7 = 'Nome';
 $lang_user_campaignsindex_title_8 = 'Data início de campanha';
 $lang_user_campaignsindex_title_9 = 'Data fim de campanha';
 $lang_user_campaignsindex_title_10 = 'Inserir nova campanha';
-$lang_user_campaignsindex_link_11 = 'Nova campanha';
-$lang_user_campaignsindex_title_12 = 'Pesquisar';
-$lang_user_campaignsindex_link_13 = 'Pesquisar';
+$lang_user_campaignsindex_link_11 = ' Nova campanha';
+$lang_user_campaignsindex_title_12 = 'Fazer pesquisa';
+$lang_user_campaignsindex_link_13 = ' Pesquisar';
 $lang_user_campaignsindex_text_14 = 'Número';
 $lang_user_campaignsindex_text_15 = 'Nome';
 $lang_user_campaignsindex_text_16 = 'Data de início';
@@ -559,7 +559,7 @@ $lang_user_campaignsindex_text_20 = 'Alterar';
 $lang_user_campaignsindex_text_21 = 'Desativar';
 $lang_user_campaignsindex_text_22 = 'Ativar';
 
-//user/campaignsinsert.php -falta adicionar-
+//user/campaignsinsert.php
 $lang_user_campaignsinsert_text_1 = 'Home';
 $lang_user_campaignsinsert_text_2 = 'Campanhas';
 $lang_user_campaignsinsert_text_3 = 'Inserir';
@@ -573,38 +573,37 @@ $lang_user_campaignsinsert_title_10 = 'Introduza o nome da campanha';
 $lang_user_campaignsinsert_text_11 = 'Introduza o nome da campanha';
 $lang_user_campaignsinsert_text_12 = 'Data de início';
 $lang_user_campaignsinsert_title_13 = 'Introduza a data de início da campanha';
-$lang_user_campaignsinsert_title_14 = 'Introduza a data de início da campanha';
+$lang_user_campaignsinsert_text_14 = 'Introduza a data de início da campanha';
 $lang_user_campaignsinsert_text_15 = 'Data de fim';
 $lang_user_campaignsinsert_title_16 = 'Introduza a data de fim da campanha';
-$lang_user_campaignsinsert_title_17 = 'Introduza a data de fim da campanha';
+$lang_user_campaignsinsert_text_17 = 'Introduza a data de fim da campanha';
 $lang_user_campaignsinsert_text_18 = 'Observações';
 $lang_user_campaignsinsert_placeholder_19 = 'Observações da campanha';
 $lang_user_campaignsinsert_title_20 = 'Introduza observações da campanha';
 $lang_user_campaignsinsert_text_21 = 'Introduza observações da campanha';
 $lang_user_campaignsinsert_text_22 = 'Agendamentos';
 $lang_user_campaignsinsert_text_23 = 'Escolha os clientes e ';
-$lang_user_campaignsinsert_text_24 = 'leads';
-$lang_user_campaignsinsert_text_25 = 'associados à campanha';
-$lang_user_campaignsinsert_text_26 = 'Todos os ';
+$lang_user_campaignsinsert_text_24 = 'leads ';
+$lang_user_campaignsinsert_text_25 = 'associados à campanha.';
+$lang_user_campaignsinsert_text_26 = ' Todos os ';
 $lang_user_campaignsinsert_text_27 = 'leads';
-$lang_user_campaignsinsert_text_28 = 'Todos os clientes';
+$lang_user_campaignsinsert_text_28 = ' Todos os clientes';
 $lang_user_campaignsinsert_link_29 = 'Criar';
 
-//user/campaignsview.php -falta adicionar-
+//user/campaignsview.php
 $lang_user_campaignsview_text_1 = 'Home';
 $lang_user_campaignsview_text_2 = 'Campanhas';
 $lang_user_campaignsview_text_3 = 'Ver';
 $lang_user_campaignsview_text_4 = 'Ver campanha';
 $lang_user_campaignsview_text_5 = 'Ver os dados da campanha';
 $lang_user_campaignsview_text_6 = 'Dados da campanha';
-$lang_user_campaignsview_text_7 = 'Ver';
-$lang_user_campaignsview_text_8 = 'Número da campanha';
-$lang_user_campaignsview_text_9 = 'Nome';
-$lang_user_campaignsview_text_10 = 'Data de início';
+$lang_user_campaignsview_text_7 = 'Número da campanha';
+$lang_user_campaignsview_text_8 = 'Nome';
+$lang_user_campaignsview_text_9 = 'Data de início';
 $lang_user_campaignsview_text_10 = 'Data de fim';
 $lang_user_campaignsview_text_11 = 'Observações';
 
-//user/campaignsupdate.php -falta adicionar-
+//user/campaignsupdate.php
 $lang_user_campaignsupdate_text_1 = 'Home';
 $lang_user_campaignsupdate_text_2 = 'Campanhas';
 $lang_user_campaignsupdate_text_3 = 'Alterar';
@@ -618,14 +617,15 @@ $lang_user_campaignsupdate_title_10 = 'Altere o nome da campanha';
 $lang_user_campaignsupdate_text_11 = 'Altere o nome da campanha';
 $lang_user_campaignsupdate_text_12 = 'Data de início';
 $lang_user_campaignsupdate_title_13 = 'Altere a data de início da campanha';
-$lang_user_campaignsupdate_title_14 = 'Altere a data de início da campanha';
+$lang_user_campaignsupdate_text_14 = 'Altere a data de início da campanha';
 $lang_user_campaignsupdate_text_15 = 'Data de fim';
 $lang_user_campaignsupdate_title_16 = 'Altere a data de fim da campanha';
-$lang_user_campaignsupdate_title_17 = 'Altere a data de fim da campanha';
+$lang_user_campaignsupdate_text_17 = 'Altere a data de fim da campanha';
 $lang_user_campaignsupdate_text_18 = 'Observações';
 $lang_user_campaignsupdate_placeholder_19 = 'Observações da campanha';
 $lang_user_campaignsupdate_title_20 = 'Altere observações da campanha';
 $lang_user_campaignsupdate_text_21 = 'Altere observações da campanha';
+/*
 $lang_user_campaignsupdate_text_22 = 'Agendamentos';
 $lang_user_campaignsupdate_text_23 = 'Escolha os clientes e ';
 $lang_user_campaignsupdate_text_24 = 'leads';
@@ -633,7 +633,8 @@ $lang_user_campaignsupdate_text_25 = 'associados à campanha';
 $lang_user_campaignsupdate_text_26 = 'Todos os ';
 $lang_user_campaignsupdate_text_27 = 'leads';
 $lang_user_campaignsupdate_text_28 = 'Todos os clientes';
-$lang_user_campaignsupdate_link_29 = 'Criar';
+*/
+$lang_user_campaignsupdate_link_29 = 'Alterar';
 
 //user/interactionsindex.php -falta adicionar-
 $lang_user_interactionsindex_text_1 = 'Home';

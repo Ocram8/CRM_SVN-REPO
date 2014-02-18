@@ -27,7 +27,7 @@
 		
 		public function getEmpNome()
 		{
-			return $this->empNome
+			return $this->empNome;
 		}
 		
 		public function getEmpTelefone()

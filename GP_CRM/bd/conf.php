@@ -2,7 +2,7 @@
 
 	//parametros de conexao
 	$hostname="localhost";
-	$database="database_name";
+	$database="crm_bd";
 	$username="database_username";
 	$password="database_password";
 ?>
