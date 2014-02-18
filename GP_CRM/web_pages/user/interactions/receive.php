@@ -12,8 +12,8 @@ else {
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
-				<li><a href="./index.html">Interações</a></li>
+				<li><a href="?page=home">Painel Principal</a></li>
+				<li><a href="?page=interactions">Interações</a></li>
 				<li class="active">Receber</li>
 			</ol>
 
@@ -82,8 +82,8 @@ else {
 					<span class="help-block">Observações chamada</span> 					
 					<input type="checkbox" id="cont" value="cont" checked>Deseja voltar a ser contactado? </br> </br> 
 					
-					<a class="btn btn-default btn-sm" href="user/interactions/insert_package.html" title="Inserir nova interação"><span class="glyphicon glyphicon-plus"></span> Nova encomenda</a> 
-					<a class="btn btn-default btn-sm" href="javascript:popUp('user/interactions/success.html')" title="Inserir nova interação"><span class="glyphicon glyphicon-earphone"></span> Terminar</a>
+					<a class="btn btn-default btn-sm" href="?page=new_package" title="Inserir nova interação"><span class="glyphicon glyphicon-plus"></span> Nova encomenda</a> 
+					<a class="btn btn-default btn-sm" href="javascript:popUp('?page=success_interaction')" title="Inserir nova interação"><span class="glyphicon glyphicon-earphone"></span> Terminar</a>
 				</fieldset>
 			</div>
 

@@ -12,7 +12,7 @@ else {
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
+				<li><a href="?page=interactions">Painel Principal</a></li>
 				<li class="active">Interações</li>
 			</ol>
 
@@ -73,7 +73,7 @@ else {
 						<td>dd/mm/aaaa</td>
 						<td>12:34</td>
 						<td>Coisas do tempo</td>
-						<td><a href="./receive.html"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
+						<td><a href="?page=receive_interaction"><span class="glyphicon glyphicon-play"></span> Iniciar</a></td>
 					</tr>
 					<tr>
 						<td>2</td>
@@ -225,8 +225,8 @@ else {
 	</div>
 
 	<hr>
-	<a class="btn btn-default btn-sm" href="javascript:popUp('user/interactions/initiate.php')" title="Efetuar chamada"> <span class="glyphicon glyphicon-resize-full"></span> Iniciar Interação
-	</a> <a class="btn btn-default btn-sm" href="user/interactions/receive.php" title="Receber chamada"> <span class="glyphicon glyphicon-resize-small"></span> Receber interação
+	<a class="btn btn-default btn-sm" href="javascript:popUp('?page=receive_interaction')" title="Efetuar chamada"> <span class="glyphicon glyphicon-resize-full"></span> Iniciar Interação
+	</a> <a class="btn btn-default btn-sm" href="?page=receive_interaction" title="Receber chamada"> <span class="glyphicon glyphicon-resize-small"></span> Receber interação
 	</a>
 </div>
 <!--/.container-->

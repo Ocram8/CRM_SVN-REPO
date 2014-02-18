@@ -13,8 +13,8 @@ else
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
-				<li class="active">Campanhas</li>
+				<li><a href="?page=home">Painel Principal</a></li>
+				<li class="?page=campaigns">Campanhas</li>
 			</ol>
 
 			<div class="page-header">
@@ -49,7 +49,7 @@ else
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="./insert.html" title="Inserir nova campanha"><span class="glyphicon glyphicon-plus"></span> Nova campanha</a>
+					<a class="btn btn-default btn-sm" href="?page=new_campaign" title="Inserir nova campanha"><span class="glyphicon glyphicon-plus"></span> Nova campanha</a>
 				</div>
 			</div>
 			<br>
@@ -68,8 +68,8 @@ else
 						<td>Campanha 1</td>
 						<td>dd/mm/aaaa</td>
 						<td>dd/mm/aaaa</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
+						<td><a href="?page=view_campaign"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+						<td><a href="?page=update_campaign"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
 						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
 					</tr>
 					<tr class="success">

@@ -12,8 +12,8 @@ else {
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
-				<li><a href="./index.html">Encomendas</a></li>
+				<li><a href="?page=home">Painel Principal</a></li>
+				<li><a href="?page=package">Encomendas</a></li>
 				<li class="active">Alterar</li>
 			</ol>
 

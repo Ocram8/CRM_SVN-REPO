@@ -13,8 +13,8 @@ else
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
-				<li><a href="./index.html">Campanhas</a></li>
+				<li><a href="?page=home">Painel Principal</a></li>
+				<li><a href="?page=campaigns">Campanhas</a></li>
 				<li class="active">Ver</li>
 			</ol>
 

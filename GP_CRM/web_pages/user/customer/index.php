@@ -12,7 +12,7 @@ else {
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
+				<li><a href="?page=home">Painel Principal</a></li>
 				<li class="active">Clientes</li>
 			</ol>
 
@@ -35,10 +35,7 @@ else {
 							</select>
 						</div>
 						<div class="form-group">
-							<label class="sr-only">Bi</label> <input type="date" class="form-control input-sm" placeholder="Data de início" title="Data de início da campanha">
-						</div>
-						<div class="form-group">
-							<label class="sr-only">Email</label> <input type="date" class="form-control input-sm" placeholder="Data de fim" title="Data de fim da campanha">
+							<label class="sr-only">dataregisto</label> <input type="date" class="form-control input-sm" title="Data de registo de cliente">
 						</div>
 						<button type="submit" class="btn btn-default btn-sm" title="Pesquisar">
 							<span class="glyphicon glyphicon-search"></span> Pesquisar
@@ -46,7 +43,7 @@ else {
 					</form>
 				</div>
 				<div class="col-xs-6 col-md-4" style="width: 100px">
-					<a class="btn btn-default btn-sm" href="./insert.html" title="Inserir Novo Cliente"><span class="glyphicon glyphicon-plus"></span> Novo Cliente</a>
+					<a class="btn btn-default btn-sm" href="?page=new_customer" title="Inserir Novo Cliente"><span class="glyphicon glyphicon-plus"></span> Novo Cliente</a>
 				</div>
 			</div>
 			<br>
@@ -65,8 +62,8 @@ else {
 						<td>Cliente 1</td>
 						<td>*********</td>
 						<td>....@mail.com</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
+						<td><a href="?page=view_customer"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+						<td><a href="?page=update_customer"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
 						<td><a href=""><span class="glyphicon glyphicon-ban-circle"></span> Desativar</a></td>
 					</tr>
 					<tr class="success">

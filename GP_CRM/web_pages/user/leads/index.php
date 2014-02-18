@@ -36,10 +36,10 @@ else {
 							</select>
 						</div>
 						<div class="form-group">
-							<label class="sr-only">Empresa</label> <input type="date" class="form-control input-sm" title="Data de início da campanha">
+							<label class="sr-only">iniciolead</label> <input type="date" class="form-control input-sm" title="Data de inicio da lead">
 						</div>
 						<div class="form-group">
-							<label class="sr-only">Origem</label> <input type="date" class="form-control input-sm" title="Data de fim da campanha">
+							<label class="sr-only">fimlead</label> <input type="date" class="form-control input-sm" title="Data de fim da lead">
 						</div>
 						<button type="submit" class="btn btn-default btn-sm" title="Pesquisar">
 							<span class="glyphicon glyphicon-search"></span> Pesquisar

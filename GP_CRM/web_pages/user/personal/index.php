@@ -12,7 +12,7 @@ else {
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
+				<li><a href="?page=home">Painel Principal</a></li>
 				<li class="active">Área Pessoal</li>
 			</ol>
 

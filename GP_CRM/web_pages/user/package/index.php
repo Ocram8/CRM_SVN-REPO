@@ -12,7 +12,7 @@ else {
 			</p>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Painel Principal</a></li>
+				<li><a href="?page=home">Painel Principal</a></li>
 				<li class="active">Encomendas</li>
 			</ol>
 
@@ -74,8 +74,8 @@ else {
 						<td>11:15</td>
 						<td>7/1/2014</td>
 						<td>[Texto]</td>
-						<td><a href="./view.html"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
-						<td><a href="./update.html"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
+						<td><a href="?page=view_package"><span class="glyphicon glyphicon-eye-open"></span> Ver</a></td>
+						<td><a href="?page=update_package"><span class="glyphicon glyphicon-edit"></span> Alterar</a></td>
 					</tr>
 					<tr class="success">
 						<td>2</td>

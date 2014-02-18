@@ -86,7 +86,7 @@ if (isset ( $_GET ['page'] )) {
 					'page' => 'user/campaigns/insert.php'
 			);
 
-		elseif ($_GET ['page'] == 'View_campaign')
+		elseif ($_GET ['page'] == 'view_campaign')
 			$container = array (
 					'menu' => 'campaigns',
 					'tabtitle' => "$lang_user_index_tabtitle_4_3",
